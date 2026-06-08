@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <!-- Accent gradient: cyan → violet -->
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+
+    <!-- Accent gradient vertical for tiles -->
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+
+    <!-- Tile background -->
+    <linearGradient id="tileBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2233"/>
+      <stop offset="100%" stop-color="#151d2e"/>
+    </linearGradient>
+
+    <!-- Red/orange for "before" state -->
+    <linearGradient id="warn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle card glow -->
+    <filter id="cardglow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+
+  <!-- Subtle grid texture overlay -->
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.04"/>
+  </pattern>
+  <rect width="1080" height="1350" fill="url(#grid)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1080" height="5" fill="url(#accent)"/>
+
+  <!-- ─── HERO SECTION ─── -->
+  <!-- Hero label -->
+  <text x="540" y="98" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="18" font-weight="500" letter-spacing="4" fill="#22d3ee"
+        text-anchor="middle" opacity="0.85">AI-ASSISTED BUILDING — REAL LEARNINGS</text>
+
+  <!-- Hero hook line -->
+  <text x="540" y="168" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="64" font-weight="800" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    One prompt.
+  </text>
+  <text x="540" y="248" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="48" font-weight="700" fill="url(#accent)" text-anchor="middle">
+    Zero working features.
+  </text>
+
+  <!-- Divider line -->
+  <rect x="380" y="278" width="320" height="2" fill="url(#accent)" opacity="0.4" rx="1"/>
+
+  <!-- ─── BEFORE / AFTER BAR ─── -->
+  <text x="90" y="336" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="600" letter-spacing="3" fill="#94a3b8"
+        text-anchor="start" opacity="0.8">WHAT YOU EXPECT VS. WHAT YOU SHIP</text>
+
+  <!-- Row: Expect -->
+  <text x="90" y="378" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="500" fill="#94a3b8" text-anchor="start">EXPECT</text>
+  <rect x="180" y="360" width="740" height="28" rx="4" fill="#1a2233"/>
+  <rect x="180" y="360" width="680" height="28" rx="4" fill="url(#accent)" opacity="0.85"/>
+  <text x="840" y="379" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="700" fill="#22d3ee" text-anchor="middle">95%</text>
+
+  <!-- Row: Reality -->
+  <text x="90" y="426" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="500" fill="#94a3b8" text-anchor="start">SHIP</text>
+  <rect x="180" y="408" width="740" height="28" rx="4" fill="#1a2233"/>
+  <rect x="180" y="408" width="200" height="28" rx="4" fill="url(#warn)" opacity="0.8"/>
+  <text x="390" y="427" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="700" fill="#f97316" text-anchor="middle">~27%</text>
+
+  <text x="90" y="468" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" fill="#64748b" text-anchor="start" font-style="italic">
+    (after 6 screens of AI generation — all UX, integration, and flow work still manual)
+  </text>
+
+  <!-- ─── STAT TILES ─── -->
+  <!-- Tile 1 -->
+  <rect x="60" y="510" width="290" height="200" rx="12" fill="url(#tileBg)" stroke="#22d3ee"
+        stroke-width="0.8" stroke-opacity="0.3" filter="url(#cardglow)"/>
+  <text x="205" y="582" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="72" font-weight="800" fill="url(#accentV)" text-anchor="middle">6</text>
+  <text x="205" y="622" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" font-weight="700" letter-spacing="2" fill="#cbd5e1"
+        text-anchor="middle">SCREENS GENERATED</text>
+  <text x="205" y="650" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" fill="#64748b" text-anchor="middle">before anything worked</text>
+  <rect x="155" y="668" width="100" height="2" fill="url(#accent)" opacity="0.4" rx="1"/>
+  <text x="205" y="694" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="12" fill="#94a3b8" text-anchor="middle">AI output: fast</text>
+
+  <!-- Tile 2 -->
+  <rect x="395" y="510" width="290" height="200" rx="12" fill="url(#tileBg)" stroke="#a78bfa"
+        stroke-width="0.8" stroke-opacity="0.3" filter="url(#cardglow)"/>
+  <text x="540" y="582" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="72" font-weight="800" fill="url(#accentV)" text-anchor="middle">1x</text>
+  <text x="540" y="622" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" font-weight="700" letter-spacing="2" fill="#cbd5e1"
+        text-anchor="middle">SCREEN AT A TIME</text>
+  <text x="540" y="650" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" fill="#64748b" text-anchor="middle">the only way to actually ship</text>
+  <rect x="490" y="668" width="100" height="2" fill="url(#accent)" opacity="0.4" rx="1"/>
+  <text x="540" y="694" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="12" fill="#94a3b8" text-anchor="middle">no shortcuts found</text>
+
+  <!-- Tile 3 -->
+  <rect x="730" y="510" width="290" height="200" rx="12" fill="url(#tileBg)" stroke="#22d3ee"
+        stroke-width="0.8" stroke-opacity="0.3" filter="url(#cardglow)"/>
+  <text x="875" y="582" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="72" font-weight="800" fill="url(#accentV)" text-anchor="middle">3</text>
+  <text x="875" y="622" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" font-weight="700" letter-spacing="2" fill="#cbd5e1"
+        text-anchor="middle">FAILURE MODES</text>
+  <text x="875" y="650" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" fill="#64748b" text-anchor="middle">UI · integration · flow</text>
+  <rect x="825" y="668" width="100" height="2" fill="url(#accent)" opacity="0.4" rx="1"/>
+  <text x="875" y="694" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="12" fill="#94a3b8" text-anchor="middle">each needs manual work</text>
+
+  <!-- ─── INSIGHT CALLOUT ─── -->
+  <rect x="60" y="750" width="960" height="130" rx="12" fill="#0d1626"
+        stroke="url(#accent)" stroke-width="1.5" opacity="0.95"/>
+
+  <!-- Left accent bar inside callout -->
+  <rect x="60" y="750" width="5" height="130" rx="2" fill="url(#accentV)"/>
+
+  <text x="100" y="800" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" font-weight="600" letter-spacing="3" fill="#22d3ee" opacity="0.8">KEY LEARNING</text>
+  <text x="100" y="840" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="26" font-weight="700" fill="#f1f5f9">
+    AI accelerates the build.
+  </text>
+  <text x="100" y="873" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="26" font-weight="700" fill="url(#accent)">
+    It does not replace thinking about how it needs to feel.
+  </text>
+
+  <!-- ─── WHAT THE AGENT CAN AND CAN'T DO ─── -->
+  <text x="60" y="950" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="600" letter-spacing="3" fill="#94a3b8" opacity="0.8">
+    WHERE AI HELPS VS. WHERE YOU'RE ON YOUR OWN
+  </text>
+
+  <!-- Can do column -->
+  <text x="60" y="990" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="700" fill="#22d3ee">AI CAN DO</text>
+  <text x="60" y="1018" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" fill="#94a3b8">Design components in isolation</text>
+  <text x="60" y="1044" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" fill="#94a3b8">Generate individual screens fast</text>
+  <text x="60" y="1070" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" fill="#94a3b8">Fix localized bugs quickly</text>
+
+  <!-- Divider -->
+  <rect x="490" y="975" width="1" height="110" fill="#334155" opacity="0.6"/>
+
+  <!-- Can't do column -->
+  <text x="540" y="990" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="700" fill="#f97316">YOU STILL OWN</text>
+  <text x="540" y="1018" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" fill="#94a3b8">End-to-end flow testing</text>
+  <text x="540" y="1044" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" fill="#94a3b8">UX simplicity and feel</text>
+  <text x="540" y="1070" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" fill="#94a3b8">Integration between every layer</text>
+
+  <!-- ─── TAGLINE ─── -->
+  <text x="540" y="1148" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">
+    AI builds fast. Polish takes time.
+  </text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="1345" width="1080" height="5" fill="url(#accent)"/>
+
+  <!-- Byline -->
+  <text x="540" y="1320" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" fill="#475569" text-anchor="middle" letter-spacing="1">
+    Built by Altaf Shaikh · AI Engineering
+  </text>
+</svg>

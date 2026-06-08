@@ -1,0 +1,48 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B"],
+  "status": "needs_revision",
+  "winner": "B",
+  "why_winner": "Variant B leads with the sharpest claim in the space and earns it fast. The structure is tighter — each paragraph advances the argument rather than narrating the experience. The payoff ('AI accelerates the build. It does not replace the thinking about how the build needs to feel.') lands harder and is more quotable than Variant A's conclusion.",
+  "scores": {
+    "A": {
+      "hook_strength": 8,
+      "authenticity": 9,
+      "readability": 8,
+      "plan_compliance": 9,
+      "cta_clarity": 8,
+      "avg": 8.4
+    },
+    "B": {
+      "hook_strength": 9,
+      "authenticity": 8,
+      "readability": 9,
+      "plan_compliance": 9,
+      "cta_clarity": 8,
+      "avg": 8.6
+    }
+  },
+  "runner_up_notes": {
+    "A": "The moment of 'six screens later, the UI looked clean. Nothing worked.' is the most visceral line in either draft. B should borrow this beat — the concrete number-of-screens detail grounds the story and raises authenticity."
+  },
+  "issues": [
+    {
+      "type": "buries_insight",
+      "severity": "medium",
+      "description": "The payoff line ('AI accelerates the build. It does not replace the thinking about how the build needs to feel.') arrives late at paragraph 8. LinkedIn readers who don't scroll will miss the best line.",
+      "action": "Surface this insight earlier — ideally as a standalone line within the first 4 paragraphs, before the screen-by-screen detail."
+    },
+    {
+      "type": "weak_hook",
+      "severity": "low",
+      "description": "'One prompt will not build your app.' is strong but generic — it could be anyone's post. It doesn't yet carry Altaf's builder identity or signal this is a personal, tested observation.",
+      "action": "Borrow the concrete imagery from Variant A — add a 1-2 line beat right after the opener that shows this comes from a real build, not a hot take. Something like the 'screens appeared, nothing worked' beat."
+    },
+    {
+      "type": "too_long",
+      "severity": "low",
+      "description": "At 285 words the post is solid, but the middle section (three 'UI rendered / Features added / UX fixed' lines) and the 'You still have to hold' closing paragraph add weight without new information.",
+      "action": "Collapse the three-line breakdown into one tight sentence. Trim the closing paragraph from 4 lines to 2 — pick the single sharpest 'you still have to' line."
+    }
+  ]
+}

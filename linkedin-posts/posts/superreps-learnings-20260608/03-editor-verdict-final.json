@@ -1,0 +1,19 @@
+{
+  "round": 2,
+  "variants_reviewed": ["revised-B"],
+  "status": "approved",
+  "winner": "revised-B",
+  "why_winner": "All three issues from round 1 are resolved. The 'six screens in, nothing worked' beat arrives in paragraph 2 and immediately earns the opener. The key insight is now in the first half of the post. The middle is tight and the closing is sharp. The CTA is open, public-shareable, and builder-specific. No invented claims. No company names. No emojis. Approved.",
+  "scores": {
+    "revised-B": {
+      "hook_strength": 9,
+      "authenticity": 9,
+      "readability": 9,
+      "plan_compliance": 10,
+      "cta_clarity": 9,
+      "avg": 9.2
+    }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}
