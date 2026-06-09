@@ -1,0 +1,22 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "B's opening reframe ('changes what running a tool means') creates immediate curiosity and the payoff line ('you stop thinking about tools you invoke and start thinking about processes that run') is a genuinely memorable mental model shift. A is authentic but the hook is passive and the middle section invents pipeline detail ('picking up where the last run left off, processing the next item') not clearly stated in the raw idea.",
+  "scores": {
+    "A": { "hook_strength": 6, "authenticity": 9, "readability": 8, "plan_compliance": 7, "cta_clarity": 9, "avg": 7.8 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.8 }
+  },
+  "runner_up_notes": {
+    "A": "The 'field note from day one / not a results review' framing is honest and distinctive — B should borrow this explicit positioning to anchor the post's intent and diffuse any expectation that results are coming in this post."
+  },
+  "issues": [
+    {
+      "type": "buries_insight",
+      "severity": "low",
+      "description": "B's 'within an hour' claim is not stated in the raw idea and risks overclaiming. The raw idea says 'just set it up today' but gives no time frame.",
+      "action": "Remove 'Within an hour' — replace with 'Same day' or drop the time qualifier entirely."
+    }
+  ]
+}

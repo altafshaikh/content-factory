@@ -1,0 +1,12 @@
+{
+  "round": 2,
+  "variants_reviewed": ["B-revised"],
+  "status": "approved",
+  "winner": "B-revised",
+  "why_winner": "The revision cleans the one factual overreach ('within an hour') and adds A's honest 'field note from day one' framing which anchors reader expectations. The core reframe ('tools you invoke' vs 'processes that run') is intact and is the strongest line in either draft. Post is clean, authentic, on-plan, and CTA is open and public-shareable.",
+  "scores": {
+    "B-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}
