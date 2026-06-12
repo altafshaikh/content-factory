@@ -44,8 +44,8 @@ Step 2 — Sync TODO.md
 - Leave the "Done" section untouched.
 
 Step 3 — Trigger the post pipeline
-- Invoke the /linkedin-growth-agent skill on today's pick. Pass the full file content as the raw idea. Use default N=2 variants unless the file's frontmatter specifies otherwise.
-- The skill: Strategist → 2 Copywriters → Editor (max 2 revision rounds) → Image Designer. All handoffs save to ./linkedin-posts/posts/<slug>-YYYYMMDD/.
+- Invoke the /linkedin-growth-agent skill on today's pick. Pass the full file content as the raw idea. Use the skill's default N unless the file's frontmatter specifies otherwise.
+- The skill handles: Strategist → N Copywriters → Editor (max 2 revision rounds) → Image Designer. All handoffs save to ./linkedin-posts/posts/<slug>-YYYYMMDD/.
 
 Step 4 — Finalize the queue
 - After the skill writes final-post.md, DO NOT move the source idea. raw-ideas/ is immutable and shared across channels.

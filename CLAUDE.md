@@ -35,6 +35,20 @@ Full overview: [`README.md`](./README.md).
 | "add an idea" / "new idea: ..."               | Write to `./raw-ideas/<NNN>-<slug>.md` with the next available prefix   |
 | "process my ideas" (ambiguous)                | Ask which channel, OR run all active channel loops in sequence          |
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
+| "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
+
+---
+
+## Shared agents
+
+Agents that serve all channels live in `./agents/`. They are not channels — they produce no posts — they are shared services called by channel pipelines.
+
+| Agent | Folder | Global skill | What it does |
+|-------|--------|--------------|--------------|
+| image-gen | `agents/image-gen/` | `~/.claude/skills/image-gen-agent/SKILL.md` | Generates on-brand SVGs for any channel. Reads inspiration library, picks style, produces SVG. |
+
+**To edit an agent's behavior:** open its folder, read `AGENT.md` — it points to the global skill file.
+**To add inspiration styles:** drop a file (SVG/PNG/JPG/PDF/screenshot) into `agents/image-gen/inspiration/<style-slug>/` and add a row to `MANIFEST.md`.
 
 ---
 
