@@ -40,14 +40,20 @@ Full skill definition: `~/.claude/skills/linkedin-growth-agent/SKILL.md`.
 | Redo an idea on LinkedIn                              | Remove its line from `TODO.md` Done section. Then trigger the skill.   |
 | `TODO.md` drifts out of sync                          | Rebuild Queue section: `ls ../raw-ideas/` minus Done+In-Progress filenames. Leave Done untouched. |
 | `../raw-ideas/` empty (relative to this channel's done) | Print "No new LinkedIn ideas. Skipping." Stop.                       |
+| "add performance data" / drops CSV in csv-imports/    | Run `/linkedin-growth-agent` — Agent 0 will detect and process the CSV automatically. |
+| "how do I export from LinkedIn?"                      | Point to [`performance/HOWTO.md`](./performance/HOWTO.md).             |
+| "what's working?" / "show me patterns"                | Read [`performance/tracker.md`](./performance/tracker.md) Pattern Summary section. |
 
 ---
 
 ## Pipeline contract (quick reference)
 
 ```
+[csv-imports/ has new files?]
+  → Agent 0: Performance Sync         → performance.md per post + tracker.md
+
 ../raw-ideas/<NNN>-<slug>.md
-  → Strategist                        → 01-post-plan.md
+  → Agent 1: Strategist               → 01-post-plan.md  (reads tracker.md first)
   → Copywriters × N parallel          → 02a-..., 02b-..., 02c-... (if N≥3)
   → Editor                            → 03-editor-verdict.json
   → [revision loop, max 2 rounds]
