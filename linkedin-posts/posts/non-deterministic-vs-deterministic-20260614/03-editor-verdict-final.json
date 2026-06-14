@@ -1,0 +1,19 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C-revised",
+  "why_winner": "All editor issues resolved. The revision lands the vendor dimension cleanly with two strong borrowed lines that each do different work — the ownership line is personal and authentic, the 'living system' line is crisp and shareable. The hook is now grounded. The closing structure (traditional artifact / agent living system / neither is wrong) reads like a thesis, not a take — which makes it more inviting for comments. Approved.",
+  "scores": {
+    "C-revised": {
+      "hook_strength": 9,
+      "authenticity": 9,
+      "readability": 9,
+      "plan_compliance": 10,
+      "cta_clarity": 9,
+      "avg": 9.2
+    }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}

@@ -1,0 +1,184 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="redCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f5"/>
+      <stop offset="100%" stop-color="#fff0f0"/>
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#ecfdf5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White/cream background -->
+  <rect width="1080" height="1350" fill="#fafaf9"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1080" height="8" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="540" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="38" font-weight="900" text-anchor="middle" fill="#111827">Traditional Code vs AI Agents</text>
+  <text x="540" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" text-anchor="middle" fill="#6b7280">The maintenance reality nobody talks about</text>
+
+  <!-- Thin divider -->
+  <rect x="80" y="164" width="920" height="1" fill="#e5e7eb"/>
+
+  <!-- ─── LEFT CARD: TRADITIONAL CODE ─── -->
+  <rect x="60" y="188" width="440" height="740" rx="20" fill="url(#greenCard)" stroke="#bbf7d0" stroke-width="2"/>
+
+  <!-- Green header bar -->
+  <rect x="60" y="188" width="440" height="64" rx="20" fill="#16a34a"/>
+  <rect x="60" y="228" width="440" height="24" fill="#16a34a"/>
+
+  <!-- Check icon circle -->
+  <circle cx="96" cy="220" r="16" fill="#ffffff" fill-opacity="0.25"/>
+  <text x="96" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="900" text-anchor="middle" fill="#ffffff">✓</text>
+
+  <text x="280" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="800" letter-spacing="3" text-anchor="middle" fill="#ffffff">TRADITIONAL CODE</text>
+
+  <!-- Row items inside left card -->
+  <!-- Item 1 -->
+  <rect x="84" y="278" width="392" height="88" rx="12" fill="#ffffff" stroke="#d1fae5" stroke-width="1.5"/>
+  <text x="112" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#16a34a">INPUT / OUTPUT</text>
+  <text x="112" y="344" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Same input → same output.</text>
+  <text x="112" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Every time. No exceptions.</text>
+
+  <!-- Item 2 -->
+  <rect x="84" y="382" width="392" height="88" rx="12" fill="#ffffff" stroke="#d1fae5" stroke-width="1.5"/>
+  <text x="112" y="418" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#16a34a">MAINTENANCE</text>
+  <text x="112" y="448" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Write once. Run forever.</text>
+  <text x="112" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Only changes when you change it.</text>
+
+  <!-- Item 3 -->
+  <rect x="84" y="486" width="392" height="88" rx="12" fill="#ffffff" stroke="#d1fae5" stroke-width="1.5"/>
+  <text x="112" y="522" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#16a34a">OWNERSHIP</text>
+  <text x="112" y="552" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">You own it. Fully.</text>
+  <text x="112" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">No vendor can break your code.</text>
+
+  <!-- Item 4 -->
+  <rect x="84" y="590" width="392" height="88" rx="12" fill="#ffffff" stroke="#d1fae5" stroke-width="1.5"/>
+  <text x="112" y="626" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#16a34a">VARIANCE</text>
+  <text x="112" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Zero variance.</text>
+  <text x="112" y="678" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Deterministic by design.</text>
+
+  <!-- Item 5 -->
+  <rect x="84" y="694" width="392" height="88" rx="12" fill="#ffffff" stroke="#d1fae5" stroke-width="1.5"/>
+  <text x="112" y="730" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#16a34a">ARTIFACT TYPE</text>
+  <text x="112" y="760" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Stable artifact.</text>
+  <text x="112" y="782" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Ship it. Forget it.</text>
+
+  <!-- Card footer label -->
+  <text x="280" y="920" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="800" text-anchor="middle" fill="#16a34a">26,040 bytes → 26,040 bytes</text>
+  <text x="280" y="948" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" text-anchor="middle" fill="#6b7280">Predictable. Always.</text>
+
+  <!-- ─── RIGHT CARD: AI AGENTS ─── -->
+  <rect x="580" y="188" width="440" height="740" rx="20" fill="url(#redCard)" stroke="#fecaca" stroke-width="2"/>
+
+  <!-- Red header bar -->
+  <rect x="580" y="188" width="440" height="64" rx="20" fill="#dc2626"/>
+  <rect x="580" y="228" width="440" height="24" fill="#dc2626"/>
+
+  <!-- X icon circle -->
+  <circle cx="616" cy="220" r="16" fill="#ffffff" fill-opacity="0.25"/>
+  <text x="616" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="900" text-anchor="middle" fill="#ffffff">!</text>
+
+  <text x="800" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="800" letter-spacing="3" text-anchor="middle" fill="#ffffff">AI AGENTS</text>
+
+  <!-- Item 1 -->
+  <rect x="604" y="278" width="392" height="88" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="632" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#dc2626">INPUT / OUTPUT</text>
+  <text x="632" y="344" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Same input → output: ?</text>
+  <text x="632" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">May skip instructions. May drift.</text>
+
+  <!-- Item 2 -->
+  <rect x="604" y="382" width="392" height="88" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="632" y="418" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#dc2626">MAINTENANCE</text>
+  <text x="632" y="448" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Write once. Then tend it.</text>
+  <text x="632" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Add rules. Monitor. Repeat.</text>
+
+  <!-- Item 3 -->
+  <rect x="604" y="486" width="392" height="88" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="632" y="522" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#dc2626">OWNERSHIP</text>
+  <text x="632" y="552" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Vendor can change the model.</text>
+  <text x="632" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Your automation adapts — or breaks.</text>
+
+  <!-- Item 4 -->
+  <rect x="604" y="590" width="392" height="88" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="632" y="626" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#dc2626">VARIANCE</text>
+  <text x="632" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Non-deterministic.</text>
+  <text x="632" y="678" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Probabilistic by nature.</text>
+
+  <!-- Item 5 -->
+  <rect x="604" y="694" width="392" height="88" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="632" y="730" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="3" fill="#dc2626">ARTIFACT TYPE</text>
+  <text x="632" y="760" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" fill="#111827">Living system.</text>
+  <text x="632" y="782" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" fill="#374151">Ship it. Keep watching it.</text>
+
+  <!-- Card footer label -->
+  <text x="800" y="920" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="800" text-anchor="middle" fill="#dc2626">Run 1: perfect · Run 2: ?</text>
+  <text x="800" y="948" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" text-anchor="middle" fill="#6b7280">Non-deterministic. Always.</text>
+
+  <!-- ─── BOTTOM STATEMENT ─── -->
+  <rect x="80" y="978" width="920" height="1" fill="#e5e7eb"/>
+
+  <!-- Large center metric -->
+  <text x="540" y="1062" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="56" font-weight="900" text-anchor="middle" fill="#111827">Neither is wrong.</text>
+
+  <text x="540" y="1120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="400" text-anchor="middle" fill="#6b7280">But they are not the same thing.</text>
+  <text x="540" y="1156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="400" text-anchor="middle" fill="#6b7280">Stop building agents like they are.</text>
+
+  <!-- Bottom divider -->
+  <rect x="80" y="1218" width="920" height="1" fill="#e5e7eb"/>
+
+  <!-- Byline -->
+  <text x="540" y="1270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" text-anchor="middle" fill="#374151">Altaf Shaikh</text>
+  <text x="540" y="1300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" font-weight="400" text-anchor="middle" fill="#9ca3af">@teachmebro  ·  AI Engineering</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="1342" width="1080" height="8" fill="#1a1a2e"/>
+</svg>

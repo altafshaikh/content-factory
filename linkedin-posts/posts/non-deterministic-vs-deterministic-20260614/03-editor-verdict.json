@@ -1,0 +1,51 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "needs_revision",
+  "winner": "C",
+  "why_winner": "The split-screen opening is the sharpest hook of the three — it delivers the entire thesis in two lines before a reader can scroll past. Performance data shows comparison framing outperforms story-first with this audience, and Variant C puts the comparison front and center rather than earning it through narrative. The 'neither is wrong' landing also avoids preachiness better than A or B.",
+  "scores": {
+    "A": {
+      "hook_strength": 7,
+      "authenticity": 9,
+      "readability": 8,
+      "plan_compliance": 9,
+      "cta_clarity": 9,
+      "avg": 8.4
+    },
+    "B": {
+      "hook_strength": 8,
+      "authenticity": 8,
+      "readability": 9,
+      "plan_compliance": 9,
+      "cta_clarity": 9,
+      "avg": 8.6
+    },
+    "C": {
+      "hook_strength": 9,
+      "authenticity": 8,
+      "readability": 9,
+      "plan_compliance": 10,
+      "cta_clarity": 9,
+      "avg": 9.0
+    }
+  },
+  "runner_up_notes": {
+    "B": "The phrase 'you're maintaining a living system, not shipping a stable artifact' is excellent — crisper than C's version of the same idea. Worth grafting into the revision.",
+    "A": "The line 'You never fully own an AI agent the way you own a function you wrote' is authentic and personal — consider borrowing it for a mid-post moment in the revision."
+  },
+  "issues": [
+    {
+      "type": "buries_insight",
+      "severity": "medium",
+      "description": "The vendor dimension ('company that owns the model can change it') is introduced abruptly mid-post and exits quickly. It deserves one more line to land — it's actually the scariest part of the argument.",
+      "action": "After 'New ones appear.' add a single punchy sentence that makes the reader feel the loss of control — e.g. borrowing B's framing: 'You're maintaining a living system, not shipping a stable artifact.'"
+    },
+    {
+      "type": "weak_hook",
+      "severity": "low",
+      "description": "The opening two-line contrast is strong but the second line could be sharpened — 'maintain it forever' reads slightly hyperbolic.",
+      "action": "Consider: 'AI agents: write it once, then keep tending it.' — preserves the contrast but grounds it in the real experience of ongoing attention rather than 'forever'."
+    }
+  ]
+}
