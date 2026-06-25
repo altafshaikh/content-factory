@@ -1,0 +1,172 @@
+<svg viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fafaf8"/>
+      <stop offset="100%" stop-color="#f0ede6"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="archGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="stepGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="stepGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#ddd6fe"/>
+    </linearGradient>
+    <linearGradient id="stepGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3e8ff"/>
+      <stop offset="100%" stop-color="#e9d5ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1080" height="6" fill="url(#arrowGrad)"/>
+
+  <!-- Title -->
+  <text x="540" y="90" text-anchor="middle" font-size="36" font-weight="800" fill="#1a1a2e" letter-spacing="3">PROMPTING vs AGENT SYSTEMS</text>
+  <text x="540" y="128" text-anchor="middle" font-size="22" font-weight="400" fill="#64748b" letter-spacing="1">Same models. Completely different result.</text>
+
+  <!-- Divider line under title -->
+  <line x1="80" y1="150" x2="1000" y2="150" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- LEFT CARD: Prompting -->
+  <rect x="60" y="175" width="430" height="380" rx="20" fill="white" stroke="#fca5a5" stroke-width="3"/>
+  <!-- Red header bar -->
+  <rect x="60" y="175" width="430" height="60" rx="20" fill="#fef2f2"/>
+  <rect x="60" y="215" width="430" height="20" fill="#fef2f2"/>
+  <!-- X mark -->
+  <text x="100" y="216" text-anchor="middle" font-size="28" font-weight="900" fill="#ef4444">&#x2717;</text>
+  <text x="300" y="218" text-anchor="middle" font-size="26" font-weight="800" fill="#dc2626">Prompting</text>
+
+  <!-- Content rows -->
+  <text x="100" y="278" text-anchor="start" font-size="20" font-weight="700" fill="#374151">Model count</text>
+  <text x="460" y="278" text-anchor="end" font-size="32" font-weight="900" fill="#ef4444">1</text>
+  <line x1="80" y1="292" x2="470" y2="292" stroke="#fee2e2" stroke-width="1"/>
+
+  <text x="100" y="330" text-anchor="start" font-size="20" font-weight="700" fill="#374151">What it handles</text>
+  <text x="460" y="330" text-anchor="end" font-size="22" font-weight="700" fill="#ef4444">1 task</text>
+  <line x1="80" y1="344" x2="470" y2="344" stroke="#fee2e2" stroke-width="1"/>
+
+  <text x="100" y="382" text-anchor="start" font-size="20" font-weight="700" fill="#374151">Result</text>
+  <text x="460" y="382" text-anchor="end" font-size="22" font-weight="700" fill="#ef4444">task done</text>
+  <line x1="80" y1="396" x2="470" y2="396" stroke="#fee2e2" stroke-width="1"/>
+
+  <text x="100" y="434" text-anchor="start" font-size="20" font-weight="700" fill="#374151">Goal awareness</text>
+  <text x="460" y="434" text-anchor="end" font-size="22" font-weight="700" fill="#ef4444">none</text>
+  <line x1="80" y1="448" x2="470" y2="448" stroke="#fee2e2" stroke-width="1"/>
+
+  <!-- Bottom punch line -->
+  <rect x="80" y="468" width="390" height="62" rx="12" fill="#fef2f2"/>
+  <text x="275" y="493" text-anchor="middle" font-size="17" font-weight="400" fill="#6b7280">You ask.</text>
+  <text x="275" y="514" text-anchor="middle" font-size="17" font-weight="700" fill="#dc2626">AI answers. Task done.</text>
+
+  <!-- ARROW in middle -->
+  <text x="540" y="388" text-anchor="middle" font-size="52" font-weight="900" fill="#94a3b8">&#8594;</text>
+  <text x="540" y="415" text-anchor="middle" font-size="14" font-weight="600" fill="#94a3b8" letter-spacing="2">UPGRADE</text>
+
+  <!-- RIGHT CARD: Agent System -->
+  <rect x="590" y="175" width="430" height="380" rx="20" fill="white" stroke="#86efac" stroke-width="3"/>
+  <!-- Green header bar -->
+  <rect x="590" y="175" width="430" height="60" rx="20" fill="#f0fdf4"/>
+  <rect x="590" y="215" width="430" height="20" fill="#f0fdf4"/>
+  <!-- Check mark -->
+  <text x="628" y="216" text-anchor="middle" font-size="28" font-weight="900" fill="#22c55e">&#10003;</text>
+  <text x="820" y="218" text-anchor="middle" font-size="26" font-weight="800" fill="#16a34a">Agent System</text>
+
+  <!-- Content rows -->
+  <text x="614" y="278" text-anchor="start" font-size="20" font-weight="700" fill="#374151">Agent count</text>
+  <text x="1000" y="278" text-anchor="end" font-size="32" font-weight="900" fill="#16a34a">3</text>
+  <line x1="610" y1="292" x2="1000" y2="292" stroke="#dcfce7" stroke-width="1"/>
+
+  <text x="614" y="330" text-anchor="start" font-size="20" font-weight="700" fill="#374151">What it handles</text>
+  <text x="1000" y="330" text-anchor="end" font-size="22" font-weight="700" fill="#16a34a">1 goal</text>
+  <line x1="610" y1="344" x2="1000" y2="344" stroke="#dcfce7" stroke-width="1"/>
+
+  <text x="614" y="382" text-anchor="start" font-size="20" font-weight="700" fill="#374151">Result</text>
+  <text x="1000" y="382" text-anchor="end" font-size="22" font-weight="700" fill="#16a34a">problem solved</text>
+  <line x1="610" y1="396" x2="1000" y2="396" stroke="#dcfce7" stroke-width="1"/>
+
+  <text x="614" y="434" text-anchor="start" font-size="20" font-weight="700" fill="#374151">Goal awareness</text>
+  <text x="1000" y="434" text-anchor="end" font-size="22" font-weight="700" fill="#16a34a">shared</text>
+  <line x1="610" y1="448" x2="1000" y2="448" stroke="#dcfce7" stroke-width="1"/>
+
+  <!-- Bottom punch line -->
+  <rect x="610" y="468" width="390" height="62" rx="12" fill="#f0fdf4"/>
+  <text x="805" y="493" text-anchor="middle" font-size="17" font-weight="400" fill="#6b7280">AI reads, plans, executes.</text>
+  <text x="805" y="514" text-anchor="middle" font-size="17" font-weight="700" fill="#16a34a">Problem solved.</text>
+
+  <!-- SECTION: Architecture -->
+  <text x="540" y="615" text-anchor="middle" font-size="28" font-weight="800" fill="#1a1a2e" letter-spacing="2">THE ARCHITECTURE</text>
+  <text x="540" y="648" text-anchor="middle" font-size="18" font-weight="400" fill="#64748b">Three roles. One goal. Agents pass work between them.</text>
+
+  <!-- Three step boxes -->
+  <!-- Step 1: Understand -->
+  <rect x="60" y="670" width="290" height="180" rx="20" fill="url(#stepGrad1)" stroke="#818cf8" stroke-width="2"/>
+  <text x="205" y="718" text-anchor="middle" font-size="42" font-weight="900" fill="#4338ca">01</text>
+  <text x="205" y="758" text-anchor="middle" font-size="26" font-weight="800" fill="#3730a3">Understand</text>
+  <text x="205" y="785" text-anchor="middle" font-size="16" font-weight="400" fill="#4338ca">Read the input.</text>
+  <text x="205" y="806" text-anchor="middle" font-size="16" font-weight="400" fill="#4338ca">Know the goal.</text>
+  <text x="205" y="830" text-anchor="middle" font-size="14" font-weight="600" fill="#6366f1" letter-spacing="1">AGENT 1</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="390" y="775" text-anchor="middle" font-size="36" font-weight="900" fill="#a78bfa">&#8594;</text>
+
+  <!-- Step 2: Do -->
+  <rect x="395" y="670" width="290" height="180" rx="20" fill="url(#stepGrad2)" stroke="#a78bfa" stroke-width="2"/>
+  <text x="540" y="718" text-anchor="middle" font-size="42" font-weight="900" fill="#7c3aed">02</text>
+  <text x="540" y="758" text-anchor="middle" font-size="26" font-weight="800" fill="#6d28d9">Do</text>
+  <text x="540" y="785" text-anchor="middle" font-size="16" font-weight="400" fill="#7c3aed">Execute the work.</text>
+  <text x="540" y="806" text-anchor="middle" font-size="16" font-weight="400" fill="#7c3aed">Produce output.</text>
+  <text x="540" y="830" text-anchor="middle" font-size="14" font-weight="600" fill="#8b5cf6" letter-spacing="1">AGENT 2</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="725" y="775" text-anchor="middle" font-size="36" font-weight="900" fill="#a78bfa">&#8594;</text>
+
+  <!-- Step 3: Review -->
+  <rect x="730" y="670" width="290" height="180" rx="20" fill="url(#stepGrad3)" stroke="#c084fc" stroke-width="2"/>
+  <text x="875" y="718" text-anchor="middle" font-size="42" font-weight="900" fill="#9333ea">03</text>
+  <text x="875" y="758" text-anchor="middle" font-size="26" font-weight="800" fill="#7e22ce">Review</text>
+  <text x="875" y="785" text-anchor="middle" font-size="16" font-weight="400" fill="#9333ea">Check the result.</text>
+  <text x="875" y="806" text-anchor="middle" font-size="16" font-weight="400" fill="#9333ea">Pass it forward.</text>
+  <text x="875" y="830" text-anchor="middle" font-size="14" font-weight="600" fill="#a855f7" letter-spacing="1">AGENT 3</text>
+
+  <!-- Real-world examples section -->
+  <text x="540" y="910" text-anchor="middle" font-size="24" font-weight="800" fill="#1a1a2e" letter-spacing="2">TWO EXAMPLES IN THE WILD</text>
+
+  <!-- Example 1 -->
+  <rect x="60" y="932" width="450" height="130" rx="16" fill="white" stroke="#e0e7ff" stroke-width="2"/>
+  <rect x="60" y="932" width="6" height="130" rx="3" fill="#6366f1"/>
+  <text x="90" y="965" text-anchor="start" font-size="18" font-weight="800" fill="#1a1a2e">Content Pipeline</text>
+  <text x="90" y="990" text-anchor="start" font-size="15" font-weight="400" fill="#64748b">Read raw idea &#8594; Build plan &#8594; Write draft</text>
+  <text x="90" y="1016" text-anchor="start" font-size="15" font-weight="400" fill="#64748b">No prompt needed after setup.</text>
+  <text x="90" y="1044" text-anchor="start" font-size="15" font-weight="700" fill="#6366f1">The system runs.</text>
+
+  <!-- Example 2 -->
+  <rect x="570" y="932" width="450" height="130" rx="16" fill="white" stroke="#ddd6fe" stroke-width="2"/>
+  <rect x="570" y="932" width="6" height="130" rx="3" fill="#8b5cf6"/>
+  <text x="600" y="965" text-anchor="start" font-size="18" font-weight="800" fill="#1a1a2e">Security Workflow</text>
+  <text x="600" y="990" text-anchor="start" font-size="15" font-weight="400" fill="#64748b">Read input &#8594; Run checks &#8594; Output verdict</text>
+  <text x="600" y="1016" text-anchor="start" font-size="15" font-weight="400" fill="#64748b">Same three-role pattern.</text>
+  <text x="600" y="1044" text-anchor="start" font-size="15" font-weight="700" fill="#8b5cf6">Any problem fits this shape.</text>
+
+  <!-- Big tagline -->
+  <rect x="60" y="1088" width="960" height="110" rx="20" fill="#1a1a2e"/>
+  <text x="540" y="1136" text-anchor="middle" font-size="36" font-weight="900" fill="white">Stop prompting.</text>
+  <text x="540" y="1176" text-anchor="middle" font-size="36" font-weight="900" fill="url(#archGrad)">Start building systems.</text>
+
+  <!-- Footer -->
+  <line x1="80" y1="1222" x2="1000" y2="1222" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="540" y="1262" text-anchor="middle" font-size="28" font-weight="800" fill="#6366f1">@teachmebro</text>
+  <text x="540" y="1292" text-anchor="middle" font-size="18" font-weight="400" fill="#94a3b8">Altaf Shaikh &#183; AI Engineering</text>
+  <text x="540" y="1318" text-anchor="middle" font-size="14" font-weight="400" fill="#cbd5e1">Full walkthrough &#8594; link in comments</text>
+</svg>

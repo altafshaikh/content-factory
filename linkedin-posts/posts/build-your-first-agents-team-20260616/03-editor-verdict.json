@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "The split-screen hook puts the central contrast in the reader's face in the first two lines — same idea the story and claim variants take paragraphs to reach. The 'Understand → Do → Review' framework is the clearest articulation of the 3-agent pattern across all three drafts, and the parallel structure of the two real-project examples makes the architecture immediately graspable. Performance context also favors comparison framing.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.4 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 7, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.6 },
+    "C": { "hook_strength": 10, "authenticity": 8, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 9.0 }
+  },
+  "runner_up_notes": {
+    "B": "The phrase 'The handoff is what makes it a system' is the best single-line insight across all three drafts — it names the mechanism, not just the result. Worth grafting into C.",
+    "A": "The 'None of them know the goal. Together, they achieve it.' line captures emergent system behavior in a way C doesn't — strong authenticity hit."
+  },
+  "issues": []
+}
