@@ -37,10 +37,10 @@ content-stratergy/
 │   └── image-gen/                ← image generation agent + inspiration library
 │       └── inspiration/          ← style samples (SVG, JPEG) + MANIFEST.md
 ├── linkedin.agent.md             ← /loop prompt for the LinkedIn channel
-├── x.agent.md                    ← /loop prompt for the X channel       (stub)
+├── x.agent.md                    ← /loop prompt for the X channel
 ├── blog.agent.md                 ← /loop prompt for the blog channel    (stub)
 ├── linkedin-posts/               ← LinkedIn channel — CLAUDE.md + TODO + posts/
-├── x-posts/                      ← X channel                            (stub)
+├── x-posts/                      ← X channel — CLAUDE.md + TODO + posts/
 └── blog-post/                    ← Blog channel                         (stub)
 ```
 
@@ -88,7 +88,7 @@ This means:
 | Channel       | Skill                                | Loop prompt           | Folder            | Status      |
 |---------------|--------------------------------------|------------------------|-------------------|-------------|
 | LinkedIn      | `linkedin-growth-agent`              | `linkedin.agent.md`   | `linkedin-posts/` | ✅ active   |
-| X (Twitter)   | (TBD — `x-growth-agent`)             | `x.agent.md` (stub)   | `x-posts/`        | 🟡 stub     |
+| X (Twitter)   | `x-growth-agent`                     | `x.agent.md`          | `x-posts/`        | ✅ active   |
 | Blog          | (TBD — `blog-growth-agent` / `idea-to-blog`) | `blog.agent.md` (stub) | `blog-post/`      | 🟡 stub     |
 | Presentation  | (TBD — `idea-to-presentation`)       | (not yet)             | (not yet)         | ⚪ planned   |
 

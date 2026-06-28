@@ -29,7 +29,7 @@ Full overview: [`README.md`](./README.md).
 | User says...                                  | Trigger                                                                 |
 |-----------------------------------------------|-------------------------------------------------------------------------|
 | "LinkedIn post" / "/linkedin-growth-agent"    | Skill `linkedin-growth-agent` (writes into `linkedin-posts/`)           |
-| "X post" / "tweet" / "thread"                 | Skill `x-growth-agent` (TBD — writes into `x-posts/`)                   |
+| "X post" / "tweet" / "thread"                 | Skill `x-growth-agent` (writes into `x-posts/`)                         |
 | "blog post" / "write a blog"                  | Skill `idea-to-blog` (writes into `blog-post/`)                         |
 | "presentation" / "slides" / "deck"            | Skill `idea-to-presentation` then `anthropic-skills:pptx`              |
 | "add an idea" / "new idea: ..."               | Write to `./raw-ideas/<NNN>-<slug>.md` with the next available prefix   |

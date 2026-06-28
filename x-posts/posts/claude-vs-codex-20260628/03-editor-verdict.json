@@ -1,0 +1,29 @@
+{
+  "round": 1,
+  "format": "SINGLE",
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "A",
+  "why_winner": "A (Viral) leads with the concrete scroll-stopping image in the first 7 words, then lands a quotable reframe ('we're past can it code') that begs to be screenshotted and quote-tweeted. It carries the contrarian idea inside a tighter, more shareable package than C, and is far punchier than B. C is the strongest runner-up for pure reply/debate volume.",
+  "scores": {
+    "A": { "hook_strength": 9, "scroll_stop": 9, "conciseness": 9, "authenticity": 8, "cta_clarity": 8, "avg": 8.6 },
+    "B": { "hook_strength": 7, "scroll_stop": 7, "conciseness": 7, "authenticity": 9, "cta_clarity": 7, "avg": 7.4 },
+    "C": { "hook_strength": 8, "scroll_stop": 8, "conciseness": 8, "authenticity": 8, "cta_clarity": 9, "avg": 8.2 }
+  },
+  "char_check": { "A": "pass (195)", "B": "pass (269)", "C": "pass (243)" },
+  "playbook_check": {
+    "hook_in_first_7_words": "pass — A: 'Codex opened my app in a browser'",
+    "no_link_in_main_tweet": "pass — nuance/link-free CTA in reply",
+    "no_hashtags": "pass",
+    "one_idea_per_tweet": "pass",
+    "cta_is_question_not_bait": "pass — reply ends on 'What are you using?'",
+    "follow_reason_landed": "pass — A hits HMM + FINALLY (reframes the benchmark)",
+    "no_emojis_no_jargon": "pass",
+    "no_invented_facts": "pass — maps to source ('three more prompts', 'opened browser and tested the flow')"
+  },
+  "runner_up_notes": {
+    "C": "C's 'Generating code is basically solved. Acting on intent is the real frontier.' is the strongest debate bait — keep C in reserve as a quote-tweet follow-up or a separate post. Its framing is already grafted into A's reframe line.",
+    "B": "B's 'I re-explained three times' is the most human detail; could be folded into A if a story variant is wanted."
+  },
+  "issues": []
+}
