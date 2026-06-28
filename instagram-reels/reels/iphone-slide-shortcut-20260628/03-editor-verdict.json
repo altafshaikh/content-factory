@@ -1,0 +1,58 @@
+{
+  "round": 1,
+  "style": "FACELESS",
+  "format": "screen-demo",
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "needs_revision",
+  "winner": "C",
+  "why_winner": "Variant C opens with a specific, instantly relatable number ('30+ ideas. Zero slide decks.') that earns the watch before anything is explained. Its story arc builds genuine emotional investment, and the CTA ('What's the idea you've had longest that you still haven't turned into anything?') is the most comment-triggering of the three — it asks a personal question, not a generic one.",
+  "scores": {
+    "A": {
+      "hook_1_2s": 8,
+      "retention_arc": 8,
+      "payoff": 8,
+      "clarity": 9,
+      "cta_strength": 8,
+      "avg": 8.2
+    },
+    "B": {
+      "hook_1_2s": 9,
+      "retention_arc": 7,
+      "payoff": 8,
+      "clarity": 8,
+      "cta_strength": 7,
+      "avg": 7.8
+    },
+    "C": {
+      "hook_1_2s": 9,
+      "retention_arc": 8,
+      "payoff": 9,
+      "clarity": 7,
+      "cta_strength": 9,
+      "avg": 8.4
+    }
+  },
+  "length_check": {
+    "A": "pass (~38s)",
+    "B": "pass (~38s)",
+    "C": "tight — beat 2 VO is over-dense for a 6-second slot"
+  },
+  "runner_up_notes": {
+    "A": "C should borrow A's step-label clarity: 'Share → Shortcut → Done' as on-screen text in the live demo beat (18-30s). A's demo section is tighter and more instructional — graft that precision into C's story arc.",
+    "B": "The 'design around friction, not through it' insight from B's takeaway (beat 5) is stronger than C's current lesson line. Consider lifting it into C's lesson beat."
+  },
+  "issues": [
+    {
+      "type": "slow_open",
+      "severity": "medium",
+      "description": "Beat 2 VO ('Every time I sat down to make slides, I'd open my notes, see the mess, feel the weight of converting all that into something structured — and close the laptop. It wasn't lack of ideas. It was the gap between rough thought and finished layout.') is ~10 seconds of narration compressed into a 6-second beat. This creates pacing friction.",
+      "action": "Trim beat 2 VO to one punchy line: 'Every time I tried to turn one into slides, the friction killed it.' Save the explanation for beat 3."
+    },
+    {
+      "type": "weak_hook",
+      "severity": "low",
+      "description": "Beat 3 VO ('I spent 30 minutes building a custom iPhone shortcut.') leads with the effort cost before the benefit, which is a mild deterrent before the viewer is invested.",
+      "action": "Lead beat 3 with the benefit: 'I built a shortcut that does the conversion for me.' Then add 'Took 30 minutes to set up.' as the reassurance, not the lead."
+    }
+  ]
+}
