@@ -1,0 +1,50 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "needs_revision",
+  "winner": "B",
+  "why_winner": "Angle B leads with the sharpest, most ownable claim — 'it's a friction problem, not a skills problem' — which immediately reframes the reader's mental model. It flows from diagnosis to solution to principle without the step-by-step structure of C (which feels instructional for this audience of builders who want insight, not a tutorial). It's close to A in authenticity but slightly punchier at every beat.",
+  "scores": {
+    "A": {
+      "hook_strength": 7,
+      "authenticity": 9,
+      "readability": 9,
+      "plan_compliance": 9,
+      "cta_clarity": 8,
+      "avg": 8.4
+    },
+    "B": {
+      "hook_strength": 9,
+      "authenticity": 7,
+      "readability": 8,
+      "plan_compliance": 9,
+      "cta_clarity": 8,
+      "avg": 8.2
+    },
+    "C": {
+      "hook_strength": 7,
+      "authenticity": 6,
+      "readability": 8,
+      "plan_compliance": 10,
+      "cta_clarity": 9,
+      "avg": 8.0
+    }
+  },
+  "runner_up_notes": {
+    "A": "The personal moment in A — voice memo and rough notes sitting untouched for weeks — is the single most authentic beat in any of the three drafts. Grafting that specific detail into B's opening would ground the claim in a real moment and lift authenticity from 7 to a 9. The story first sentence ('I had a voice memo and two pages of rough notes for a talk I wanted to give. Both sat untouched for three weeks.') should open B before the claim lands."
+  },
+  "issues": [
+    {
+      "type": "inauthentic",
+      "severity": "high",
+      "description": "Angle B opens with a direct-address claim to the reader ('Your raw ideas...') but never grounds it in a real personal moment. The claim is strong but feels like generic advice without an anchor. A's opener — the untouched voice memo and rough notes — is the missing proof that this is lived experience, not theory.",
+      "action": "Graft A's opening moment (voice memo + rough notes sat for weeks) as the first 2-3 lines BEFORE the claim. Let the personal experience lead, then the claim follows as the diagnosis of that experience. This makes the post both personal and provocative."
+    },
+    {
+      "type": "weak_hook",
+      "severity": "medium",
+      "description": "The second paragraph ('It's a friction problem.') is punchy but the transition from standalone claim to explanation is slightly abrupt. After adding the personal opener, re-examine the flow into the diagnosis line.",
+      "action": "Once the personal opener is added, revise the transition so the friction diagnosis emerges naturally from the story, not as a separate assertion."
+    }
+  ]
+}

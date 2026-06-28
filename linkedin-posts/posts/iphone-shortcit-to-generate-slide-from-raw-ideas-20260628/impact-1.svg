@@ -1,0 +1,89 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: warm cream, editorial style -->
+  <rect width="1080" height="1080" fill="#f2ece3"/>
+
+  <!-- Decorative network graph: top-right corner -->
+  <line x1="810" y1="72" x2="948" y2="138" stroke="#c8bdb4" stroke-width="1.5"/>
+  <line x1="948" y1="138" x2="1018" y2="84" stroke="#c8bdb4" stroke-width="1.5"/>
+  <line x1="810" y1="72" x2="862" y2="196" stroke="#c8bdb4" stroke-width="1.5"/>
+  <line x1="948" y1="138" x2="1000" y2="228" stroke="#c8bdb4" stroke-width="1.5"/>
+  <circle cx="810" cy="72" r="5" fill="#c8bdb4"/>
+  <circle cx="948" cy="138" r="5" fill="#c8bdb4"/>
+  <circle cx="1018" cy="84" r="5" fill="#c8bdb4"/>
+  <circle cx="862" cy="196" r="5" fill="#c8bdb4"/>
+  <circle cx="1000" cy="228" r="5" fill="#c8bdb4"/>
+  <!-- Accent dots top-right -->
+  <circle cx="986" cy="76" r="10" fill="#e85c1e"/>
+  <circle cx="1014" cy="76" r="10" fill="#2563eb"/>
+
+  <!-- Category: dash rule + label -->
+  <rect x="80" y="88" width="35" height="2" fill="#8a8a8a"/>
+  <text x="128" y="98"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="700" letter-spacing="8" fill="#8a8a8a">AI PRODUCTIVITY</text>
+
+  <!-- Hero headline line 1: "Three weeks" (black) -->
+  <text x="80" y="308"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="112" font-weight="900" fill="#1a1a1a">Three weeks</text>
+
+  <!-- Hero headline line 2: "One shortcut." (orange) -->
+  <text x="80" y="436"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="112" font-weight="900" fill="#e85c1e">One shortcut.</text>
+
+  <!-- Sub-insight: left orange bar + two lines -->
+  <rect x="80" y="472" width="5" height="90" rx="2" fill="#e85c1e"/>
+  <text x="104" y="512"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="700" fill="#1a1a1a">Not a skills problem.</text>
+  <text x="104" y="556"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="700" fill="#1a1a1a">A <tspan fill="#2563eb">friction</tspan> problem.</text>
+
+  <!-- Section divider -->
+  <rect x="80" y="584" width="920" height="1" fill="#1a1a1a" fill-opacity="0.15"/>
+
+  <!-- Before row -->
+  <circle cx="92" cy="620" r="8" fill="#ef4444"/>
+  <text x="112" y="626"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" fill="#8a8a8a">BEFORE</text>
+  <text x="238" y="626"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" fill="#555555">raw notes &#8594; procrastination &#8594; nothing</text>
+
+  <!-- After row -->
+  <circle cx="92" cy="672" r="8" fill="#e85c1e"/>
+  <text x="112" y="678"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" fill="#8a8a8a">AFTER</text>
+  <text x="238" y="678"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" fill="#555555">raw notes &#8594; shortcut &#8594; slide layout</text>
+
+  <!-- Footer divider -->
+  <rect x="80" y="714" width="920" height="1" fill="#1a1a1a" fill-opacity="0.15"/>
+
+  <!-- Handle: @teachmebro -->
+  <text x="80" y="782"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="42" font-weight="700" fill="#2563eb">@teachmebro</text>
+
+  <!-- Byline: name + role -->
+  <text x="80" y="832"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" fill="#1a1a1a">Altaf Shaikh</text>
+  <text x="80" y="860"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" fill="#8a8a8a">// AI Productivity / Developer Tools</text>
+
+  <!-- Tagline: right-aligned -->
+  <text x="1000" y="1002" text-anchor="end"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="300" letter-spacing="1" fill="#aaaaaa">From idea to slide in one tap.</text>
+
+  <!-- Bottom decorative dots -->
+  <circle cx="986" cy="1010" r="10" fill="#e85c1e"/>
+  <circle cx="1014" cy="1010" r="10" fill="#2563eb"/>
+</svg>

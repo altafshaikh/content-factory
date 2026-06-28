@@ -3,12 +3,13 @@
 This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
 
 ## Queue (unprocessed for LinkedIn)
-- [ ] iphone-shortcit-to-generate-slide-from-raw-ideas.md — (empty file, awaiting content)
-- [ ] run-your-own-agent-acengy-with-paperclip.md — (empty file, awaiting content)
+- [ ] just text.md — foundations vs AI tools, developer mindset (note: says "do not generate the image for this")
+- [ ] run-your-own-agent-acengy-with-paperclip.md — multi-agent setup with Paperclip, learning by doing
 
 ## In Progress
 
 ## Done
+- [x] iphone-shortcit-to-generate-slide-from-raw-ideas.md → [posts/iphone-shortcit-to-generate-slide-from-raw-ideas-20260628/final-post.md](./posts/iphone-shortcit-to-generate-slide-from-raw-ideas-20260628/final-post.md) — 2026-06-28
 - [x] first-autonoumsly-dveloped-todo-app.md → [posts/first-autonoumsly-dveloped-todo-app-20260624/final-post.md](./posts/first-autonoumsly-dveloped-todo-app-20260624/final-post.md) — 2026-06-24
 - [x] build-your-first-agents-team.md → [posts/build-your-first-agents-team-20260616/final-post.md](./posts/build-your-first-agents-team-20260616/final-post.md) — 2026-06-16
 - [x] gen-ai-roadmap.md → [posts/gen-ai-roadmap-20260614/final-post.md](./posts/gen-ai-roadmap-20260614/final-post.md) — 2026-06-14

@@ -1,0 +1,115 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tile2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2538"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <radialGradient id="heroGlow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg2)"/>
+
+  <!-- Hero glow -->
+  <ellipse cx="540" cy="360" rx="430" ry="210" fill="url(#heroGlow2)"/>
+
+  <!-- Top accent line -->
+  <rect x="80" y="80" width="920" height="4" rx="2" fill="url(#accent2)"/>
+
+  <!-- Category label -->
+  <text x="80" y="148"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" letter-spacing="8" fill="#22d3ee">AI PRODUCTIVITY</text>
+
+  <!-- Hero: transformation -->
+  <!-- "3 WEEKS" in muted red — the problem duration -->
+  <text x="540" y="320"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="158" font-weight="900" text-anchor="middle" fill="#f87171">3 WEEKS</text>
+  <text x="540" y="374"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="300" text-anchor="middle" fill="#94a3b8" letter-spacing="1">of procrastination on one talk</text>
+
+  <!-- Arrow / divider between before and after state -->
+  <rect x="80" y="414" width="920" height="1" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="540" y="462"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="36" font-weight="400" text-anchor="middle" fill="#475569">with one iPhone shortcut &#8595;</text>
+
+  <!-- "under 1 min" in accent gradient -->
+  <text x="540" y="558"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="110" font-weight="900" text-anchor="middle" fill="url(#accent2)">under 1 min</text>
+  <text x="540" y="610"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="300" text-anchor="middle" fill="#64748b" letter-spacing="1">to a structured slide layout</text>
+
+  <!-- Section divider -->
+  <rect x="80" y="650" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- BEFORE tile (full width) -->
+  <rect x="80" y="674" width="920" height="210" rx="16" fill="url(#tile2)"/>
+  <rect x="80" y="674" width="920" height="4" rx="2" fill="#ef4444"/>
+  <text x="116" y="718"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="6" fill="#ef4444">BEFORE</text>
+  <rect x="116" y="728" width="840" height="1" fill="#ffffff" fill-opacity="0.06"/>
+  <text x="116" y="766"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" fill="#94a3b8">Raw notes sitting in the Notes app</text>
+  <text x="116" y="808"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" fill="#f87171">&#8594; procrastination (too much setup cost)</text>
+  <text x="116" y="850"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" fill="#64748b">&#8594; ideas stay stuck, slides never get built</text>
+
+  <!-- AFTER tile (full width) -->
+  <rect x="80" y="908" width="920" height="210" rx="16" fill="url(#tile2)"/>
+  <rect x="80" y="908" width="920" height="4" rx="2" fill="url(#accent2)"/>
+  <text x="116" y="952"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="6" fill="#22d3ee">AFTER</text>
+  <rect x="116" y="962" width="840" height="1" fill="#ffffff" fill-opacity="0.06"/>
+  <text x="116" y="1000"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" fill="#94a3b8">Raw notes sitting in the Notes app</text>
+  <text x="116" y="1042"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" fill="#22d3ee">&#8594; share to shortcut (custom prompt runs)</text>
+  <text x="116" y="1084"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" fill="#a78bfa">&#8594; structured slide layout in seconds</text>
+
+  <!-- Footer divider -->
+  <rect x="80" y="1148" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Tagline -->
+  <text x="540" y="1208"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="300" text-anchor="middle" fill="#94a3b8" letter-spacing="2">From idea to slide in one tap.</text>
+
+  <!-- Handle -->
+  <text x="540" y="1262"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="38" font-weight="700" text-anchor="middle" fill="url(#accent2)">@teachmebro</text>
+
+  <!-- Byline -->
+  <text x="540" y="1306"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="500" text-anchor="middle" fill="#475569">Altaf Shaikh &#183; AI Productivity / Developer Tools</text>
+
+  <!-- Bottom accent line -->
+  <rect x="80" y="1330" width="920" height="4" rx="2" fill="url(#accent2)"/>
+</svg>

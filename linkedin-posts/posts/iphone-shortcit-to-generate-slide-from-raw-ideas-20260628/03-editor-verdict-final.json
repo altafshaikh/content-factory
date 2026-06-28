@@ -1,0 +1,19 @@
+{
+  "round": 2,
+  "variants_reviewed": ["B-revised"],
+  "status": "approved",
+  "winner": "B-revised",
+  "why_winner": "The revision successfully merges B's sharpest quality (the friction-vs-skills reframe) with A's strongest quality (the personal, specific opener). The story now earns the claim rather than asserting it cold. The transition from personal moment to diagnosis is clean. Readability is strong throughout, hook is now both authentic and provocative, and the CTA is public-shareable and open-ended. No issues remain.",
+  "scores": {
+    "B-revised": {
+      "hook_strength": 8,
+      "authenticity": 9,
+      "readability": 9,
+      "plan_compliance": 9,
+      "cta_clarity": 8,
+      "avg": 8.6
+    }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}
