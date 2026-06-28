@@ -8,6 +8,7 @@ Instagram does NOT drain a queue — it mines the whole library. The live menu o
 _(none)_
 
 ## Produced
+- [x] [reels/hello-world-ai-agents-20260628/reel-script.md](./reels/hello-world-ai-agents-20260628/reel-script.md) — Direct — sources: first-autonoumsly-dveloped-todo-app.md — 2026-06-28
 - [x] [reels/iphone-slide-shortcut-20260628/reel-script.md](./reels/iphone-slide-shortcut-20260628/reel-script.md) — Direct — sources: iphone-shortcit-to-generate-slide-from-raw-ideas.md — 2026-06-28
 
 ## Parked (reel ideas judged not worth producing)

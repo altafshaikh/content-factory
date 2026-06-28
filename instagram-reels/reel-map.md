@@ -2,7 +2,7 @@
 
 Living board of reel candidates mined from the whole `../raw-ideas/` library. Refreshed every run. Ranked by reel-worthiness. ✅ = already produced (see [TODO.md](./TODO.md) Produced).
 
-_Last refreshed: 2026-06-28 · Library size: 11 ideas · Coverage: 1/11 ideas have ≥1 reel_
+_Last refreshed: 2026-06-28 · Library size: 11 ideas · Coverage: 2/11 ideas have ≥1 reel_
 
 ---
 
@@ -11,7 +11,7 @@ _Last refreshed: 2026-06-28 · Library size: 11 ideas · Coverage: 1/11 ideas ha
 | # | Reel-worthiness | Reel idea (working title) | Source | Style | Status |
 |---|-----------------|---------------------------|--------|-------|--------|
 | 1 | 9 | Your messy notes → polished slides in seconds (iPhone shortcut workflow) | iphone-shortcit-to-generate-slide-from-raw-ideas.md | faceless | ✅ |
-| 2 | 9 | Hello World of AI agents: Autonomous agents built a working app from a PRD | first-autonoumsly-dveloped-todo-app.md | faceless | ⬜ |
+| 2 | 9 | Hello World of AI agents: Autonomous agents built a working app from a PRD | first-autonoumsly-dveloped-todo-app.md | faceless | ✅ |
 | 3 | 8 | Coding is the easy part — the hard skill AI can't give you | just text.md | on-camera | ⬜ |
 | 4 | 8 | AI is non-deterministic — that's a bigger problem than anyone admits | ai-non-deterministic-code-vs-program-deterministic-code.md | on-camera | ⬜ |
 | 5 | 8 | I tested two AI coding tools. One ran the whole app itself. | 001-claude-vs-codex.md | faceless | ⬜ |
@@ -47,12 +47,14 @@ _Last refreshed: 2026-06-28 · Library size: 11 ideas · Coverage: 1/11 ideas ha
 
 ## Coverage gaps (ideas with no reel yet)
 
-All 11 ideas are coverage gaps — this is the first Instagram run.
+9 of 11 ideas have no reel yet. Priority gaps:
 
-Priority gaps (highest reel-worthiness, zero coverage):
-- `iphone-shortcit-to-generate-slide-from-raw-ideas.md` — **TOP PICK** (9/10, never produced on any channel, maximally visual for Instagram)
-- `first-autonoumsly-dveloped-todo-app.md` — 9/10, LinkedIn done; Instagram gets the demo angle
-- `just text.md` — 8/10, not yet on any channel
-
-Lower priority:
+- `just text.md` — 8/10, not on any channel yet, strong on-camera hook
+- `ai-non-deterministic-code-vs-program-deterministic-code.md` — 8/10, LinkedIn done, Instagram gets the visual angle
+- `001-claude-vs-codex.md` — 8/10, LinkedIn done, screen-demo comparison angle available
+- `run-your-own-agent-acengy-with-paperclip.md` — 8/10, LinkedIn pending, strong "clone + run your own AI company" hook
+- `002-SuperReps-learnings.md` — 7/10, LinkedIn done, on-camera story angle
+- `ai drinks water more than humans do.md` — 7/10, LinkedIn done, surprise-stat hook available
+- `build-your-first-agents-team.md` — 7/10, LinkedIn done; best used in a Combo reel
+- `gen-ai-roadmap.md` — 6/10, LinkedIn done, evergreen faceless listicle
 - `003-claude-new-feature-loop.md` — 5/10, product-specific, limited reel reach

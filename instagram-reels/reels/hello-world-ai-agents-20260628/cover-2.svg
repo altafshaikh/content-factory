@@ -1,0 +1,157 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accentG2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <linearGradient id="heroG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="100%" stop-color="#00CC6E"/>
+    </linearGradient>
+    <linearGradient id="tileG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2538"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.3" r="0.4">
+      <stop offset="0%" stop-color="#00FF88" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00FF88" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg2)"/>
+
+  <!-- Hero glow -->
+  <ellipse cx="540" cy="340" rx="440" ry="200" fill="url(#glow2)"/>
+
+  <!-- Top accent line -->
+  <rect x="80" y="80" width="920" height="4" rx="2" fill="url(#accentG2)"/>
+
+  <!-- Category label -->
+  <text x="80" y="154"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" letter-spacing="8" fill="#00FF88">AI ENGINEERING</text>
+
+  <!-- Hero: "4 TICKS" block -->
+  <text x="540" y="330"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="240" font-weight="900" text-anchor="middle" fill="url(#heroG2)">4</text>
+
+  <text x="540" y="406"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="64" font-weight="900" text-anchor="middle" letter-spacing="16" fill="#e2e8f0">TICKS</text>
+
+  <!-- Sub-label -->
+  <text x="540" y="458"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="300" text-anchor="middle" fill="#64748b" letter-spacing="1">PRD &#8594; Working App &#183; Zero intervention.</text>
+
+  <!-- Divider -->
+  <rect x="80" y="496" width="920" height="1" fill="#ffffff" fill-opacity="0.08"/>
+
+  <!-- 2x2 tile grid -->
+  <!-- Tile width: (920 - 20) / 2 = 450, height = 220 -->
+
+  <!-- Tile 1: PLAN (top-left) -->
+  <rect x="80" y="520" width="450" height="220" rx="16" fill="url(#tileG2)"/>
+  <rect x="80" y="520" width="450" height="4" rx="2" fill="url(#accentG2)"/>
+  <text x="160" y="586"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="5" fill="#00FF88">TICK 1</text>
+  <text x="160" y="650"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="60" font-weight="900" fill="#e2e8f0">PLAN</text>
+  <text x="160" y="694"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" fill="#475569">Spec &#8594; task breakdown</text>
+  <circle cx="488" cy="598" r="22" fill="#00FF88" fill-opacity="0.14"/>
+  <text x="488" y="607"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="900" text-anchor="middle" fill="#00FF88">&#10003;</text>
+
+  <!-- Tile 2: BUILD (top-right) -->
+  <rect x="550" y="520" width="450" height="220" rx="16" fill="url(#tileG2)"/>
+  <rect x="550" y="520" width="450" height="4" rx="2" fill="url(#accentG2)"/>
+  <text x="630" y="586"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="5" fill="#00FF88">TICK 2</text>
+  <text x="630" y="650"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="60" font-weight="900" fill="#e2e8f0">BUILD</text>
+  <text x="630" y="694"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" fill="#475569">Code written end-to-end</text>
+  <circle cx="958" cy="598" r="22" fill="#00FF88" fill-opacity="0.14"/>
+  <text x="958" y="607"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="900" text-anchor="middle" fill="#00FF88">&#10003;</text>
+
+  <!-- Tile 3: TEST (bottom-left) -->
+  <rect x="80" y="760" width="450" height="220" rx="16" fill="url(#tileG2)"/>
+  <rect x="80" y="760" width="450" height="4" rx="2" fill="url(#accentG2)"/>
+  <text x="160" y="826"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="5" fill="#00FF88">TICK 3</text>
+  <text x="160" y="890"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="60" font-weight="900" fill="#e2e8f0">TEST</text>
+  <text x="160" y="934"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" fill="#475569">Issues caught and fixed</text>
+  <circle cx="488" cy="838" r="22" fill="#00FF88" fill-opacity="0.14"/>
+  <text x="488" y="847"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="900" text-anchor="middle" fill="#00FF88">&#10003;</text>
+
+  <!-- Tile 4: DONE (bottom-right, highlighted) -->
+  <rect x="550" y="760" width="450" height="220" rx="16" fill="url(#tileG2)"/>
+  <rect x="550" y="760" width="450" height="4" rx="2" fill="url(#accentG2)"/>
+  <!-- Subtle green glow on done tile -->
+  <rect x="550" y="760" width="450" height="220" rx="16" fill="#00FF88" fill-opacity="0.04"/>
+  <text x="630" y="826"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="5" fill="#00FF88">TICK 4</text>
+  <text x="630" y="890"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="60" font-weight="900" fill="#00FF88">DONE.</text>
+  <text x="630" y="934"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" fill="#475569">Working app delivered</text>
+  <circle cx="958" cy="838" r="22" fill="#00FF88" fill-opacity="0.28"/>
+  <text x="958" y="847"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="900" text-anchor="middle" fill="#00FF88">&#10003;</text>
+
+  <!-- Divider before footer -->
+  <rect x="80" y="1044" width="920" height="1" fill="#ffffff" fill-opacity="0.08"/>
+
+  <!-- The claim -->
+  <text x="540" y="1110"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="38" font-weight="700" text-anchor="middle" fill="#e2e8f0">Solo devs are a bottleneck.</text>
+  <text x="540" y="1160"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="38" font-weight="700" text-anchor="middle" fill="#00FF88">Agent teams are the fix.</text>
+
+  <!-- Footer divider -->
+  <rect x="80" y="1210" width="920" height="1" fill="#ffffff" fill-opacity="0.08"/>
+
+  <!-- Tagline -->
+  <text x="540" y="1262"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="300" text-anchor="middle" fill="#94a3b8" letter-spacing="2">From PRD to working app &#183; zero intervention.</text>
+
+  <!-- Handle -->
+  <text x="540" y="1312"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="36" font-weight="700" text-anchor="middle" fill="#00FF88" letter-spacing="1">@teachmebro</text>
+
+  <!-- Byline -->
+  <text x="540" y="1342"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="400" text-anchor="middle" fill="#475569">Altaf Shaikh &#183; AI Engineering</text>
+</svg>
