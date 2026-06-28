@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/altaf.shaikh/Code-Space/AI/content-factory/scripts/open-content-prs.sh</string>
+        <string>/Users/altaf.shaikh/Code-Space/AI/content-factory/scripts/daily-content-sync.sh</string>
     </array>
 
     <key>WorkingDirectory</key>

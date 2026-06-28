@@ -57,7 +57,12 @@ If the user names a different time, convert IST → UTC (subtract 5:30) and **co
 The cloud agent starts with zero context, so the prompt must be self-contained. The final block is the **up-sync**: it routes generated content from the fork back to the private personal upstream via a PR (see "Content flows up" below).
 
 ```
-Run <AGENT INVOCATION>.
+First, sync your working tree to the latest upstream content. The personal repo altafshaikh/content-factory is the source of truth and is public, so no auth is needed:
+  git fetch https://github.com/altafshaikh/content-factory.git main
+  git reset --hard FETCH_HEAD
+This discards any stale fork state so you generate against current code.
+
+Then run <AGENT INVOCATION>.
 
 <one-paragraph channel summary: what this channel does and where it writes — pull it from the channel's CLAUDE.md so the cloud agent has context>. Follow .claude/skills/<channel-skill>/SKILL.md and ./<channel-folder>/CLAUDE.md exactly. ./raw-ideas/ is immutable — never move, rename, or delete files there. Only write inside ./<channel-folder>/; cross-channel reads are read-only. Update the channel's TODO.md.
 
@@ -65,19 +70,18 @@ After the run, save the generated content for review:
 1. Create a branch on the fork: git checkout -b claude/<channel>-$(date +%Y%m%d)
 2. Stage and commit only the new/changed files with a clear message.
 3. Push the branch to origin (the fork): git push -u origin claude/<channel>-$(date +%Y%m%d)
-Do NOT push to main. Do NOT attempt to open a pull request — this cloud environment only has the work-account token and cannot access the private personal upstream repo, so a PR will fail. The PR into the personal repo is opened later from Altaf's local machine (scripts/open-content-prs.sh). Your job ends at pushing the branch to the fork.
+Do NOT push to main. Do NOT open a pull request — the cloud's gh is not authenticated for the upstream, so a PR from here fails. The PR into the personal repo is opened later from Altaf's local machine (scripts/open-content-prs.sh). Your job ends at pushing the branch to the fork.
 ```
 
-## Content flows up: fork → personal (the other sync direction)
+## Sync model (personal `main` = single source of truth)
 
-The cloud routine is authed only on the **work** account, and the personal repo is **private**, so the cloud **cannot** open a PR into it (verified: cross-fork `gh pr create` against a private parent fails without a token that can access the parent). The work is split:
+`altafshaikh/content-factory` is **PUBLIC**, so the routine can fetch it with no auth — that powers the self-sync. Three parts:
 
-- **Cloud (routine):** runs the agent, commits to a `claude/<channel>-<date>` branch on the **fork**, and pushes that branch. It stops there.
-- **Local (your machine, has the personal token):** run `bash scripts/open-content-prs.sh` — it finds the fork's `claude/*` branches and opens a cross-fork PR for each into `altafshaikh/content-factory:main`. (Add `--merge` to auto-squash-merge and re-sync the fork.)
-- **You review and merge** the PR(s) on GitHub → content lands in personal `main`.
-- Then `bash scripts/sync-fork.sh` fast-forwards the fork to match personal, keeping it a clean downstream mirror.
+- **Down, at generation time (PRIMARY):** the routine's first step is `git fetch <upstream> main && git reset --hard FETCH_HEAD`, so it always works from current upstream no matter how stale the fork is. No Mac/cron dependency.
+- **Up (fork → personal):** the routine pushes a `claude/<channel>-<date>` branch to the fork but does **not** open a PR — the cloud's `gh` isn't authenticated for the upstream (verified: a live run pushed the branch fine but created no PR). The PR is opened **from the local machine** (which has the personal token) via `bash scripts/open-content-prs.sh` (`--merge` to auto-merge + re-sync). You review/merge; unreviewed PRs stay open.
+- **11:00 AM cron** (`scripts/daily-content-sync.sh`, launchd): down-syncs the fork from personal (picks up merges), then opens PRs for new fork branches. Mac-awake only; run by hand otherwise.
 
-This makes **personal `main` the single source of truth**: code flows down (personal → fork via `sync-fork.sh`), content flows up (fork branch → local PR → personal), and the fork is only ever a fast-forward of personal — so the down-sync never conflicts.
+Because the fork's `main` is only ever a fast-forward of personal, the down-sync never conflicts; the routine self-sync guarantees freshness even if the fork drifts.
 
 ---
 

@@ -1,9 +1,15 @@
-# launchd: daily content up-sync
+# launchd: daily content sync
 
-`com.altaf.content-factory.open-content-prs.plist` runs `scripts/open-content-prs.sh`
-**every day at 11:00 AM local time (Asia/Calcutta)** on Altaf's Mac. It pulls the
-routine-generated `claude/*` branches off the fork and opens cross-fork PRs into
-the private personal repo for review.
+`com.altaf.content-factory.open-content-prs.plist` runs `scripts/daily-content-sync.sh`
+**every day at 11:00 AM local time (Asia/Calcutta)** on Altaf's Mac. That wrapper:
+1. **down-syncs** the fork's `main` from personal (`sync-fork.sh`) — picks up any
+   content PRs you merged since the last run, and
+2. **opens PRs** (`open-content-prs.sh`) for any new routine-generated `claude/*`
+   branches on the fork, into personal `main`, for your review.
+
+(The routines also self-sync from upstream at generation time, so the fork being
+briefly stale between runs doesn't cause bad content — this cron mainly keeps the
+fork tidy and routes content up.)
 
 Why 11:00 AM: the cloud routines fire at 10:00 AM (X), 8:30 PM (LinkedIn), and
 9:00 PM (Instagram). An 11:00 AM local run catches the prior evening's LinkedIn +
