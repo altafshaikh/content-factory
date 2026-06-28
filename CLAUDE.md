@@ -21,6 +21,27 @@ Full overview: [`README.md`](./README.md).
 5. **Strip company names, internal tool names, and private details** from any generated content unless explicitly told otherwise.
 6. **No emojis** in generated content unless the user explicitly asks.
 7. **Filesystem is the source of truth.** Don't invent sidecar state files or JSON manifests. `TODO.md` per channel is enough.
+8. **Every push must sync the fork.** The cloud routines clone the FORK `altaf-shaikh-cs/content-factory`, not this local `origin` (`altafshaikh/content-factory`). After ANY `git push origin main`, immediately run `bash scripts/sync-fork.sh` so the routines run current code. See **Deploy & routines** below. Don't consider a change "shipped" until the fork is synced.
+
+---
+
+## Deploy & routines
+
+The daily channel runs are **cloud routines** (scheduled Claude Code agents), not local cron. They clone code from the **fork** `altaf-shaikh-cs/content-factory` (a fork of this repo's `origin`, `altafshaikh/content-factory`) and run the channel's growth-agent skill, then commit + open a PR.
+
+**Deploy path for any repo change a routine depends on:**
+1. `git push origin main` (land it on upstream `main`).
+2. `bash scripts/sync-fork.sh` (fast-forward the fork's `main` from upstream — this is the auto-sync step; never skip it).
+
+A change is not live for the routines until step 2 completes.
+
+**Set up / change a routine:** use the repo-scoped skill `setup-channel-routine` (`.claude/skills/setup-channel-routine/SKILL.md`) — `/setup-channel-routine <linkedin|x|instagram>`. It bakes in the canonical config (environment, fork repo, tools, no MCP connectors, commit+PR prompt) and staggered schedules. Manage/disable routines at https://claude.ai/code/routines.
+
+| Channel | Routine name | Schedule (IST) |
+|---------|--------------|----------------|
+| LinkedIn | Daily Linkedin Post Creator | 8:30 PM |
+| Instagram | Daily Instagram Reel Creator | 9:00 PM |
+| X | Daily X Post Creator | 10:00 AM |
 
 ---
 
