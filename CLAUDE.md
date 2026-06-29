@@ -69,6 +69,7 @@ A change is live for the routines once step 2 completes (their next run clones t
 | "process my ideas" (ambiguous)                | Ask which channel, OR run all active channel loops in sequence          |
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
 | "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
+| "sync the mirror" / "update personal repo" / "/mirror-personal" | Skill `mirror-personal` (runs `scripts/mirror-personal.sh`) |
 
 ---
 
