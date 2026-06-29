@@ -1,0 +1,12 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C-revised",
+  "why_winner": "Both Round 1 issues are resolved. The natural labels ('The one with strong foundations:' / 'The one without them:') feel observational rather than clinical — Altaf is describing something he's seen, not writing a case study. The added tension paragraph ('And the confusing part? The second developer often feels productive...') is the standout improvement: it makes the confusion outcome surprising, not obvious. That 'Until it isn't.' line earns its place.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 9.0 }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}
