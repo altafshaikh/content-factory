@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+
+  <!-- Background: warm cream -->
+  <rect width="1600" height="900" fill="#F5F0E5"/>
+
+  <!-- Category label: small caps, muted gray, top left -->
+  <text x="80" y="72"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="19" font-weight="700" letter-spacing="6"
+    fill="#94a3b8" text-anchor="start">&#8212; AI EXPERIMENT #2</text>
+
+  <!-- Decorative network nodes: top right -->
+  <line x1="1392" y1="96" x2="1472" y2="137" stroke="#c4bdb2" stroke-width="1.5" opacity="0.6"/>
+  <line x1="1472" y1="137" x2="1537" y2="73" stroke="#c4bdb2" stroke-width="1.5" opacity="0.6"/>
+  <line x1="1472" y1="137" x2="1508" y2="188" stroke="#c4bdb2" stroke-width="1.2" opacity="0.5"/>
+  <line x1="1392" y1="96" x2="1537" y2="73" stroke="#c4bdb2" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="1392" cy="96" r="8" fill="#E84F1B" opacity="0.80"/>
+  <circle cx="1472" cy="137" r="6" fill="#94a3b8" opacity="0.55"/>
+  <circle cx="1537" cy="73" r="5" fill="#2563EB" opacity="0.70"/>
+  <circle cx="1508" cy="188" r="4" fill="#E84F1B" opacity="0.45"/>
+
+  <!-- Main headline line 1: "AI Built Parts." — "Parts." in orange -->
+  <text x="80" y="258"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="130" font-weight="900"
+    fill="#1C1814" text-anchor="start">AI Built <tspan fill="#E84F1B">Parts.</tspan></text>
+
+  <!-- Main headline line 2: "Not Products." — "Products." in blue -->
+  <text x="80" y="398"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="130" font-weight="900"
+    fill="#1C1814" text-anchor="start">Not <tspan fill="#2563EB">Products.</tspan></text>
+
+  <!-- Orange left-bar quote block -->
+  <rect x="80" y="440" width="5" height="74" rx="2.5" fill="#E84F1B"/>
+  <text x="106" y="466"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="26" font-weight="700"
+    fill="#1C1814" text-anchor="start">The gap between &#8220;looks right&#8221; and &#8220;works right&#8221;</text>
+  <text x="106" y="501"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="26" font-weight="700"
+    fill="#1C1814" text-anchor="start">is where most builds die.</text>
+
+  <!-- Contrast stat row -->
+  <!-- Left: Parts -->
+  <text x="80" y="590"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="50" font-weight="900"
+    fill="#E84F1B" text-anchor="start">Parts</text>
+  <text x="80" y="620"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="16" font-weight="400" letter-spacing="4"
+    fill="#94a3b8" text-anchor="start">WORK INDIVIDUALLY</text>
+
+  <!-- Vertical divider between stats -->
+  <rect x="322" y="558" width="1.5" height="76" fill="#c4bdb2"/>
+
+  <!-- Right: Flow -->
+  <text x="352" y="590"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="50" font-weight="900"
+    fill="#2563EB" text-anchor="start">Flow</text>
+  <text x="352" y="620"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="16" font-weight="400" letter-spacing="4"
+    fill="#94a3b8" text-anchor="start">BREAKS AT THE SEAMS</text>
+
+  <!-- Horizontal rule -->
+  <rect x="80" y="664" width="1440" height="1.5" fill="#d4cec5"/>
+
+  <!-- Handle — prominent, orange accent -->
+  <text x="80" y="726"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="34" font-weight="700"
+    fill="#E84F1B" text-anchor="start">@teachmebro</text>
+
+  <!-- Author name + domain -->
+  <text x="80" y="766"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="700"
+    fill="#1C1814" text-anchor="start">Altaf Shaikh</text>
+  <text x="80" y="791"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="17" font-weight="400"
+    fill="#94a3b8" text-anchor="start">// AI Engineering</text>
+
+  <!-- Right-side footer tagline -->
+  <text x="1520" y="740"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="18" font-weight="400"
+    fill="#94a3b8" text-anchor="end">build one flow completely,</text>
+  <text x="1520" y="764"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="18" font-weight="400"
+    fill="#94a3b8" text-anchor="end">then move</text>
+
+  <!-- Brand dots: bottom right -->
+  <circle cx="1552" cy="814" r="7" fill="#E84F1B" opacity="0.85"/>
+  <circle cx="1571" cy="814" r="7" fill="#2563EB" opacity="0.85"/>
+
+</svg>
