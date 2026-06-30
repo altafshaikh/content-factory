@@ -33,9 +33,9 @@ Accepted file formats: SVG, PNG, JPG, PDF, screenshot — any format works as a 
 
 Apply in order — first match wins:
 
-**SVG-native (dark brand) — default for LinkedIn dark-card look:**
+**SVG-native (dark brand):**
 1. `stat-card` + `linkedin` → **stat-card-dark**
-2. `editorial` + `blog` → **editorial-bold**
+2. `editorial` + `blog` (concept-driven / opinion / big statement) → **editorial-bold**
 3. `quote-card` + `x` → **quote-card-minimal**
 4. `hero` + `presentation` → **gradient-hero**
 
@@ -46,6 +46,22 @@ Apply in order — first match wins:
 8. Post is a short insight, opinion, or "less is more" message → **minimal-sketch**
 9. Post compares two approaches OR breaks down a system/architecture → **diagram-explainer**
 
+**Blog-specific style selection (channel: blog, dimensions: 1600×900):**
+
+When channel is `blog`, override the generic rules above with these — first match wins:
+
+| Blog post type | Best style | Reasoning |
+|---|---|---|
+| Tutorial / how-to / step-by-step / skill install | `warm-illustrated` | Approachable, process-friendly, educational tone |
+| Claude Code feature / CLI / developer tool deep-dive | `dark-terminal-cream` | Developer-native, terminal aesthetic fits the topic |
+| Mental model shift / "you've been doing X wrong" / contrarian | `bold-editorial-type` | Giant typography carries the reframe; sparse layout forces the reader to sit with the claim |
+| Architecture breakdown / comparison / before-after / system design | `diagram-explainer` | Structured layout mirrors the structured thinking in the post |
+| Short opinion / abstract concept / "less is more" | `minimal-sketch` | Restraint in visuals matches restraint in writing |
+| Series cover / concept-driven / atmospheric / big statement | `editorial-bold` | Cinematic 1600×900 hero; strongest for Hashnode cover images |
+| Fallback (no clear match) | `editorial-bold` | Safe SVG-native default for blog at 1600×900 |
+
+Blog dimension is always **1600×900** (16:9) — the Hashnode cover image format.
+
 **Blending (use freely):**
 - The agent MAY combine elements from two styles — e.g. take the layout grid from `warm-illustrated` and the typography weight from `bold-editorial-type`.
 - When blending, read at least one sample file from EACH style being combined.
@@ -53,7 +69,7 @@ Apply in order — first match wins:
 
 **Fallback:**
 - No direct match → read mood tags from all styles, pick closest to the brief's tone and channel.
-- When uncertain between dark-brand SVG styles and real-image-inspired styles, prefer the real-image-inspired style for LinkedIn (more feed-native) and dark-brand for presentation/blog.
+- When uncertain between dark-brand SVG styles and real-image-inspired styles: for blog, prefer real-image-inspired styles (more editorial-magazine feel); for LinkedIn, prefer real-image-inspired (more feed-native); for presentation, prefer dark-brand SVG.
 
 **Blending:** If the brief combines elements of two styles (e.g., stat-heavy blog banner), take the layout grid from one and the atmosphere/palette from the other. State the blend in the surface block.
 

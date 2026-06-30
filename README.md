@@ -39,11 +39,11 @@ content-stratergy/
 ├── linkedin.agent.md             ← /loop prompt for the LinkedIn channel
 ├── x.agent.md                    ← /loop prompt for the X channel
 ├── instagram.agent.md            ← /loop prompt for the Instagram Reels channel
-├── blog.agent.md                 ← /loop prompt for the blog channel    (stub)
+├── blog.agent.md                 ← /loop prompt for the blog channel
 ├── linkedin-posts/               ← LinkedIn channel — CLAUDE.md + TODO + posts/
 ├── x-posts/                      ← X channel — CLAUDE.md + TODO + posts/
 ├── instagram-reels/              ← Instagram channel — CLAUDE.md + PLAYBOOK + reel-map + reels/
-└── blog-post/                    ← Blog channel                         (stub)
+└── blog-post/                    ← Blog channel — CLAUDE.md + TODO + posts/
 ```
 
 ---
@@ -92,7 +92,7 @@ This means:
 | LinkedIn      | `linkedin-growth-agent`              | `linkedin.agent.md`   | `linkedin-posts/` | ✅ active   |
 | X (Twitter)   | `x-growth-agent`                     | `x.agent.md`          | `x-posts/`        | ✅ active   |
 | Instagram     | `instagram-reels-agent`             | `instagram.agent.md`  | `instagram-reels/`| ✅ active   |
-| Blog          | (TBD — `blog-growth-agent` / `idea-to-blog`) | `blog.agent.md` (stub) | `blog-post/`      | 🟡 stub     |
+| Blog          | `blog-writer-agent`                          | `blog.agent.md`        | `blog-post/`      | ✅ active   |
 | Presentation  | (TBD — `idea-to-presentation`)       | (not yet)             | (not yet)         | ⚪ planned   |
 
 > **Instagram is the odd one out.** Every other channel drains the *oldest single unconsumed idea* into one post. Instagram **mines the whole library** and ranks reel candidates by reel-worthiness across three types — **Direct** (1 idea → 1 reel), **Combo** (several ideas merged), and **Pattern** (a new angle derived across ideas, in no single file). Ideas are never "used up"; the channel tracks produced reels + coverage. Live menu: [`instagram-reels/reel-map.md`](./instagram-reels/reel-map.md).
