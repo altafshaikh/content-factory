@@ -1,0 +1,93 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dotgrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e7e0d4"/>
+    </pattern>
+    <linearGradient id="termHeader" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#151515"/>
+    </linearGradient>
+    <linearGradient id="mascotBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a3d"/>
+      <stop offset="100%" stop-color="#f2680f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#faf6ee"/>
+  <rect width="1600" height="900" fill="url(#dotgrid)"/>
+
+  <!-- top label -->
+  <g transform="translate(96,72)">
+    <circle cx="10" cy="0" r="10" fill="#f2680f"/>
+    <path d="M10 -14 L12 -4 L22 0 L12 4 L10 14 L8 4 L-2 0 L8 -4 Z" fill="#f2680f" opacity="0.85"/>
+    <text x="34" y="7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" letter-spacing="6" fill="#f2680f">CLAUDE CODE FEATURE</text>
+  </g>
+
+  <!-- headline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="900" fill="#1a1a1a">
+    <text x="96" y="220" font-size="84">I Wasn&#8217;t Automating</text>
+    <text x="96" y="312" font-size="84">My Pipeline.</text>
+    <text x="96" y="404" font-size="84">I Was Its Cron Job.</text>
+  </g>
+
+  <text x="96" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="400" fill="#6b6558">One command. One interval. No separate scheduler.</text>
+
+  <!-- before / after chips -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="96" y="500" width="230" height="64" rx="14" fill="#ffffff" stroke="#e7e0d4" stroke-width="2"/>
+    <text x="116" y="530" font-size="18" font-weight="700" letter-spacing="3" fill="#a39c8c">BEFORE</text>
+    <text x="116" y="554" font-size="20" font-weight="600" fill="#1a1a1a">Manual daily run</text>
+
+    <path d="M340 532 L376 532" stroke="#f2680f" stroke-width="3"/>
+    <path d="M370 524 L380 532 L370 540" fill="none" stroke="#f2680f" stroke-width="3"/>
+
+    <rect x="396" y="500" width="260" height="64" rx="14" fill="#ffffff" stroke="#e7e0d4" stroke-width="2"/>
+    <text x="416" y="530" font-size="18" font-weight="700" letter-spacing="3" fill="#a39c8c">AFTER</text>
+    <text x="416" y="554" font-size="20" font-weight="600" fill="#1a1a1a">Scheduled, unattended</text>
+  </g>
+
+  <!-- terminal window -->
+  <g transform="translate(940,140)">
+    <rect x="0" y="0" width="560" height="420" rx="18" fill="url(#termHeader)"/>
+    <rect x="0" y="0" width="560" height="52" rx="18" fill="#111111"/>
+    <rect x="0" y="34" width="560" height="18" fill="#111111"/>
+    <circle cx="30" cy="26" r="8" fill="#ff5f57"/>
+    <circle cx="56" cy="26" r="8" fill="#febc2e"/>
+    <circle cx="82" cy="26" r="8" fill="#28c840"/>
+
+    <text x="34" y="100" font-family="'SF Mono', Menlo, monospace" font-size="40" fill="#e8e8e8">&#62;</text>
+    <text x="64" y="100" font-family="'SF Mono', Menlo, monospace" font-size="40" font-weight="700">
+      <tspan fill="#22d3ee">/</tspan><tspan fill="#a78bfa">loop</tspan>
+    </text>
+
+    <!-- mascot -->
+    <g transform="translate(60,150)">
+      <rect x="0" y="0" width="120" height="120" rx="18" fill="url(#mascotBody)"/>
+      <circle cx="36" cy="46" r="7" fill="#1a1a1a"/>
+      <circle cx="84" cy="46" r="7" fill="#1a1a1a"/>
+      <path d="M34 74 Q60 92 86 74" stroke="#1a1a1a" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M52 12 L60 -2 L68 12 L60 22 Z" fill="#faf6ee"/>
+      <rect x="-14" y="40" width="18" height="50" rx="9" fill="url(#mascotBody)"/>
+      <rect x="116" y="40" width="18" height="50" rx="9" fill="url(#mascotBody)"/>
+    </g>
+
+    <!-- steps list -->
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="#e2e8f0">
+      <text x="220" y="180" font-size="22" font-weight="700">1. Run once</text>
+      <text x="220" y="206" font-size="16" fill="#94a3b8">Same command you already type</text>
+
+      <text x="220" y="240" font-size="22" font-weight="700">2. Set the interval</text>
+      <text x="220" y="266" font-size="16" fill="#94a3b8">1d, or self-paced</text>
+
+      <text x="220" y="300" font-size="22" font-weight="700">3. Walk away</text>
+      <text x="220" y="326" font-size="16" fill="#94a3b8">No cron, no server, no config file</text>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <line x1="96" y1="800" x2="1504" y2="800" stroke="#e7e0d4" stroke-width="2"/>
+    <text x="96" y="846" font-size="30" font-weight="800" fill="#f2680f">@teachmebro</text>
+    <text x="96" y="874" font-size="20" font-weight="500" fill="#6b6558">Altaf Shaikh &#183; AI Engineering</text>
+  </g>
+</svg>
