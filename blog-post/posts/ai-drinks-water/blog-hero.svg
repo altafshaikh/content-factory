@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2ede2"/>
+      <stop offset="100%" stop-color="#ece5d6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- faint texture line accents top right -->
+  <g stroke="#c9c0ab" stroke-width="1.5" opacity="0.5">
+    <line x1="1180" y1="90" x2="1420" y2="60"/>
+    <line x1="1420" y1="60" x2="1500" y2="180"/>
+    <line x1="1300" y1="150" x2="1420" y2="60"/>
+  </g>
+  <circle cx="1180" cy="90" r="5" fill="#3b82f6"/>
+  <circle cx="1500" cy="180" r="5" fill="#c2410c"/>
+  <circle cx="1300" cy="150" r="4" fill="#9a9482"/>
+
+  <!-- top label -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="700">
+    <line x1="90" y1="118" x2="130" y2="118" stroke="#8a8370" stroke-width="3"/>
+    <text x="146" y="126" font-size="24" letter-spacing="6" fill="#8a8370">THE HIDDEN COST OF AI</text>
+  </g>
+
+  <!-- giant headline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="900">
+    <text x="88" y="290" font-size="128" fill="#1c1a16">Free Price.</text>
+    <text x="88" y="420" font-size="128">
+      <tspan fill="#c2410c">Hidden</tspan><tspan fill="#3b82f6" dx="30">Cost.</tspan>
+    </text>
+  </g>
+
+  <!-- subtext line -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="90" y="472" width="6" height="60" fill="#c2410c"/>
+    <text x="120" y="500" font-size="34" font-weight="700" fill="#1c1a16">The cost didn&#8217;t disappear.</text>
+    <text x="120" y="540" font-size="34" font-weight="700" fill="#1c1a16">It moved off your <tspan fill="#3b82f6">invoice</tspan>.</text>
+  </g>
+
+  <!-- contrast pair -->
+  <g font-family="ui-monospace, 'SF Mono', 'Courier New', monospace">
+    <text x="90" y="660" font-size="64" font-weight="700" fill="#c2410c">$0.00</text>
+    <text x="90" y="696" font-size="24" fill="#8a8370" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">what you pay per query</text>
+
+    <line x1="500" y1="590" x2="500" y2="700" stroke="#c9c0ab" stroke-width="1.5"/>
+
+    <text x="550" y="660" font-size="64" font-weight="700" fill="#3b82f6">Water + Power</text>
+    <text x="550" y="696" font-size="24" fill="#8a8370" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">what a query actually costs</text>
+  </g>
+
+  <line x1="90" y1="748" x2="1510" y2="748" stroke="#c9c0ab" stroke-width="1"/>
+
+  <!-- byline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="90" y="800" font-size="30" font-weight="700" fill="#1c1a16">Altaf Shaikh</text>
+    <text x="90" y="828" font-size="22" fill="#8a8370">// AI Engineering</text>
+  </g>
+
+  <!-- tagline + handle bottom right -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="end">
+    <text x="1510" y="792" font-size="30" font-weight="800" fill="#3b82f6">@teachmebro</text>
+    <text x="1510" y="822" font-size="20" fill="#8a8370">&#8220;Free tier&#8221; is a pricing decision. Not a physics one.</text>
+  </g>
+</svg>
