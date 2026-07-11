@@ -1,0 +1,30 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "needs_revision",
+  "winner": "B",
+  "why_winner": "Bold claim-first hook directly challenges the reader's current behavior and creates immediate stakes. The 'You stop being the operator. You become the employer.' closing is the most memorable line in any of the three drafts, and the tracker confirms bold-claim-first outperforms on this audience (claude-vs-codex: 5.09% eng. rate).",
+  "scores": {
+    "A": { "hook_strength": 8, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.6 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.6 },
+    "C": { "hook_strength": 9, "authenticity": 7, "readability": 8, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.2 }
+  },
+  "runner_up_notes": {
+    "A": "The 8:30 PM laptop-closed scene is the most grounding, authentic element in any draft. Grafting one concrete moment like this before the bold claim would raise B's authenticity without losing its punch.",
+    "C": "The cron job vs. Routine one-liner is genuinely memorable — consider adding it as a supporting line inside the body of B to reinforce the mechanism, not just the consequence."
+  },
+  "issues": [
+    {
+      "type": "weak_hook",
+      "severity": "medium",
+      "description": "B opens with a direct challenge but has no grounding moment — the claim floats without evidence until the third paragraph. A reader who hasn't used Routines needs one concrete anchor first.",
+      "action": "Open B with a single scene-setting line (the 8:30 PM / laptop-closed moment from A), then immediately follow with the bold claim. Keep the claim in the second line, not the first."
+    },
+    {
+      "type": "jargon",
+      "severity": "low",
+      "description": "'something more' in 'the difference between a tool and something more' is vague and undersells the contrast.",
+      "action": "Replace with the sharper framing: 'The difference between a tool and a system isn't capability. It's who decides when to start.' — keeps the rhythm, clarifies the contrast."
+    }
+  ]
+}

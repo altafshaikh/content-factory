@@ -1,0 +1,12 @@
+{
+  "round": 2,
+  "variants_reviewed": ["B-revised"],
+  "status": "approved",
+  "winner": "B-revised",
+  "why_winner": "The scene-setting opener grounds the bold claim immediately — readers get both a real moment and a challenge. The system vs. tool distinction ('who decides when to start') is now sharper. The employer/operator close lands cleanly. All issues from round 1 resolved.",
+  "scores": {
+    "B-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 8, "avg": 9.0 }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}

@@ -1,0 +1,195 @@
+<svg viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg" width="1080" height="1350">
+  <defs>
+    <pattern id="dot-grid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="1.5" fill="#c9bda8" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Cream background + dot grid -->
+  <rect width="1080" height="1350" fill="#f5f0e8"/>
+  <rect width="1080" height="1350" fill="url(#dot-grid)"/>
+
+  <!-- Scattered decorative diamonds (from build-first-subagent style) -->
+  <text x="72" y="50" font-size="22" fill="#c05621" opacity="0.8"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">&#9670;</text>
+  <text x="520" y="36" font-size="14" fill="#c05621" opacity="0.5"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">&#9670;</text>
+  <text x="960" y="56" font-size="10" fill="#94a3b8" opacity="0.5"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">+</text>
+  <text x="1020" y="180" font-size="14" fill="#94a3b8" opacity="0.4"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">+</text>
+  <text x="44" y="420" font-size="10" fill="#94a3b8" opacity="0.4"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">+</text>
+
+  <!-- Header: orange asterisk + category label -->
+  <text x="80" y="90"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="700" fill="#c05621">&#10022;</text>
+  <text x="116" y="90"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="17" font-weight="700" letter-spacing="5" fill="#c05621">CLAUDE CODE ROUTINES</text>
+
+  <!-- Main headline: two-line bold black -->
+  <text x="80" y="220"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="96" font-weight="900" fill="#1a1a1a">Close the</text>
+  <text x="80" y="336"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="96" font-weight="900" fill="#1a1a1a">laptop.</text>
+
+  <!-- Sub-descriptor -->
+  <text x="80" y="394"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="28" font-weight="400" fill="#78716c">The work keeps going.</text>
+
+  <!-- Terminal window shadow -->
+  <rect x="70" y="458" width="940" height="448" rx="22" fill="#1a1a1a" opacity="0.10"/>
+
+  <!-- Terminal main window -->
+  <rect x="66" y="452" width="940" height="448" rx="20" fill="#1e1e1e"/>
+
+  <!-- Traffic light dots -->
+  <circle cx="108" cy="492" r="9" fill="#ef4444"/>
+  <circle cx="136" cy="492" r="9" fill="#f59e0b"/>
+  <circle cx="164" cy="492" r="9" fill="#22c55e"/>
+
+  <!-- Terminal title bar text -->
+  <text x="536" y="498"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="16" font-weight="400" fill="#6b7280">routines &#183; status</text>
+
+  <!-- Title bar separator -->
+  <rect x="66" y="511" width="940" height="1" fill="#2d3748"/>
+
+  <!-- Command line -->
+  <text x="100" y="554"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="28" font-weight="700" fill="#22c55e">&gt;</text>
+  <text x="134" y="554"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="28" font-weight="700" fill="#f97316">/routines</text>
+  <text x="358" y="554"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="28" font-weight="400" fill="#e2e8f0">status</text>
+
+  <!-- Separator inside terminal -->
+  <rect x="100" y="573" width="700" height="1" fill="#2d3748"/>
+
+  <!-- LinkedIn row -->
+  <circle cx="122" cy="617" r="7" fill="#22c55e"/>
+  <text x="150" y="625"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="600" fill="#e2e8f0">LinkedIn</text>
+  <text x="710" y="625"
+    text-anchor="end"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="23" font-weight="400" fill="#86efac">&#10003; active</text>
+
+  <!-- Instagram row -->
+  <circle cx="122" cy="677" r="7" fill="#22c55e"/>
+  <text x="150" y="685"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="600" fill="#e2e8f0">Instagram</text>
+  <text x="710" y="685"
+    text-anchor="end"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="23" font-weight="400" fill="#86efac">&#10003; active</text>
+
+  <!-- X row -->
+  <circle cx="122" cy="737" r="7" fill="#22c55e"/>
+  <text x="150" y="745"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="600" fill="#e2e8f0">X</text>
+  <text x="710" y="745"
+    text-anchor="end"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="23" font-weight="400" fill="#86efac">&#10003; active</text>
+
+  <!-- Bottom separator inside terminal -->
+  <rect x="100" y="765" width="700" height="1" fill="#2d3748"/>
+
+  <!-- Status summary -->
+  <text x="100" y="804"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="400" fill="#64748b">3 running</text>
+  <text x="218" y="804"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="400" fill="#475569">&#183;</text>
+  <text x="234" y="804"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="400" fill="#64748b">0 paused</text>
+
+  <!-- Cursor prompt -->
+  <text x="100" y="842"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24" font-weight="700" fill="#22c55e">&gt; _</text>
+
+  <!-- Pixel mascot in terminal (right side) -->
+  <!-- Antenna -->
+  <rect x="848" y="574" width="4" height="14" rx="2" fill="#f97316"/>
+  <circle cx="850" cy="570" r="7" fill="#f97316"/>
+  <!-- Body -->
+  <rect x="826" y="586" width="48" height="50" rx="8" fill="#f97316"/>
+  <!-- Eyes -->
+  <rect x="836" y="600" width="8" height="10" rx="2" fill="#1e1e1e"/>
+  <rect x="856" y="600" width="8" height="10" rx="2" fill="#1e1e1e"/>
+  <!-- Smile -->
+  <rect x="836" y="618" width="28" height="4" rx="2" fill="#1e1e1e" opacity="0.7"/>
+  <!-- Chest star -->
+  <text x="850" y="646" text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="13" fill="#ffffff" font-weight="900">&#10022;</text>
+  <!-- Legs -->
+  <rect x="832" y="636" width="14" height="18" rx="3" fill="#f97316"/>
+  <rect x="854" y="636" width="14" height="18" rx="3" fill="#f97316"/>
+
+  <!-- BEFORE / AFTER contrast chips section -->
+  <!-- BEFORE chip -->
+  <rect x="80" y="960" width="280" height="68" rx="14" fill="#e7e3dc"/>
+  <text x="220" y="986"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="15" font-weight="700" letter-spacing="4" fill="#92806b">BEFORE</text>
+  <text x="220" y="1012"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="20" font-weight="600" fill="#57534e">manual trigger</text>
+
+  <!-- Arrow -->
+  <text x="392" y="1004"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="30" fill="#c05621">&#8594;</text>
+
+  <!-- AFTER chip -->
+  <rect x="432" y="960" width="568" height="68" rx="14" fill="#c05621"/>
+  <text x="716" y="986"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="15" font-weight="700" letter-spacing="4" fill="#fed7aa">AFTER</text>
+  <text x="716" y="1012"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff">autonomous schedule</text>
+
+  <!-- Final insight lines -->
+  <text x="80" y="1098"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="30" font-weight="400" fill="#78716c">You stop being the operator.</text>
+  <text x="80" y="1144"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="30" font-weight="700" fill="#1a1a1a">You become the employer.</text>
+
+  <!-- Horizontal divider -->
+  <rect x="80" y="1188" width="920" height="1" fill="#d4c9b8"/>
+
+  <!-- Footer: handle + author -->
+  <text x="80" y="1250"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="34" font-weight="700" fill="#c05621">@teachmebro</text>
+  <text x="80" y="1292"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="400" fill="#92806b">Altaf Shaikh &#183; AI Engineering / Developer Productivity</text>
+
+</svg>

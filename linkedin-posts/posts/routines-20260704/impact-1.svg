@@ -1,0 +1,99 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
+  <defs>
+    <pattern id="bg-texture" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="16" cy="16" r="1" fill="#c9bda8" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Cream background -->
+  <rect width="1080" height="1080" fill="#f5f0e8"/>
+  <rect width="1080" height="1080" fill="url(#bg-texture)"/>
+
+  <!-- Decorative accent dots top-right (inspired by same-spark dots) -->
+  <circle cx="940" cy="90" r="10" fill="#c05621" opacity="0.85"/>
+  <circle cx="970" cy="90" r="10" fill="#c05621" opacity="0.35"/>
+  <circle cx="1010" cy="72" r="6" fill="#94a3b8" opacity="0.4"/>
+  <circle cx="1030" cy="108" r="5" fill="#94a3b8" opacity="0.3"/>
+
+  <!-- Category label: dash + text -->
+  <rect x="80" y="76" width="28" height="2" fill="#94a3b8" rx="1"/>
+  <text x="120" y="82"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="17" font-weight="700" letter-spacing="7" fill="#94a3b8">THE SHIFT</text>
+
+  <!-- Headline line 1: OPERATOR (dark) -->
+  <text x="80" y="248"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="110" font-weight="900" fill="#1a1a1a">OPERATOR.</text>
+
+  <!-- Headline line 2: EMPLOYER (orange accent) -->
+  <text x="80" y="378"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="110" font-weight="900" fill="#c05621">EMPLOYER.</text>
+
+  <!-- Left-bar quote block -->
+  <rect x="80" y="428" width="4" height="88" fill="#c05621" rx="2"/>
+  <text x="106" y="463"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="29" font-weight="500" fill="#374151">The difference between a tool and</text>
+  <text x="106" y="502"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="29" font-weight="500" fill="#374151">a system is who decides when to start.</text>
+
+  <!-- Stat section -->
+  <!-- Large number "3" -->
+  <text x="80" y="640"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="120" font-weight="900" fill="#c05621">3</text>
+
+  <!-- Stat label to the right of number -->
+  <text x="188" y="600"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="700" letter-spacing="4" fill="#6b7280">ROUTINES</text>
+  <text x="188" y="630"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#9ca3af">running autonomously</text>
+  <text x="188" y="658"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#9ca3af">while the laptop&#8217;s closed</text>
+
+  <!-- Vertical divider between stat columns -->
+  <rect x="460" y="560" width="1" height="100" fill="#d4c9b8"/>
+
+  <!-- Second stat -->
+  <text x="490" y="600"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="700" letter-spacing="4" fill="#6b7280">1 BRIEF</text>
+  <text x="490" y="630"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#9ca3af">written once,</text>
+  <text x="490" y="658"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#9ca3af">runs forever</text>
+
+  <!-- Tagline below stats -->
+  <text x="80" y="730"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="26" font-weight="600" fill="#57534e" font-style="italic">&#8220;Close the laptop. The work keeps going.&#8221;</text>
+
+  <!-- Horizontal divider -->
+  <rect x="80" y="780" width="920" height="1" fill="#d4c9b8"/>
+
+  <!-- Footer: author bottom-left, handle bottom-right -->
+  <text x="80" y="852"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="26" font-weight="700" fill="#1a1a1a">Altaf Shaikh</text>
+  <text x="80" y="885"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="20" font-weight="400" fill="#78716c">// AI Engineering &#183; Developer Productivity</text>
+
+  <text x="1000" y="852"
+    text-anchor="end"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="30" font-weight="700" fill="#c05621">@teachmebro</text>
+  <text x="1000" y="885"
+    text-anchor="end"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="19" font-weight="400" fill="#9ca3af">#ClaudeCode #AIEngineering</text>
+
+</svg>
