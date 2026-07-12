@@ -22,4 +22,6 @@ _(none)_
 
 ## Done
 
-- [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-11 (no hero image generated — source idea explicitly said "do not generate the image for this")
+- [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-12
+
+**Note:** all other ideas in `../raw-ideas/` (001-claude-vs-codex.md, 002-SuperReps-learnings.md, 003-claude-new-feature-loop.md, ROUTINES.MD, ai drinks water more than humans do.md, ai-non-deterministic-code-vs-program-deterministic-code.md, build-your-first-agents-team.md, first-autonoumsly-dveloped-todo-app.md, gen-ai-roadmap.md, iphone-shortcit-to-generate-slide-from-raw-ideas.md, just text.md) already have open blog PRs in flight on the fork (not yet merged, so not yet reflected here). This run picked the only remaining idea with no open blog PR: `run-your-own-agent-acengy-with-paperclip.md`.
