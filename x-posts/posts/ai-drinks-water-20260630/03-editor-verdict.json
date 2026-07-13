@@ -1,0 +1,19 @@
+{
+  "round": 1,
+  "format": "SINGLE",
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "Angle C opens by quoting a belief nearly every builder holds — \"AI is getting cheaper\" — then immediately pivots with \"is half the story.\" That's a scroll-stopper that earns quote-tweets and civil disagreement. The close is the most screenshot-worthy line in the set: \"Free tier is a pricing decision. Not a physics one.\" A strong take stated as fact invites replies without needing a question mark. No hard fails across any variant.",
+  "scores": {
+    "A": { "hook_strength": 9, "scroll_stop": 9, "conciseness": 8, "authenticity": 7, "cta_clarity": 8, "avg": 8.2 },
+    "B": { "hook_strength": 7, "scroll_stop": 7, "conciseness": 9, "authenticity": 9, "cta_clarity": 8, "avg": 8.0 },
+    "C": { "hook_strength": 9, "scroll_stop": 9, "conciseness": 9, "authenticity": 8, "cta_clarity": 8, "avg": 8.6 }
+  },
+  "char_check": { "A": "pass (268)", "B": "pass (232)", "C": "pass (245)" },
+  "runner_up_notes": {
+    "A": "The \"drank real water\" opener is visceral — would work as a standalone viral tweet. C edges it out because the belief-then-pivot structure earns more engagement types (quote-tweet + reply vs. bookmark only).",
+    "B": "\"The kind people fight over\" is the most emotionally loaded phrase in the set; C could borrow it, but C's concise structure is already its strength. B's authenticity score is the highest of three."
+  },
+  "issues": []
+}
