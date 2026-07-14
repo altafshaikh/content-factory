@@ -2,15 +2,15 @@
 
 **Source idea:** [../../../raw-ideas/iphone-shortcit-to-generate-slide-from-raw-ideas.md](../../../raw-ideas/iphone-shortcit-to-generate-slide-from-raw-ideas.md)
 **Generated:** 2026-06-28
-**Rounds:** 2  ·  **Revised:** yes
+**Rounds:** 2 · **Revised:** yes
 
 ## Variation Scores (Round 1)
 
-| Variant | Angle                  | Hook | Authenticity | Readability | Compliance | CTA | Avg |
-|---------|------------------------|------|--------------|-------------|------------|-----|-----|
-| A       | Story-first            |  7   |      9       |      9      |      9     |  8  | 8.4 |
-| B       | Bold claim-first       |  9   |      7       |      8      |      9     |  8  | 8.2 |
-| C       | Tactical/how-to-first  |  7   |      6       |      8      |     10     |  9  | 8.0 |
+| Variant | Angle                 | Hook | Authenticity | Readability | Compliance | CTA | Avg |
+| ------- | --------------------- | ---- | ------------ | ----------- | ---------- | --- | --- |
+| A       | Story-first           | 7    | 9            | 9           | 9          | 8   | 8.4 |
+| B       | Bold claim-first      | 9    | 7            | 8           | 9          | 8   | 8.2 |
+| C       | Tactical/how-to-first | 7    | 6            | 8           | 10         | 9   | 8.0 |
 
 **Winner:** Variant B (revised) — Sharpest hook, cleanest friction reframe; grafted A's personal opener to lift authenticity.
 
@@ -38,7 +38,7 @@ Then I wired it to an iPhone shortcut.
 
 The workflow: select a note from the Notes app, share it to the shortcut, receive a structured slide layout in seconds.
 
-The shortcut passes my notes to an AI model along with that prompt. The model returns the layout. I refine from there.
+The shortcut passes my notes to an AI model CHAT GPT along with that prompt. The model returns the layout. I refine from there.
 
 I went from three weeks of procrastination to a working deck structure in under a minute.
 
@@ -52,10 +52,10 @@ What's something in your workflow you've automated with AI to close a friction g
 
 ## Images
 
-| File | Format | Style | Carries |
-|------|--------|-------|---------|
-| [impact-1.svg](./impact-1.svg) | 1080×1080 (Square) | Bold Editorial Type (warm cream, orange/blue) | "Three weeks / One shortcut." headline, friction reframe, before/after chain |
-| [impact-2.svg](./impact-2.svg) | 1080×1350 (Portrait) | Dark Stat Card (dark brand, cyan-violet gradient) | "3 WEEKS → under 1 min" hero transformation, BEFORE/AFTER state tiles |
+| File                           | Format               | Style                                             | Carries                                                                      |
+| ------------------------------ | -------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [impact-1.svg](./impact-1.svg) | 1080×1080 (Square)   | Bold Editorial Type (warm cream, orange/blue)     | "Three weeks / One shortcut." headline, friction reframe, before/after chain |
+| [impact-2.svg](./impact-2.svg) | 1080×1350 (Portrait) | Dark Stat Card (dark brand, cyan-violet gradient) | "3 WEEKS → under 1 min" hero transformation, BEFORE/AFTER state tiles        |
 
 **Exported PNGs:** `exports/impact-1.png` · `exports/impact-2.png`
 
