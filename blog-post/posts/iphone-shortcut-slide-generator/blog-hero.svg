@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f0e6"/>
+      <stop offset="100%" stop-color="#f2e9db"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Headline -->
+  <text x="80" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="900" fill="#241f1a">Stop Writing Slides.</text>
+  <text x="80" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="900" fill="#241f1a">Start Shipping Notes.</text>
+
+  <!-- marker underline accent under "Shipping Notes" -->
+  <path d="M 235 292 Q 500 310 780 292" stroke="#e07a3f" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Sub-tagline -->
+  <text x="80" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="400" fill="#5a5248">One tap turns raw notes into a structured deck.</text>
+
+  <!-- Flow diagram -->
+  <!-- Tile 1: Raw notes -->
+  <g>
+    <rect x="80" y="470" width="380" height="230" rx="18" fill="#fffaf2" stroke="#241f1a" stroke-width="3"/>
+    <text x="270" y="520" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#241f1a">RAW NOTES</text>
+    <!-- scribble lines -->
+    <path d="M 130 570 Q 200 555 260 572 Q 320 590 400 568" stroke="#9c9184" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 130 605 Q 190 622 250 600 Q 330 578 410 610" stroke="#9c9184" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 130 640 Q 210 655 290 638 Q 350 625 400 645" stroke="#9c9184" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 475 585 L 555 585" stroke="#e07a3f" stroke-width="6" fill="none"/>
+  <path d="M 540 565 L 570 585 L 540 605" stroke="#e07a3f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tile 2: One tap -->
+  <g>
+    <rect x="600" y="470" width="380" height="230" rx="18" fill="#fdece0" stroke="#241f1a" stroke-width="3"/>
+    <text x="790" y="520" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#241f1a">ONE TAP</text>
+    <!-- phone share icon -->
+    <rect x="740" y="555" width="100" height="100" rx="16" fill="#fffaf2" stroke="#e07a3f" stroke-width="4"/>
+    <circle cx="790" cy="605" r="10" fill="#e07a3f"/>
+    <path d="M 790 605 L 790 575" stroke="#e07a3f" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 775 590 L 790 575 L 805 590" stroke="#e07a3f" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 995 585 L 1075 585" stroke="#e07a3f" stroke-width="6" fill="none"/>
+  <path d="M 1060 565 L 1090 585 L 1060 605" stroke="#e07a3f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tile 3: Structured deck -->
+  <g>
+    <rect x="1120" y="470" width="400" height="230" rx="18" fill="#fffaf2" stroke="#241f1a" stroke-width="3"/>
+    <text x="1320" y="520" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#241f1a">STRUCTURED DECK</text>
+    <!-- clean bars -->
+    <rect x="1160" y="555" width="320" height="24" rx="6" fill="#241f1a"/>
+    <rect x="1160" y="595" width="240" height="18" rx="6" fill="#b8afa1"/>
+    <rect x="1160" y="628" width="280" height="18" rx="6" fill="#b8afa1"/>
+    <rect x="1160" y="661" width="200" height="18" rx="6" fill="#b8afa1"/>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="775" x2="1520" y2="775" stroke="#d8cdbc" stroke-width="2"/>
+  <text x="80" y="825" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="700" fill="#e07a3f">@teachmebro</text>
+  <text x="80" y="858" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#5a5248">Altaf Shaikh &#183; AI Engineering</text>
+</svg>
