@@ -1,0 +1,105 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dotgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e3d9c9"/>
+    </pattern>
+    <linearGradient id="termShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1600" height="900" fill="#f6f0e7"/>
+  <rect width="1600" height="900" fill="url(#dotgrid)"/>
+
+  <!-- kicker -->
+  <g transform="translate(90,86)">
+    <path d="M10 0 L12.5 7.5 L20 10 L12.5 12.5 L10 20 L7.5 12.5 L0 10 L7.5 7.5 Z" fill="#e2612f"/>
+    <text x="34" y="15" font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="700" letter-spacing="6" fill="#e2612f">CLAUDE CODE ROUTINES</text>
+  </g>
+
+  <!-- headline -->
+  <text x="86" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="68" font-weight="900" fill="#1a1a1a">Three Routines.</text>
+  <text x="86" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="68" font-weight="900" fill="#1a1a1a">Zero Missed</text>
+  <text x="86" y="412" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="68" font-weight="900" fill="#1a1a1a">Shifts.</text>
+
+  <!-- subtitle -->
+  <text x="90" y="470" font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="26" fill="#6b6459">LinkedIn &#183; Instagram &#183; X</text>
+  <text x="90" y="504" font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="26" fill="#6b6459">one pull request each morning.</text>
+
+  <!-- before/after chip row -->
+  <g transform="translate(90,540)">
+    <rect x="0" y="0" width="270" height="52" rx="26" fill="none" stroke="#b9b0a0" stroke-width="2"/>
+    <text x="135" y="34" text-anchor="middle" font-family="SFMono-Regular, Consolas, monospace" font-size="19" fill="#8a8074">Manually triggered</text>
+    <text x="290" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" fill="#c7bcaa">&#8594;</text>
+    <rect x="326" y="0" width="340" height="52" rx="26" fill="#1c1f26"/>
+    <text x="496" y="34" text-anchor="middle" font-family="SFMono-Regular, Consolas, monospace" font-size="19" fill="#f4efe6">Runs on schedule, unattended</text>
+  </g>
+
+  <!-- footer: tagline + handle + byline -->
+  <text x="90" y="760" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" fill="#4a4438">I Scheduled Three AI Employees. They Haven&#8217;t Missed a Shift.</text>
+  <text x="90" y="800" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="800" fill="#e2612f">@teachmebro</text>
+  <text x="90" y="832" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="21" fill="#8a8074">Altaf Shaikh &#183; AI Engineering</text>
+
+  <!-- terminal window -->
+  <g>
+    <rect x="840" y="130" width="560" height="10" fill="url(#termShadow)"/>
+    <rect x="840" y="140" width="560" height="470" rx="16" fill="#14171c"/>
+    <rect x="840" y="140" width="560" height="46" rx="16" fill="#1c1f26"/>
+    <rect x="840" y="168" width="560" height="18" fill="#1c1f26"/>
+    <circle cx="872" cy="163" r="7" fill="#e25c4a"/>
+    <circle cx="897" cy="163" r="7" fill="#e0b04a"/>
+    <circle cx="922" cy="163" r="7" fill="#5cb87a"/>
+
+    <!-- prompt -->
+    <text x="868" y="230" font-family="SFMono-Regular, Consolas, monospace" font-size="30" fill="#f4efe6">&gt; <tspan fill="#e2612f" font-weight="700">routine</tspan><tspan fill="#8a93a3">.status()</tspan></text>
+
+    <!-- routine rows -->
+    <g font-family="SFMono-Regular, Consolas, monospace">
+      <rect x="868" y="264" width="492" height="70" rx="10" fill="#1c1f26"/>
+      <circle cx="902" cy="299" r="16" fill="#e2612f"/>
+      <text x="902" y="305" text-anchor="middle" font-size="18" font-weight="700" fill="#14171c">1</text>
+      <text x="936" y="292" font-size="21" font-weight="700" fill="#f4efe6">LinkedIn &#183; 8:30pm IST</text>
+      <text x="936" y="317" font-size="17" fill="#8a93a3">picks idea &#8594; opens PR</text>
+
+      <rect x="868" y="344" width="492" height="70" rx="10" fill="#1c1f26"/>
+      <circle cx="902" cy="379" r="16" fill="#e2612f"/>
+      <text x="902" y="385" text-anchor="middle" font-size="18" font-weight="700" fill="#14171c">2</text>
+      <text x="936" y="372" font-size="21" font-weight="700" fill="#f4efe6">Instagram &#183; 9:00pm IST</text>
+      <text x="936" y="397" font-size="17" fill="#8a93a3">picks idea &#8594; opens PR</text>
+
+      <rect x="868" y="424" width="492" height="70" rx="10" fill="#1c1f26"/>
+      <circle cx="902" cy="459" r="16" fill="#e2612f"/>
+      <text x="902" y="465" text-anchor="middle" font-size="18" font-weight="700" fill="#14171c">3</text>
+      <text x="936" y="452" font-size="21" font-weight="700" fill="#f4efe6">X &#183; 10:00am IST</text>
+      <text x="936" y="477" font-size="17" fill="#8a93a3">picks idea &#8594; opens PR</text>
+    </g>
+
+    <!-- pixel mascot -->
+    <g transform="translate(868,516)">
+      <rect x="0" y="0" width="56" height="56" rx="8" fill="#e2612f"/>
+      <rect x="12" y="16" width="8" height="8" fill="#14171c"/>
+      <rect x="36" y="16" width="8" height="8" fill="#14171c"/>
+      <path d="M14 36 Q28 46 42 36" stroke="#14171c" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M28 -10 L30.5 -4 L36 -2 L30.5 0 L28 6 L25.5 0 L20 -2 L25.5 -4 Z" fill="#f4efe6"/>
+      <text x="70" y="20" font-family="SFMono-Regular, Consolas, monospace" font-size="18" fill="#8a93a3">no laptop required.</text>
+      <text x="70" y="44" font-family="SFMono-Regular, Consolas, monospace" font-size="18" fill="#8a93a3">reviews land as a PR.</text>
+    </g>
+  </g>
+
+  <!-- connector callouts -->
+  <g font-family="SFMono-Regular, Consolas, monospace" font-size="18" fill="#4a4438">
+    <path d="M1400 220 H1440" stroke="#b9b0a0" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+    <rect x="1440" y="192" width="140" height="56" rx="10" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="1458" y="226" font-weight="700">Pull Request</text>
+
+    <path d="M1400 340 H1440" stroke="#b9b0a0" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+    <rect x="1440" y="312" width="140" height="56" rx="10" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="1458" y="346" font-weight="700">Idempotent</text>
+
+    <path d="M1400 460 H1440" stroke="#b9b0a0" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+    <rect x="1440" y="432" width="140" height="56" rx="10" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="1458" y="466" font-weight="700">Cloud-run</text>
+  </g>
+</svg>
