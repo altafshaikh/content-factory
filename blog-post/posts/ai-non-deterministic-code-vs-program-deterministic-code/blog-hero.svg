@@ -1,0 +1,61 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="80%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#f5f0e6"/>
+      <stop offset="100%" stop-color="#eee8da"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGlow)"/>
+
+  <!-- decorative constellation, tucked above the category label -->
+  <g stroke="#cfc7b3" stroke-width="1.5" fill="none" opacity="0.8">
+    <line x1="1290" y1="72" x2="1352" y2="38"/>
+    <line x1="1352" y1="38" x2="1408" y2="58"/>
+    <line x1="1408" y1="58" x2="1450" y2="24"/>
+  </g>
+  <circle cx="1290" cy="72" r="5" fill="#d9622b"/>
+  <circle cx="1352" cy="38" r="3.5" fill="#9a9284"/>
+  <circle cx="1408" cy="58" r="5" fill="#2f6fb0"/>
+  <circle cx="1450" cy="24" r="3.5" fill="#9a9284"/>
+  <circle cx="1547" cy="50" r="8" fill="#d9622b"/>
+  <circle cx="1567" cy="50" r="8" fill="#2f6fb0"/>
+
+  <!-- category label -->
+  <line x1="96" y1="104" x2="128" y2="104" stroke="#9a9284" stroke-width="2"/>
+  <text x="140" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#9a9284">DETERMINISM IN CODE &amp; IN AI</text>
+
+  <!-- headline -->
+  <text x="94" y="235" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="100" font-weight="900" fill="#2b2620">Your Code <tspan fill="#d9622b">Remembers.</tspan></text>
+  <text x="94" y="355" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="100" font-weight="900" fill="#2b2620">Your Agent <tspan fill="#2f6fb0">Forgets.</tspan></text>
+
+  <!-- subhead -->
+  <rect x="96" y="402" width="5" height="66" fill="#2b2620"/>
+  <text x="122" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="600" fill="#2b2620">Code is a <tspan fill="#d9622b">contract</tspan>.</text>
+  <text x="122" y="466" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="600" fill="#2b2620">AI output is a <tspan fill="#2f6fb0">negotiation</tspan>.</text>
+
+  <line x1="96" y1="512" x2="1504" y2="512" stroke="#d9d2c2" stroke-width="1.5"/>
+
+  <!-- contrast row -->
+  <text x="96" y="557" font-family="'SF Mono', 'Courier New', monospace" font-size="22" font-weight="700" letter-spacing="4" fill="#9a9284">CODE</text>
+  <text x="96" y="618" font-family="'SF Mono', 'Courier New', monospace" font-size="52" font-weight="700" fill="#d9622b">Same &#8594; Same</text>
+  <text x="96" y="652" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" fill="#8a8272">same input, same output. every time.</text>
+
+  <line x1="800" y1="535" x2="800" y2="668" stroke="#d9d2c2" stroke-width="1.5"/>
+
+  <text x="850" y="557" font-family="'SF Mono', 'Courier New', monospace" font-size="22" font-weight="700" letter-spacing="4" fill="#9a9284">AGENT</text>
+  <text x="850" y="618" font-family="'SF Mono', 'Courier New', monospace" font-size="52" font-weight="700" fill="#2f6fb0">Same &#8594; Different</text>
+  <text x="850" y="652" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" fill="#8a8272">same input, different output. eventually.</text>
+
+  <line x1="96" y1="705" x2="1504" y2="705" stroke="#d9d2c2" stroke-width="1.5"/>
+
+  <!-- footer -->
+  <text x="96" y="748" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#2b2620">Altaf Shaikh</text>
+  <text x="96" y="774" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#8a8272">// AI Engineering</text>
+
+  <text x="1504" y="738" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#8a8272">your python script never forgets.</text>
+  <text x="1504" y="760" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#8a8272">your agent does.</text>
+  <text x="1450" y="798" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="800" fill="#d9622b">@teachmebro</text>
+  <circle cx="1466" cy="791" r="7" fill="#d9622b"/>
+  <circle cx="1484" cy="791" r="7" fill="#2f6fb0"/>
+</svg>
