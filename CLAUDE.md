@@ -66,7 +66,7 @@ A change is live for the routines once step 2 completes (their next run clones t
 | "blog post" / "write a blog"                  | Skill `idea-to-blog` (writes into `blog-post/`)                         |
 | "presentation" / "slides" / "deck"            | Skill `idea-to-presentation` then `anthropic-skills:pptx`              |
 | "add an idea" / "new idea: ..."               | Write to `./raw-ideas/<NNN>-<slug>.md` with the next available prefix   |
-| "sync my notes" / "sync the inbox" / "/sync-inspiration" | Skill `sync-inspiration` (pulls `inspiration-inbox/inbox.md` into `raw-ideas/`) |
+| "sync my notes" / "sync the inbox" / "/sync-inspiration" | Skill `sync-inspiration` (processes all files in `inspiration-inbox/` into `raw-ideas/`) |
 | "process my ideas" (ambiguous)                | Ask which channel, OR run all active channel loops in sequence          |
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
 | "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
@@ -89,7 +89,7 @@ Agents that serve all channels live in `./agents/`. They are not channels — th
 
 ## Quick idea capture
 
-For low-friction capture, jot rough notes anytime into `./inspiration-inbox/inbox.md` (separate multiple ideas with a `---` line). Run `/sync-inspiration` to promote each note verbatim into `./raw-ideas/<NNN>-<slug>.md` and clear the inbox. `inspiration-inbox/` is a mutable scratch folder — only the promoted files in `raw-ideas/` are immutable.
+For low-friction capture, drop rough notes into any file in `./inspiration-inbox/` (separate multiple ideas within a file with a `---` line). `inbox.md` is the default scratch file; you can also drop in any `.md` file (e.g. a screenshot-to-text paste, a dedicated topic file). Run `/sync-inspiration` to process every file in the folder: it fetches any URLs, synthesizes context, promotes each idea into `./raw-ideas/<NNN>-<slug>.md`, clears `inbox.md`, and deletes other processed files. `inspiration-inbox/` is a mutable scratch folder — only the promoted files in `raw-ideas/` are immutable.
 
 ---
 
