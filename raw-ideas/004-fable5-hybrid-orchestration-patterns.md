@@ -18,3 +18,7 @@ The broader insight is that "which model should I use?" is the wrong question. T
 
 - https://x.com/ClaudeDevs/status/2074606063509528855
 - https://www.instagram.com/p/DaypoWancqb/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==
+
+## Inspiration
+
+Original screenshots folder: `../inspiration-inbox/inspiration 1/` (deleted — was 12 screenshots of the ClaudeDevs X thread and the Instagram post carousel)

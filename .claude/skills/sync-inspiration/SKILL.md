@@ -19,7 +19,8 @@ Promotes rough notes from every file in `inspiration-inbox/` into the shared, im
 4. Find the next available numeric prefix: list `raw-ideas/*.md` filenames matching `NNN-*.md`, take the highest `NNN`, add 1 (zero-padded to 3 digits). Start at `001` if none exist.
 5. For each idea chunk across all files, in order:
    a. **Detect URLs.** Scan the chunk for any `http://` or `https://` links.
-   b. **If URLs are present:**
+   b. **If the source is a folder** (contains images/screenshots alongside a links.txt or similar): read all image files using the Read tool to extract visual content, read any text files for links or notes, then synthesize everything together.
+   c. **If URLs are present:**
       - Fetch each URL using WebFetch. Read the page content thoroughly.
       - If a URL is a social media post (X/Twitter, Instagram, LinkedIn), extract: the post text, any key claim or hook, what makes it interesting or shareable.
       - Synthesize the fetched content into a coherent idea: what is being shown, what is the insight, why would an audience care.
@@ -28,13 +29,14 @@ Promotes rough notes from every file in `inspiration-inbox/` into the shared, im
         - A `# Title` heading (human-readable, descriptive)
         - A `## Context` section with the synthesized insight in plain prose — what you found, what it demonstrates, what the angle is
         - A `## Source` section listing the original URLs verbatim
-   c. **If no URLs are present:**
+        - A `## Inspiration` section with the relative path to the source folder (e.g. `../inspiration-inbox/inspiration 1/`) so channel agents can read the original screenshots and materials directly
+   d. **If no URLs are present:**
       - Write the chunk's text **verbatim** — do not rewrite, expand, or clean up the wording.
       - Generate a short kebab-case slug from the chunk's content (gist of the first line or two).
-   d. Write to `raw-ideas/NNN-slug.md` using the next available prefix, then increment for the next chunk.
+   e. Write to `raw-ideas/NNN-slug.md` using the next available prefix, then increment for the next chunk.
 6. Once all chunks from a file are written:
    - If it is `inbox.md`: reset it back to just the header comment (empty otherwise).
-   - For all other files: delete the file — it has been fully promoted.
+   - For all other files (including folders): **do NOT delete them.** They are kept as supporting material. Channel agents can read the original screenshots and files when generating posts.
 7. Report which new `raw-ideas/` files were created and a one-line summary of each.
 
 ## Rules
