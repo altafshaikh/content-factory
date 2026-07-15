@@ -33,7 +33,7 @@ content-stratergy/
 │   ├── 003-claude-new-feature-loop.md
 │   ├── ai drinks water more than humans do.md
 │   └── ai-non-deterministic-code-vs-program-deterministic-code.md
-├── raw-ideas-inbox/               ← scratch capture folder (mutable) — inbox.md, synced via /sync-ideas
+├── inspiration-inbox/               ← scratch capture folder (mutable) — inbox.md, synced via /sync-inspiration
 ├── agents/                       ← shared service agents (not channels)
 │   └── image-gen/                ← image generation agent + inspiration library
 │       └── inspiration/          ← style samples (SVG, JPEG) + MANIFEST.md
@@ -120,7 +120,7 @@ This means:
 echo "Raw notes about whatever..." > raw-ideas/002-mcp-vs-tools.md
 ```
 
-Or, for lower friction: jot notes into `raw-ideas-inbox/inbox.md` whenever inspiration strikes (separate multiple ideas with a `---` line), then run `/sync-ideas` to promote each one into `raw-ideas/<NNN>-<slug>.md` verbatim and clear the inbox.
+Or, for lower friction: jot notes into `inspiration-inbox/inbox.md` whenever inspiration strikes (separate multiple ideas with a `---` line), then run `/sync-inspiration` to promote each one into `raw-ideas/<NNN>-<slug>.md` verbatim and clear the inbox.
 
 Within 24h all active channel loops will pick it up (one per channel per day).
 
