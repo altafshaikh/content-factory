@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "Angle B opens with the sharpest, most provocative hook for a developer audience — directly challenging a tool they already know (GitHub Actions) is more arresting than a scene-setter or a how-to lead. The 'scripts that follow rules vs agents that reason' contrast is the post's core insight and B surfaces it earliest, then builds to the practical payoff. Performance context also favors this: bold claim-first on developer tool comparisons is the highest-engagement angle in the existing tracker data (5.09% on claude-vs-codex).",
+  "scores": {
+    "A": { "hook_strength": 8, "authenticity": 7, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.4 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.8 },
+    "C": { "hook_strength": 7, "authenticity": 8, "readability": 8, "plan_compliance": 7, "cta_clarity": 9, "avg": 7.8 }
+  },
+  "runner_up_notes": {
+    "A": "The scene-setting in Angle A ('Close your laptop. Your AI is still running.') is more evocative than B's equivalent. B already incorporates the 'Until now, if you closed your laptop, your AI automation died' line which carries the same weight. No additional grafting needed — the key asset is already present in B.",
+    "C": "The prompt anatomy breakdown (Role, Task, Steps, Output, Constraints, Error Handling) is genuinely useful and could be a follow-up post on its own. Not incorporated into the winner — it would bloat B and dilute the core contrast argument."
+  },
+  "issues": []
+}
