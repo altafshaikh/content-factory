@@ -41,13 +41,13 @@ Of the four, which one are you actually building, and which one are you just hop
 
 ## Carousel
 
-**Upload:** `exports/andrew-ng-four-software-skills-carousel.pdf` (8 pages, 1080×1350, ~807 KB)
+**Upload:** `exports/andrew-ng-four-software-skills-carousel.pdf` (8 pages, 1080×1350, ~748 KB)
 **Style:** Layout: diagram-explainer · Typography and palette: bold-editorial-type (same brand system as the five-rung deck, kept identical so carousels read as one system)
 **Source:** `deck.py` regenerates all 8 SVGs. Rebuild: `OUT_DIR="$PWD" python3 deck.py`
 
 | Slide | File | Carries |
 |-------|------|---------|
-| 1 | [slide-1.svg](./slide-1.svg) | Hook: "You used to lay bricks. Now a robot lays them faster." Highlighter swipe, four-skill strip at the bottom |
+| 1 | [slide-1.svg](./slide-1.svg) | Hook: "You used to lay bricks. Now a robot lays them faster." Highlighter swipe, then the thesis at full size ("It was deciding where the wall goes"), brickwork motif with one brick filled, and the Ng attribution. The four skills are deliberately NOT listed here so slide 2 still has a reveal |
 | 2 | [slide-2.svg](./slide-2.svg) | The four skills, numbered 01-04, one line each, attributed to Andrew Ng's 10,000-job analysis. The saveable slide |
 | 3 | [slide-3.svg](./slide-3.svg) | Skill 1 detail: Build & deploy AI. Predictable vs. unpredictable, callout on evals + error analysis |
 | 4 | [slide-4.svg](./slide-4.svg) | Skill 2 detail: Fundamentals. The tradeoff the AI quietly makes for you, callout on catching it before production |

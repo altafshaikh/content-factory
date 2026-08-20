@@ -114,27 +114,38 @@ def frame(body, n):
 
 
 # ---------------------------------------------------------------- slide 1: hook
+def bricks(x0, y0):
+    """Brickwork in running bond, one brick filled: the decision, not the labour."""
+    o = []
+    bw, bh, g = 84, 44, 6
+    for r in range(3):                       # 3 courses, laid bottom-up
+        y = y0 + (2 - r) * (bh + g)
+        off = -(bw // 2) if r % 2 else 0     # stagger every other course
+        for c in range(3):
+            o.append(rect(x0 + off + c * (bw + g), y, bw, bh, "none", r=3, stroke=HAIR, sw=3))
+    o.append(rect(x0 + 2 * (bw + g), y0, bw, bh, ORANGE, r=3, op=0.9))
+    return o
+
+
 def slide1():
     b = eyebrow("the 2026 skill shift")
-    y = 296
+    y = 300
     for ln in ["You used to", "lay bricks."]:
         b.append(txt(M, y, ln, size=100, weight=900, fill=INK))
         y += 118
+    b += bricks(700, 300)
     b.append(rect(M - 10, 566, 830, 74, PEACH, r=4, op=0.95))
     b.append(txt(M, 624, "Now a robot lays them faster.", size=56, weight=900, fill=INK))
-    b.append(rect(M, 710, 6, 96, ORANGE, r=3))
-    b.append(txt(M + 34, 752, "Your value was never the bricklaying.", size=34, weight=700, fill=INK))
-    b.append(txt(M + 34, 794, "It was deciding where the wall goes.", size=34, weight=400, fill=INK))
-    b.append(txt(M, 900, "Andrew Ng analyzed 10,000 job postings", size=30, weight=400, fill=INK))
-    b.append(txt(M, 940, "to find out which software skills matter now.", size=30, weight=400, fill=INK))
-    b.append(txt(M, 1080, "build & deploy AI  ·  fundamentals  ·  use agents well  ·  shape the build",
-                 size=20, weight=700, fill=GREY, font=MONO, ls=1))
-    pts = [(742, 300), (860, 246), (952, 322), (884, 404), (790, 386)]
-    for i in range(len(pts) - 1):
-        b.append(line(pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1], GREY, 2, op=0.4))
-    for i, (px, py) in enumerate(pts):
-        c = BLUE if i % 2 else ORANGE
-        b.append(f'  <circle cx="{px}" cy="{py}" r="7" fill="{c}" opacity="0.8"/>')
+    # The thesis of the whole deck -- carried at the second-largest size on the
+    # slide, and the only orange type here, so the eye lands on it last.
+    b.append(rect(M, 712, 6, 200, ORANGE, r=3))
+    b.append(txt(M + 34, 752, "Your value was never the bricklaying.", size=34, weight=400, fill=GREY))
+    b.append(txt(M + 34, 836, "It was deciding", size=68, weight=900, fill=INK))
+    b.append(txt(M + 34, 906, "where the wall goes.", size=68, weight=900, fill=ORANGE))
+    # Credibility only. The four skills stay unspoiled so slide 2 has a reveal.
+    b.append(line(M, 1024, RIGHT, 1024, HAIR, 2))
+    b.append(txt(M, 1078, "Andrew Ng analyzed 10,000 job postings.", size=30, weight=700, fill=INK))
+    b.append(txt(M, 1120, "Four skills came back. Coding was not one of them.", size=30, weight=400, fill=INK))
     return frame(b, 1)
 
 
