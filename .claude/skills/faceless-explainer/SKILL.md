@@ -201,9 +201,11 @@ Render only after user approval (autonomous mode: after the preview-or-render qu
 
 `npx hyperframes render --skill=faceless-explainer --quality high --output renders/video.mp4`
 
+**Portrait fill gate (feed formats).** After the render, run `node <SKILL_DIR>/scripts/fill-check.mjs --video renders/video.mp4 --hyperframes .` — it derives each frame's settled time from `index.html`, applies the canvas's rule from `scripts/lib/dimensions.mjs` (`FILL_RULES`), prints one line per frame, and skips formats that have no rule. Exit 1 names the failing frame ids: re-dispatch only those frames' workers with the printed line as retry feedback, re-assemble, re-render, and run it again. `snapshot` midpoints land mid-reveal, so judge fill by this script, never by the contact sheet.
+
 Do not rerun `lint`, `check`, or `snapshot` after rendering unless the user asks.
 
-**Gate:** `lint` and `check` passed and the snapshots were inspected before render; user approved at the review pause (autonomous: checks passed and the delivery includes the contact sheet); `renders/video.mp4` exists. Final reply states MP4 path and final duration.
+**Gate:** `lint` and `check` passed and the snapshots were inspected before render; user approved at the review pause (autonomous: checks passed and the delivery includes the contact sheet); `renders/video.mp4` exists; `fill-check.mjs` exited 0 (or reported `skipped`). Final reply states MP4 path and final duration.
 
 ---
 
@@ -213,7 +215,7 @@ Do not rerun `lint`, `check`, or `snapshot` after rendering unless the user asks
 
 **Faceless deltas vs a captured-asset workflow:** no Step 1 capture (synthetic `tokens.json` + `visible-text.txt`); no `asset-descriptions.md` and no `capture/assets/`; no asset-staging in Step 4; `asset_candidates` empty by default; every visual is invented by the Step 5 workers (typography / abstract graphics / diagrams / data-viz). A user-supplied `public/<basename>` image is the only real asset path.
 
-**Background scripts:** the workflow ships only these under `scripts/`: `build-frame` for adopting + brand-remixing a frame preset into `frame.md` (+ caption skin); `audio` for TTS, transcription, BGM, SFX, and duration syncing; `captions`; `transitions` for inject and verify; and `assemble-index`. Everything else is the `hyperframes` CLI.
+**Background scripts:** the workflow ships only these under `scripts/`: `build-frame` for adopting + brand-remixing a frame preset into `frame.md` (+ caption skin); `audio` for TTS, transcription, BGM, SFX, and duration syncing; `captions`; `transitions` for inject and verify; `assemble-index`; and `fill-check` for the post-render portrait fill gate. Everything else is the `hyperframes` CLI.
 
 The reusable, domain-agnostic shot shapes live in `../hyperframes-animation/blueprints/` (indexed by `../hyperframes-animation/blueprints-index.md`).
 

@@ -16,7 +16,7 @@
 When your canvas is 1080x1350 (4:5, the LinkedIn/Instagram feed format), the content area is y 80 to 1120 (keep-out at 0.83 x height). "Anchor the hero high" on its own leaves the lower 40% dead on this canvas; build to these bands instead:
 
 - **Three bands, all used.** Top band y 80-380: kicker + headline. Middle band y 380-880: the `focal` (the diagram, chart, number, card stack) at 40-60% of the frame. Lower band y 880-1120: a real element, never empty: the payoff line, the stat, the footer rule, the chart's axis and count-up, the CTA handle.
-- **Settled-state fill test.** At the frame's final held read: the lowest element's bottom edge is at y >= 1000, and no horizontal band taller than 200px between y 80 and 1120 is empty. A frame that fails this is not finished.
+- **Settled-state fill test.** At the frame's final held read the content reaches the lower band with no dead strip; the orchestrator measures it after render with `scripts/fill-check.mjs` (thresholds in `scripts/lib/dimensions.mjs` `FILL_RULES`, today: lowest content y >= 1000, no empty band over 200px). A frame that fails comes back to you with that line as retry feedback.
 - **Type-only frames scale up, not down.** Use the 1080-wide ramp: kicker/mono 26-30px, body 30-34px, headline 84-100px, display 120-150px, number-hero 220-300px. Lay the stack out as a full-height flex column (`justify-content: space-between` or explicit band positions), not a top-aligned block.
 - **Diagrams and charts get height.** A chart's plot area is at least 520px tall; columns, bars and cards are sized so the diagram's base sits in the lower band.
 - Horizontal margins stay 72-96px; nothing crosses y 1120.
