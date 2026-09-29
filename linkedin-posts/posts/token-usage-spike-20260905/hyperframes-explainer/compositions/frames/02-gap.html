@@ -1,0 +1,186 @@
+<template>
+  <div id="root" data-composition-id="02-gap" data-start="0" data-duration="5.5" data-width="1080" data-height="1350">
+    <style>
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        container-type: size;
+      }
+      [id="02-gap-bg"] {
+        position: absolute;
+        inset: 0;
+        background: #FAF9F5;
+      }
+      [id="02-gap-stage"] {
+        position: absolute;
+        inset: 0;
+      }
+      [id="02-gap-line1"],
+      [id="02-gap-line2"] {
+        position: absolute;
+        left: 72px;
+        right: 72px;
+        margin: 0;
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 400;
+        font-size: 78px;
+        line-height: 1.06;
+        letter-spacing: -0.018em;
+        color: #141413;
+      }
+      [id="02-gap-line1"] { top: 196px; }
+      [id="02-gap-line2"] { top: 300px; }
+      [id="02-gap-turns"] { color: #CC785C; }
+
+      [id="02-gap-rule"] {
+        position: absolute;
+        left: 72px;
+        right: 72px;
+        top: 476px;
+        height: 1px;
+        background: rgba(20, 20, 19, 0.2);
+        transform-origin: left center;
+      }
+
+      [id="02-gap-tiles"] {
+        position: absolute;
+        left: 72px;
+        right: 72px;
+        top: 540px;
+        height: 470px;
+        display: flex;
+        gap: 32px;
+      }
+      [id="02-gap-tile-a"],
+      [id="02-gap-tile-b"] {
+        position: relative;
+        flex: 1 1 0;
+        background: #EFE9DE;
+        border: 1px solid rgba(20, 20, 19, 0.12);
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(20, 20, 19, 0.08), 0 4px 16px rgba(20, 20, 19, 0.04);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+      }
+      [id="02-gap-label-a"],
+      [id="02-gap-label-b"] {
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #141413;
+      }
+      [id="02-gap-wrap-a"],
+      [id="02-gap-wrap-b"] {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      [id="02-gap-num-a"],
+      [id="02-gap-num-b"] {
+        display: inline-block;
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 400;
+        font-size: 196px;
+        line-height: 0.95;
+        letter-spacing: -0.025em;
+        font-variant-numeric: tabular-nums;
+        font-feature-settings: "tnum" 1, "lnum" 1;
+        color: #141413;
+        transform-origin: center center;
+      }
+    </style>
+
+    <div id="02-gap-bg" class="clip" data-start="0" data-duration="5.5" data-track-index="0"></div>
+
+    <div id="02-gap-stage" class="clip" data-start="0" data-duration="5.5" data-track-index="1">
+      <h1 id="02-gap-line1">You think in messages.</h1>
+      <h1 id="02-gap-line2">You get billed in <span id="02-gap-turns">turns</span>.</h1>
+      <div id="02-gap-rule"></div>
+      <div id="02-gap-tiles">
+        <div id="02-gap-tile-a">
+          <div id="02-gap-label-a">MESSAGES</div>
+          <div id="02-gap-wrap-a"><span id="02-gap-num-a">0</span></div>
+        </div>
+        <div id="02-gap-tile-b">
+          <div id="02-gap-label-b">API CALLS</div>
+          <div id="02-gap-wrap-b"><span id="02-gap-num-b">0</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        var $ = function (id) { return document.getElementById(id); };
+        var line1 = $("02-gap-line1");
+        var line2 = $("02-gap-line2");
+        var rule = $("02-gap-rule");
+        var tileA = $("02-gap-tile-a");
+        var tileB = $("02-gap-tile-b");
+        var labelA = $("02-gap-label-a");
+        var labelB = $("02-gap-label-b");
+        var numA = $("02-gap-num-a");
+        var numB = $("02-gap-num-b");
+
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.2s): line 1 fades up in the upper third
+        tl.fromTo(line1, { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.05);
+
+        // Scene 2 (1.2-2.4s): line 2 rises in beneath, "turns" in coral
+        tl.fromTo(line2, { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 1.2);
+
+        // Hairline section rule draws on ahead of the tiles
+        tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.inOut" }, 2.05);
+
+        // Scene 3 (2.4-4.0s): two tiles rise in side by side
+        tl.fromTo(tileA, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 2.4);
+        tl.fromTo(tileB, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 2.48);
+
+        // Labels arrive before the counts peak
+        tl.fromTo([labelA, labelB], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 2.6);
+
+        // counting-dynamic-scale: value + transform scale share start, duration, ease (a chord)
+        var COUNT_AT = 2.55;
+        var COUNT_DUR = 1.4;
+        var COUNT_EASE = "power3.out";
+        var START_SCALE = 0.5; // START_SIZE / END_SIZE = 98 / 196
+
+        var stateA = { value: 0 };
+        var stateB = { value: 0 };
+
+        tl.fromTo(stateA, { value: 0 }, {
+          value: 5, duration: COUNT_DUR, ease: COUNT_EASE,
+          onUpdate: function () { numA.textContent = Math.round(stateA.value).toLocaleString("en-US"); }
+        }, COUNT_AT);
+        tl.fromTo(numA, { scale: START_SCALE }, { scale: 1, duration: COUNT_DUR, ease: COUNT_EASE }, COUNT_AT);
+
+        tl.fromTo(stateB, { value: 0 }, {
+          value: 427, duration: COUNT_DUR, ease: COUNT_EASE,
+          onUpdate: function () { numB.textContent = Math.round(stateB.value).toLocaleString("en-US"); }
+        }, COUNT_AT);
+        tl.fromTo(numB, { scale: START_SCALE }, { scale: 1, duration: COUNT_DUR, ease: COUNT_EASE }, COUNT_AT);
+
+        // Scene 4 (4.0-5.0s): hold still. Pad the timeline to the full duration.
+        tl.set({}, {}, 5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["02-gap"] = tl;
+      })();
+    </script>
+  </div>
+</template>

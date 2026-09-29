@@ -1,0 +1,197 @@
+<template>
+  <style>
+    @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+    @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+
+    #root {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      container-type: size;
+    }
+    #m03-ground {
+      position: absolute;
+      inset: 0;
+      background: #FAF9F5;
+    }
+    #m03-stage {
+      position: absolute;
+      inset: 0;
+    }
+    #m03-kicker {
+      position: absolute;
+      left: 80px;
+      top: 112px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 26px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #141413;
+      opacity: 0;
+    }
+    #m03-kicker .m03-spike { color: #CC785C; margin-right: 14px; }
+    #m03-headline {
+      position: absolute;
+      left: 80px;
+      top: 172px;
+      width: 920px;
+      margin: 0;
+      font-family: "EB Garamond", serif;
+      font-weight: 400;
+      font-size: 76px;
+      line-height: 1.06;
+      letter-spacing: -0.018em;
+      color: #141413;
+      opacity: 0;
+    }
+    #m03-baseline {
+      position: absolute;
+      left: 80px;
+      top: 900px;
+      width: 920px;
+      height: 1px;
+      background: rgba(20, 20, 19, 0.2);
+      transform-origin: 0 50%;
+    }
+    .m03-col {
+      position: absolute;
+      top: 460px;
+      width: 280px;
+      height: 440px;
+    }
+    #m03-col1 { left: 80px; }
+    #m03-col2 { left: 400px; }
+    #m03-col3 { left: 720px; }
+    .m03-block {
+      position: absolute;
+      left: 0;
+      width: 280px;
+      height: 120px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      opacity: 0;
+    }
+    .m03-tile {
+      background: #EFE9DE;
+      border: 1px solid rgba(20, 20, 19, 0.12);
+      color: #141413;
+    }
+    .m03-new {
+      background: #CC785C;
+      color: #141413;
+      box-shadow: 0 1px 3px rgba(20, 20, 19, 0.08), 0 4px 16px rgba(20, 20, 19, 0.04);
+    }
+    .m03-b1 { bottom: 16px; }
+    .m03-b2 { bottom: 152px; }
+    .m03-b3 { bottom: 288px; }
+    .m03-label {
+      position: absolute;
+      top: 924px;
+      width: 280px;
+      text-align: center;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 26px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #141413;
+      opacity: 0;
+    }
+    #m03-label1 { left: 80px; }
+    #m03-label2 { left: 400px; }
+    #m03-label3 { left: 720px; }
+    #m03-footer {
+      position: absolute;
+      left: 80px;
+      top: 1016px;
+      width: 920px;
+      margin: 0;
+      text-align: center;
+      font-family: "EB Garamond", serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 1.12;
+      letter-spacing: -0.012em;
+      color: #141413;
+      opacity: 0;
+    }
+  </style>
+
+  <div id="root" data-composition-id="03-mechanism" data-width="1080" data-height="1350" data-start="0" data-duration="7">
+    <div id="m03-ground" class="clip" data-start="0" data-duration="7" data-track-index="0"></div>
+
+    <div id="m03-stage" class="clip" data-start="0" data-duration="7" data-track-index="1">
+      <div id="m03-kicker"><span class="m03-spike">&#x2731;</span>NO MEMORY</div>
+      <h1 id="m03-headline">Every call re-sends the entire conversation.</h1>
+
+      <div id="m03-col1" class="m03-col">
+        <div id="m03-c1-b1" class="m03-block m03-new m03-b1">read file</div>
+      </div>
+      <div id="m03-col2" class="m03-col">
+        <div id="m03-c2-b1" class="m03-block m03-tile m03-b1">read file</div>
+        <div id="m03-c2-b2" class="m03-block m03-new m03-b2">run command</div>
+      </div>
+      <div id="m03-col3" class="m03-col">
+        <div id="m03-c3-b1" class="m03-block m03-tile m03-b1">read file</div>
+        <div id="m03-c3-b2" class="m03-block m03-tile m03-b2">run command</div>
+        <div id="m03-c3-b3" class="m03-block m03-new m03-b3">read file</div>
+      </div>
+
+      <div id="m03-baseline"></div>
+      <div id="m03-label1" class="m03-label">CALL 1</div>
+      <div id="m03-label2" class="m03-label">CALL 2</div>
+      <div id="m03-label3" class="m03-label">CALL 3</div>
+
+      <p id="m03-footer">Call three carries calls one and two.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      var rise = { ease: "power3.out", duration: 0.5 };
+      var land = { ease: "power2.out", duration: 0.45 };
+
+      // Macro: slow settle of the whole stage, finished before the Scene 5 hold.
+      tl.fromTo("#m03-stage", { scale: 0.985, transformOrigin: "50% 45%" }, { scale: 1, duration: 4.9, ease: "sine.inOut" }, 0);
+
+      // Scene 1 (0.0-1.2): kicker + headline fade up; baseline draws in.
+      tl.fromTo("#m03-kicker", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo("#m03-headline", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.25);
+      tl.fromTo("#m03-baseline", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.inOut" }, 0.35);
+
+      // Scene 2 (1.2-2.4): CALL 1, one coral "read file" rises in.
+      tl.fromTo("#m03-label1", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 1.2);
+      tl.fromTo("#m03-c1-b1", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 1.3);
+
+      // Scene 3 (2.4-3.6): CALL 2, tile copy rises, coral "run command" lands on top.
+      tl.fromTo("#m03-label2", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 2.4);
+      tl.fromTo("#m03-c2-b1", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 2.5);
+      tl.fromTo("#m03-c2-b2", { opacity: 0, y: -60 }, Object.assign({ opacity: 1, y: 0 }, land), 3.0);
+
+      // Scene 4 (3.6-4.9): CALL 3, tile copies rise, coral "read file" lands on top.
+      tl.fromTo("#m03-label3", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 3.6);
+      tl.fromTo("#m03-c3-b1", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 3.7);
+      tl.fromTo("#m03-c3-b2", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 3.9);
+      tl.fromTo("#m03-c3-b3", { opacity: 0, y: -60 }, Object.assign({ opacity: 1, y: 0 }, land), 4.35);
+
+      // Scene 5 (4.9-6.5): footer fades up below the columns; hold still.
+      tl.fromTo("#m03-footer", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 4.95);
+
+      // Pad timeline to the full frame duration.
+      tl.set({}, {}, 6.5);
+
+      window.__timelines["03-mechanism"] = tl;
+    })();
+  </script>
+</template>

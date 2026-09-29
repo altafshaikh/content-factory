@@ -1,0 +1,166 @@
+<template id="07-fix-template">
+  <div id="root" data-composition-id="07-fix" data-width="1080" data-height="1350" data-duration="6.5">
+    <style>
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        color: #141413;
+      }
+      .fix07-ground {
+        position: absolute;
+        inset: 0;
+        background: #FAF9F5;
+      }
+      .fix07-stage {
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 150px;
+        height: 960px;
+      }
+      .fix07-kicker {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #141413;
+      }
+      .fix07-kicker-rule {
+        display: block;
+        width: 44px;
+        height: 1px;
+        background: rgba(20, 20, 19, 0.45);
+      }
+      .fix07-headline {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 900px;
+        margin: 0;
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 400;
+        font-size: 78px;
+        line-height: 1.06;
+        letter-spacing: -0.018em;
+        color: #141413;
+      }
+      .fix07-card {
+        position: absolute;
+        left: 0;
+        width: 920px;
+        height: 300px;
+        box-sizing: border-box;
+        background: #EFE9DE;
+        border: 1px solid rgba(20, 20, 19, 0.12);
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(20, 20, 19, 0.08), 0 4px 16px rgba(20, 20, 19, 0.04);
+        display: flex;
+        align-items: center;
+        padding: 0 56px;
+        gap: 48px;
+      }
+      #fix07-card1 { top: 330px; }
+      #fix07-card2 { top: 662px; }
+      .fix07-index {
+        flex: 0 0 170px;
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 400;
+        font-size: 168px;
+        line-height: 0.95;
+        letter-spacing: -0.025em;
+        color: #CC785C;
+      }
+      .fix07-text {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding-left: 44px;
+        border-left: 1px solid rgba(20, 20, 19, 0.12);
+      }
+      .fix07-title {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        color: #141413;
+      }
+      .fix07-body {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.45;
+        color: rgba(20, 20, 19, 0.72);
+      }
+    </style>
+
+    <div class="clip fix07-ground" id="fix07-ground" data-start="0" data-duration="6.5" data-track-index="0"></div>
+
+    <div class="clip fix07-stage" id="fix07-stage" data-start="0" data-duration="6.5" data-track-index="1">
+      <div class="fix07-kicker" id="fix07-kicker"><span class="fix07-kicker-rule"></span><span>TWO FIXES</span></div>
+      <h1 class="fix07-headline" id="fix07-headline">Neither of them a better prompt.</h1>
+
+      <div class="fix07-card" id="fix07-card1">
+        <div class="fix07-index" id="fix07-idx1">01</div>
+        <div class="fix07-text">
+          <div class="fix07-title" id="fix07-title1">Drop the 1M default.</div>
+          <div class="fix07-body" id="fix07-body1">Switch it on per session, when a task genuinely needs it.</div>
+        </div>
+      </div>
+
+      <div class="fix07-card" id="fix07-card2">
+        <div class="fix07-index" id="fix07-idx2">02</div>
+        <div class="fix07-text">
+          <div class="fix07-title" id="fix07-title2">One session per task.</div>
+          <div class="fix07-body" id="fix07-body2">Clear in between.</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.2s): kicker and headline fade up at the top.
+        tl.fromTo("#fix07-kicker", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.0);
+        tl.fromTo("#fix07-headline", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.15);
+
+        // Scene 2 (1.2-3.2s): card 1 rises into its slot, then index, title, body in quick succession.
+        tl.fromTo("#fix07-card1", { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 1.2);
+        tl.fromTo("#fix07-idx1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 1.4);
+        tl.fromTo("#fix07-title1", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 1.6);
+        tl.fromTo("#fix07-body1", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 1.8);
+
+        // Scene 3 (3.2-5.0s): card 2 rises in the same way below it.
+        tl.fromTo("#fix07-card2", { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 3.2);
+        tl.fromTo("#fix07-idx2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 3.4);
+        tl.fromTo("#fix07-title2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 3.6);
+        tl.fromTo("#fix07-body2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 3.8);
+
+        // Scene 4 (5.0-6.0s): hold still. Anchor the timeline to the full 6s duration.
+        tl.set({}, {}, 6.0);
+
+        window.__timelines["07-fix"] = tl;
+      })();
+    </script>
+  </div>
+</template>

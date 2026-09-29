@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        background: #FAF9F5;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="46"
+      data-width="1080"
+      data-height="1350"
+    >
+      <div
+        id="el-01-hook"
+        class="scene"
+        data-composition-id="01-hook"
+        data-composition-src="compositions/frames/01-hook.html"
+        data-start="0"
+        data-duration="5"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-02-gap"
+        class="scene"
+        data-composition-id="02-gap"
+        data-composition-src="compositions/frames/02-gap.html"
+        data-start="4.5"
+        data-duration="5.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-03-mechanism"
+        class="scene"
+        data-composition-id="03-mechanism"
+        data-composition-src="compositions/frames/03-mechanism.html"
+        data-start="9.5"
+        data-duration="7"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-04-example"
+        class="scene"
+        data-composition-id="04-example"
+        data-composition-src="compositions/frames/04-example.html"
+        data-start="16"
+        data-duration="7.6"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-05-rule"
+        class="scene"
+        data-composition-id="05-rule"
+        data-composition-src="compositions/frames/05-rule.html"
+        data-start="23"
+        data-duration="6"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-06-brake"
+        class="scene"
+        data-composition-id="06-brake"
+        data-composition-src="compositions/frames/06-brake.html"
+        data-start="28.5"
+        data-duration="6.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-07-fix"
+        class="scene"
+        data-composition-id="07-fix"
+        data-composition-src="compositions/frames/07-fix.html"
+        data-start="34.5"
+        data-duration="6.5"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-08-close"
+        class="scene"
+        data-composition-id="08-close"
+        data-composition-src="compositions/frames/08-close.html"
+        data-start="40.5"
+        data-duration="5.5"
+        data-track-index="1"
+      ></div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions (injected by transitions.mjs) ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-01-hook", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 4.5);
+        tl.fromTo("#el-02-gap", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 4.5);
+        tl.addLabel("hf:transition:01-hook:02-gap:crossfade", 4.5);
+        tl.to("#el-02-gap", { x: -1080, duration: 0.5, ease: "power3.inOut" }, 9.5);
+        tl.fromTo("#el-03-mechanism", { x: 1080, opacity: 1 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }, 9.5);
+        tl.addLabel("hf:transition:02-gap:03-mechanism:push-slide", 9.5);
+        tl.to("#el-03-mechanism", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 16);
+        tl.fromTo("#el-04-example", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 16);
+        tl.addLabel("hf:transition:03-mechanism:04-example:crossfade", 16);
+        tl.to("#el-04-example", { filter: "blur(10px)", scale: 1.03, opacity: 0, duration: 0.6, ease: "power2.inOut" }, 23);
+        tl.fromTo("#el-05-rule", { filter: "blur(10px)", scale: 0.97, opacity: 0 }, { filter: "blur(0px)", scale: 1, opacity: 1, duration: 0.6, ease: "power2.inOut" }, 23);
+        tl.addLabel("hf:transition:04-example:05-rule:blur-crossfade", 23);
+        tl.to("#el-05-rule", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 28.5);
+        tl.fromTo("#el-06-brake", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 28.5);
+        tl.addLabel("hf:transition:05-rule:06-brake:crossfade", 28.5);
+        tl.to("#el-06-brake", { x: -1080, duration: 0.5, ease: "power3.inOut" }, 34.5);
+        tl.fromTo("#el-07-fix", { x: 1080, opacity: 1 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }, 34.5);
+        tl.addLabel("hf:transition:06-brake:07-fix:push-slide", 34.5);
+        tl.to("#el-07-fix", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 40.5);
+        tl.fromTo("#el-08-close", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 40.5);
+        tl.addLabel("hf:transition:07-fix:08-close:crossfade", 40.5);
+        tl.to({}, { duration: 46 }, 0); // full-span anchor — main.duration() == composition total (Studio master duration)
+      })();
+    </script>
+  </body>
+</html>

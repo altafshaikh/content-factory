@@ -1,0 +1,123 @@
+<template>
+  <div id="root" data-composition-id="05-rule" data-width="1080" data-height="1350" data-start="0" data-duration="6">
+    <style>
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+
+      #root { position: relative; width: 1080px; height: 1350px; overflow: hidden; }
+
+      #root [data-el="05-rule-bg"] { position: absolute; inset: 0; background: #FAF9F5; }
+      #root [data-el="05-rule-stage"] { position: absolute; inset: 0; transform-origin: 50% 40%; }
+
+      #root [data-el="05-rule-kicker"] {
+        position: absolute; left: 80px; right: 80px; top: 196px;
+        display: flex; align-items: center; justify-content: center; gap: 20px;
+        font-family: "JetBrains Mono", monospace; font-weight: 400; font-size: 28px;
+        letter-spacing: 0.16em; text-transform: uppercase; color: rgba(20, 20, 19, 0.72);
+      }
+      #root [data-el="05-rule-kicker-rule"] { width: 48px; height: 1px; background: rgba(20, 20, 19, 0.35); }
+
+      #root [data-el="05-rule-plate"] {
+        position: absolute; left: 80px; top: 268px; width: 920px; height: 448px;
+        box-sizing: border-box; padding: 58px 72px;
+        background: #181715; border: 1px solid rgba(250, 249, 245, 0.14); border-radius: 12px;
+        display: flex; flex-direction: column; justify-content: center; gap: 14px;
+        transform-origin: 50% 50%;
+      }
+      #root [data-el="05-rule-row"] { display: flex; align-items: baseline; gap: 30px; white-space: nowrap; }
+      #root .rule05-term {
+        display: inline-block; font-family: "EB Garamond", Georgia, serif; font-weight: 400;
+        font-size: 92px; line-height: 1.04; letter-spacing: -0.022em; color: #FAF9F5;
+      }
+      #root .rule05-grow { color: #CC785C; font-size: 84px; }
+      #root .rule05-op {
+        display: inline-block; font-family: "JetBrains Mono", monospace; font-weight: 400;
+        font-size: 60px; line-height: 1; color: rgba(250, 249, 245, 0.72);
+      }
+
+      #root [data-el="05-rule-divider"] {
+        position: absolute; left: 240px; width: 600px; top: 772px; height: 1px;
+        background: rgba(20, 20, 19, 0.12); transform-origin: 50% 50%;
+      }
+      #root [data-el="05-rule-line1"] {
+        position: absolute; left: 60px; right: 60px; top: 812px; text-align: center;
+        font-family: "EB Garamond", Georgia, serif; font-weight: 400; font-size: 76px;
+        line-height: 1.06; letter-spacing: -0.018em; color: #141413; white-space: nowrap;
+      }
+      #root [data-el="05-rule-line2"] {
+        position: absolute; left: 40px; right: 40px; top: 920px; text-align: center;
+        font-family: "EB Garamond", Georgia, serif; font-weight: 400; font-size: 132px;
+        line-height: 1.02; letter-spacing: -0.022em; color: #141413; white-space: nowrap;
+      }
+    </style>
+
+    <div data-el="05-rule-bg" class="clip" data-start="0" data-duration="6" data-track-index="0"></div>
+
+    <div data-el="05-rule-stage" class="clip" data-start="0" data-duration="6" data-track-index="1">
+      <div data-el="05-rule-kicker"><span data-el="05-rule-kicker-rule"></span><span>THE RULE</span><span data-el="05-rule-kicker-rule"></span></div>
+
+      <div data-el="05-rule-plate">
+        <div data-el="05-rule-row">
+          <span class="rule05-term" data-el="05-rule-t-cost">cost</span>
+          <span class="rule05-op" data-el="05-rule-t-eq">=</span>
+        </div>
+        <div data-el="05-rule-row">
+          <span class="rule05-term rule05-grow" data-el="05-rule-t-avg">average context</span>
+        </div>
+        <div data-el="05-rule-row">
+          <span class="rule05-op" data-el="05-rule-t-x">×</span>
+          <span class="rule05-term rule05-grow" data-el="05-rule-t-calls">number of calls</span>
+        </div>
+      </div>
+
+      <div data-el="05-rule-divider"></div>
+      <div data-el="05-rule-line1">2× longer session</div>
+      <div data-el="05-rule-line2">≈ 4× the cost</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var root = document.querySelector('[data-composition-id="05-rule"]');
+        var q = function (n) { return root.querySelector('[data-el="' + n + '"]'); };
+        var tl = gsap.timeline({ paused: true });
+
+        // Macro camera: slow push under the build, settles still at the landing (3.8s).
+        tl.fromTo(q("05-rule-stage"), { scale: 1 }, { scale: 1.015, duration: 3.8, ease: "sine.inOut" }, 0);
+
+        // Scene 1 (0.0-0.8): kicker fades up; the navy plate scales in from 0.96.
+        tl.fromTo(q("05-rule-kicker"), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0);
+        tl.fromTo(q("05-rule-plate"), { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.7, ease: "power2.out" }, 0.05);
+
+        // Scene 2 (0.8-2.6): formula assembles term by term.
+        var terms = [
+          ["05-rule-t-cost", 0.8],
+          ["05-rule-t-eq", 1.15],
+          ["05-rule-t-avg", 1.45],
+          ["05-rule-t-x", 1.9],
+          ["05-rule-t-calls", 2.15]
+        ];
+        terms.forEach(function (t) {
+          tl.fromTo(q(t[0]),
+            { opacity: 0, y: 22, filter: "blur(6px)" },
+            { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "power2.out" }, t[1]);
+        });
+
+        // Scene 3 (2.6-3.8): hairline draws on, "2x longer session" rises in.
+        tl.fromTo(q("05-rule-divider"), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, 2.6);
+        tl.fromTo(q("05-rule-line1"), { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 2.7);
+
+        // Scene 4 (3.8-5.5): the consequence lands at display scale, then holds still.
+        tl.fromTo(q("05-rule-line2"), { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 3.8);
+
+        // Pin the timeline to the frame's fixed duration.
+        tl.to({}, { duration: 0 }, 5.5);
+
+        window.__timelines["05-rule"] = tl;
+      })();
+    </script>
+  </div>
+</template>

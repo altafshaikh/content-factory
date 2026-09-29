@@ -1,0 +1,77 @@
+<template id="08-close-template">
+  <div id="root" data-composition-id="08-close" data-width="1080" data-height="1350" data-duration="5.5">
+    <style>
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      #root { position: relative; width: 1080px; height: 1350px; overflow: hidden; }
+      #close-08-bg { position: absolute; inset: 0; background: #FAF9F5; }
+      #close-08-content { position: absolute; left: 0; top: 0; width: 1080px; height: 1350px; }
+      #close-08-block { position: absolute; left: 80px; top: 300px; width: 920px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+      #close-08-line1 {
+        margin: 0; font-family: "EB Garamond", Georgia, serif; font-weight: 400;
+        font-size: 74px; line-height: 1.08; letter-spacing: -0.018em; color: #141413;
+      }
+      #close-08-rule { width: 120px; height: 1px; background: rgba(20,20,19,0.2); margin: 56px 0 56px 0; }
+      #close-08-line2 {
+        margin: 0; font-family: "EB Garamond", Georgia, serif; font-weight: 400; font-style: italic;
+        font-size: 86px; line-height: 1.06; letter-spacing: -0.012em; color: #141413;
+      }
+      #close-08-line2 .close-08-accent { color: #CC785C; }
+      #close-08-handle {
+        position: absolute; left: 0; width: 1080px; top: 1010px; text-align: center; margin: 0;
+        font-family: "JetBrains Mono", monospace; font-weight: 400; font-size: 26px;
+        letter-spacing: 0.02em; color: rgba(20,20,19,0.72);
+      }
+    </style>
+
+    <div id="close-08-bg" class="clip" data-start="0" data-duration="5.5" data-track-index="0"></div>
+
+    <div id="close-08-content" class="clip" data-start="0" data-duration="5.5" data-track-index="1">
+      <div id="close-08-block">
+        <p id="close-08-line1">Open your longest session from this week.</p>
+        <div id="close-08-rule"></div>
+        <p id="close-08-line2">Count how many API calls came out of <span class="close-08-accent">one message</span>.</p>
+      </div>
+      <p id="close-08-handle">@teachmebro</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.4s): line 1 slides up + fades in, subtle scale settle
+        tl.fromTo("#close-08-line1",
+          { opacity: 0, y: 40, scale: 0.97 },
+          { opacity: 1, y: 0, scale: 1, duration: 1.0, ease: "power3.out" }, 0.15);
+
+        // Scene 2 (1.4-2.8s): hairline draws, line 2 slides up beneath
+        tl.fromTo("#close-08-rule",
+          { opacity: 0, scaleX: 0 },
+          { opacity: 1, scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.4);
+        tl.fromTo("#close-08-line2",
+          { opacity: 0, y: 44 },
+          { opacity: 1, y: 0, duration: 1.0, ease: "power3.out" }, 1.55);
+        tl.fromTo("#close-08-line2 .close-08-accent",
+          { opacity: 0.55 },
+          { opacity: 1, duration: 0.6, ease: "power2.out" }, 2.2);
+
+        // Scene 3 (2.8-4.9s): handle fades in, then still hold
+        tl.fromTo("#close-08-handle",
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 2.8);
+
+        // Scene 4 (4.9-5.5s): final frame exit, content fades to the cream ground
+        tl.fromTo("#close-08-content",
+          { opacity: 1 },
+          { opacity: 0, duration: 0.6, ease: "power1.inOut", immediateRender: false }, 4.9);
+
+        // pin total length to the fixed duration
+        tl.set({}, {}, 5.5);
+
+        window.__timelines["08-close"] = tl;
+      })();
+    </script>
+  </div>
+</template>

@@ -1,0 +1,224 @@
+<template id="06-brake-template">
+  <div
+    id="root"
+    data-composition-id="06-brake"
+    data-start="0"
+    data-duration="6.5"
+    data-width="1080"
+    data-height="1350"
+  >
+    <style>
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        container-type: size;
+        font-family: "Inter", sans-serif;
+        color: #141413;
+      }
+      #brake-bg {
+        position: absolute;
+        inset: 0;
+        background: #FAF9F5;
+      }
+      #brake-kicker {
+        position: absolute;
+        left: 72px;
+        top: 118px;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #141413;
+      }
+      #brake-kicker .brake-spike { color: #CC785C; margin-right: 16px; letter-spacing: 0; }
+      #brake-headline {
+        position: absolute;
+        left: 72px;
+        top: 176px;
+        width: 936px;
+        font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-size: 84px;
+        line-height: 1.06;
+        letter-spacing: -0.018em;
+        color: #141413;
+      }
+      .brake-row {
+        position: absolute;
+        left: 72px;
+        width: 936px;
+        height: 200px;
+      }
+      #brake-row-a { top: 452px; }
+      #brake-row-b { top: 712px; }
+      .brake-label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.005em;
+        color: #141413;
+      }
+      .brake-track {
+        position: absolute;
+        left: 0;
+        top: 68px;
+        width: 936px;
+        height: 72px;
+        background: #EFE9DE;
+        border: 1px solid rgba(20, 20, 19, 0.12);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .brake-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: left center;
+      }
+      #brake-fill-a { background: #141413; }
+      #brake-fill-b { background: #CC785C; }
+      .brake-tick {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: rgba(20, 20, 19, 0.2);
+      }
+      #brake-marker {
+        position: absolute;
+        left: 748px;
+        top: 48px;
+        width: 2px;
+        height: 112px;
+        background: #141413;
+        transform-origin: center bottom;
+      }
+      #brake-marker-label {
+        position: absolute;
+        right: 200px;
+        top: 160px;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 400;
+        font-size: 26px;
+        letter-spacing: 0.02em;
+        color: #141413;
+        white-space: nowrap;
+      }
+      #brake-tag {
+        position: absolute;
+        right: 0;
+        top: 156px;
+        padding: 8px 20px;
+        border: 1px solid rgba(20, 20, 19, 0.2);
+        border-radius: 9999px;
+        background: #FAF9F5;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 400;
+        font-size: 26px;
+        letter-spacing: 0.02em;
+        color: #141413;
+        white-space: nowrap;
+      }
+      #brake-rule {
+        position: absolute;
+        left: 72px;
+        top: 972px;
+        width: 936px;
+        height: 1px;
+        background: rgba(20, 20, 19, 0.2);
+        transform-origin: left center;
+      }
+      #brake-footer {
+        position: absolute;
+        left: 72px;
+        top: 1000px;
+        width: 936px;
+        font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 60px;
+        line-height: 1.1;
+        letter-spacing: -0.012em;
+        color: #141413;
+      }
+    </style>
+
+    <div id="brake-bg" class="clip" data-start="0" data-duration="6.5" data-track-index="0"></div>
+
+    <div id="brake-kicker"><span class="brake-spike">&#x2731;</span>THE BRAKE</div>
+    <div id="brake-headline">Auto-compact caps the average.</div>
+
+    <div id="brake-row-a" class="brake-row">
+      <div id="brake-label-a" class="brake-label">200k window</div>
+      <div id="brake-track-a" class="brake-track">
+        <div id="brake-fill-a" class="brake-fill"></div>
+      </div>
+      <div id="brake-marker"></div>
+      <div id="brake-marker-label">fires near 160k</div>
+    </div>
+
+    <div id="brake-row-b" class="brake-row">
+      <div id="brake-label-b" class="brake-label">1M default</div>
+      <div id="brake-track-b" class="brake-track">
+        <div class="brake-tick" style="left: 20%"></div>
+        <div class="brake-tick" style="left: 40%"></div>
+        <div class="brake-tick" style="left: 60%"></div>
+        <div class="brake-tick" style="left: 80%"></div>
+        <div id="brake-fill-b" class="brake-fill"></div>
+      </div>
+      <div id="brake-tag">never fired</div>
+    </div>
+
+    <div id="brake-rule"></div>
+    <div id="brake-footer">On a 1M default, nothing caps it.</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.2s): kicker + headline fade up; empty tracks set the stage
+        tl.fromTo("#brake-kicker", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.0);
+        tl.fromTo("#brake-headline", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.15);
+        tl.fromTo(["#brake-track-a", "#brake-track-b"], { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power1.out", stagger: 0.1 }, 0.3);
+        tl.fromTo(["#brake-fill-a", "#brake-fill-b"], { scaleX: 0 }, { scaleX: 0, duration: 0.01 }, 0.0);
+
+        // Scene 2 (1.2-3.2s): row A fills to the marker, auto-compact fires, steps back to ~40%
+        tl.fromTo("#brake-label-a", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 1.2);
+        tl.fromTo("#brake-marker", { opacity: 0, scaleY: 0 }, { opacity: 1, scaleY: 1, duration: 0.4, ease: "power2.out" }, 1.3);
+        tl.fromTo("#brake-fill-a", { scaleX: 0 }, { scaleX: 0.8, duration: 1.0, ease: "power2.out", immediateRender: false }, 1.35);
+        tl.fromTo("#brake-marker-label", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 2.2);
+        tl.fromTo("#brake-fill-a", { scaleX: 0.8 }, { scaleX: 0.4, duration: 0.55, ease: "power2.inOut", immediateRender: false }, 2.55);
+
+        // Scene 3 (3.2-4.8s): row B coral fill runs the whole track without stopping
+        tl.fromTo("#brake-label-b", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 3.2);
+        tl.fromTo("#brake-fill-b", { scaleX: 0 }, { scaleX: 1, duration: 1.1, ease: "power1.in", immediateRender: false }, 3.3);
+        tl.fromTo("#brake-tag", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, 4.35);
+
+        // Scene 4 (4.8-6.0s): rule draws on, footer fades up, hold still
+        tl.fromTo("#brake-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, 4.8);
+        tl.fromTo("#brake-footer", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 4.9);
+        tl.set({}, {}, 6.0);
+
+        window.__timelines["06-brake"] = tl;
+      })();
+    </script>
+  </div>
+</template>

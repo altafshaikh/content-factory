@@ -1,0 +1,43 @@
+
+Five messages. 427 API calls. Twelve hours.
+
+One session in my logs last week. It is the thing most people get wrong about agent cost.
+
+You think in messages. You get billed in turns.
+
+Here is why they are not the same.
+
+The model has no memory. Every call re-sends the entire conversation so far: your messages, its replies, and every tool result it has collected.
+
+So the agent reads a file, runs a command, reads another file. That is three calls. Call three carries everything from calls one and two.
+
+Now the part that actually costs money.
+
+In one of my sessions the agent read a 21,000-token file at call 200. That session ran 947 calls.
+
+That file then rode along in the context for 747 more calls. Same 21k, re-sent every time.
+
+About 16 million tokens, roughly eight dollars at list rates. For one file read.
+
+And nothing ever leaves. Every tool result stacks on the last, so context only grows, and you pay the current size on every call.
+
+Which gives you: cost = average context x number of calls.
+
+Both terms grow together. So a session twice as long does not cost twice as much. It costs about four times as much.
+
+Across the week: 213 tokens re-read for every 1 token produced. 1,196M read, 5.6M written.
+
+The brake is auto-compact. On a 200k window it fires near 160k and caps the average. I had 1M set as my default, so it never fired.
+
+Two fixes, neither of them a better prompt.
+
+Drop the 1M default. Switch it on per session, when a task genuinely needs it.
+
+Then one session per task. Clear in between.
+
+Open your longest session from this week. Count how many API calls came out of one message.
+
+#AIEngineering #ClaudeCode #LLM #AIAgents
+
+---
+
