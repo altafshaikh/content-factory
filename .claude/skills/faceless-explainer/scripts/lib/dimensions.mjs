@@ -44,3 +44,16 @@ export function captionBand(height, safetyPx = 20) {
   const bandTopY = h - bandHeight; // foreground must end at/above this y
   return { bandHeight, bandTopY, foregroundMaxY: bandTopY - safetyPx };
 }
+
+// Portrait fill rule — the settled read must use the canvas down to the caption
+// band. Keyed by "WxH"; a format with no entry has no fill rule (fill-check skips).
+// minLowest: the lowest content row must reach this y. maxEmptyBand: no run of
+// empty rows taller than this between `top` and the caption band top. A row is
+// content when >= minPixels pixels (inside sideMargin) differ from the ground by
+// > diff gray levels, which ignores faint grids and paper tints.
+export const FILL_RULES = {
+  "1080x1350": { minLowest: 1000, maxEmptyBand: 200, top: 80, sideMargin: 72, diff: 40, minPixels: 8 },
+};
+export function fillRule(width, height) {
+  return FILL_RULES[`${width}x${height}`] ?? null;
+}
