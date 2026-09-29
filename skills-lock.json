@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "faceless-explainer": {
+      "source": "heygen-com/hyperframes",
+      "sourceType": "github",
+      "skillPath": "skills/faceless-explainer/SKILL.md",
+      "computedHash": "fc94c198fd156f39f4ec9f9a0ca9677609193851a72060120dc744de2bf52df4"
+    },
     "hyperframes": {
       "source": "heygen-com/hyperframes",
       "sourceType": "github",
