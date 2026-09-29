@@ -96,6 +96,7 @@ The zones, density, hierarchy, and depth principles all still apply; the **aspec
 - **Stack vertically, not side-by-side** — split-screen / triptych / 60-40 become top/bottom stacks, vertical step lists, stacked bands. Square tolerates side-by-side only for two compact items.
 - **Vertical center moves with the canvas** — anchor a centered hero around **y ≈ 0.42 × height** (portrait ≈806, square ≈454), not a fixed 540.
 - **Type runs larger, fewer words per line** — narrow frames wrap long headlines badly; prefer short kinetic lines, bigger type, more vertical rhythm.
+- **4:5 feed (1080x1350) is its own layout, not a short 9:16.** Plan every frame in three bands: top y 80-380 (kicker + headline), middle y 380-880 (the focal, 40-60% of frame), lower y 880-1120 (a real element: payoff line, stat, axis, footer, handle). The settled read must reach y >= 1000 with no empty band taller than 200px above the keep-out. Name the band each Scene's element lands in. Short type-only frames scale type up to fill, they do not float at the top.
 - **Travels well to portrait:** Centered, Layered Depth, Full-Width Strip (stacked band), vertical Rule-of-Thirds. **Avoid** wide Split Screen and Triptych — use stacked equivalents.
 
 ## `## Video direction` — write the invariants ONCE

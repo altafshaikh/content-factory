@@ -209,7 +209,7 @@ Do not rerun `lint`, `check`, or `snapshot` after rendering unless the user asks
 
 ## Quick Reference
 
-**Formats:** landscape `1920x1080`; portrait `1080x1920`; square `1080x1080` — derived from the destination (brief contract § 2). Set the format once in the storyboard frontmatter.
+**Formats:** landscape `1920x1080`; portrait `1080x1920`; square `1080x1080`; feed `1080x1350` (4:5, three-band layout in `references/visual-design.md` and the worker delta) — derived from the destination (brief contract § 2). Set the format once in the storyboard frontmatter.
 
 **Faceless deltas vs a captured-asset workflow:** no Step 1 capture (synthetic `tokens.json` + `visible-text.txt`); no `asset-descriptions.md` and no `capture/assets/`; no asset-staging in Step 4; `asset_candidates` empty by default; every visual is invented by the Step 5 workers (typography / abstract graphics / diagrams / data-viz). A user-supplied `public/<basename>` image is the only real asset path.
 

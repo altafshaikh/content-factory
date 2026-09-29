@@ -9,6 +9,7 @@ export const ORIENTATION_PRESETS = {
   landscape: { width: 1920, height: 1080 }, // 16:9 — default
   portrait: { width: 1080, height: 1920 }, // 9:16 — reels / shorts / TikTok
   square: { width: 1080, height: 1080 }, // 1:1 — feed
+  feed: { width: 1080, height: 1350 }, // 4:5 — LinkedIn / Instagram feed portrait
 };
 
 export const DEFAULT_DIMENSIONS = ORIENTATION_PRESETS.landscape;
