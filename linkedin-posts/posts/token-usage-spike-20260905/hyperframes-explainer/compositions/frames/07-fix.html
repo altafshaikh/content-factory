@@ -1,5 +1,5 @@
 <template id="07-fix-template">
-  <div id="root" data-composition-id="07-fix" data-width="1080" data-height="1350" data-duration="6.5">
+  <div id="root" data-composition-id="07-fix" data-width="1080" data-height="1350" data-duration="5.5">
     <style>
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
@@ -151,13 +151,13 @@
         tl.fromTo("#fix07-body1", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 1.8);
 
         // Scene 3 (3.2-5.0s): card 2 rises in the same way below it.
-        tl.fromTo("#fix07-card2", { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 3.2);
-        tl.fromTo("#fix07-idx2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 3.4);
-        tl.fromTo("#fix07-title2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 3.6);
-        tl.fromTo("#fix07-body2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 3.8);
+        tl.fromTo("#fix07-card2", { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 2.8);
+        tl.fromTo("#fix07-idx2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 3.0);
+        tl.fromTo("#fix07-title2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 3.2);
+        tl.fromTo("#fix07-body2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 3.4);
 
         // Scene 4 (5.0-6.0s): hold still. Anchor the timeline to the full 6s duration.
-        tl.set({}, {}, 6.0);
+        tl.set({}, {}, 5.0);
 
         window.__timelines["07-fix"] = tl;
       })();

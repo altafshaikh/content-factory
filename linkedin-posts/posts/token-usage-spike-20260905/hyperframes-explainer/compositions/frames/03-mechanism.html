@@ -125,7 +125,7 @@
     }
   </style>
 
-  <div id="root" data-composition-id="03-mechanism" data-width="1080" data-height="1350" data-start="0" data-duration="7">
+  <div id="root" data-composition-id="03-mechanism" data-width="1080" data-height="1350" data-start="0" data-duration="6.1">
     <div id="m03-ground" class="clip" data-start="0" data-duration="7" data-track-index="0"></div>
 
     <div id="m03-stage" class="clip" data-start="0" data-duration="7" data-track-index="1">
@@ -180,16 +180,16 @@
       tl.fromTo("#m03-c2-b2", { opacity: 0, y: -60 }, Object.assign({ opacity: 1, y: 0 }, land), 3.0);
 
       // Scene 4 (3.6-4.9): CALL 3, tile copies rise, coral "read file" lands on top.
-      tl.fromTo("#m03-label3", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 3.6);
-      tl.fromTo("#m03-c3-b1", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 3.7);
-      tl.fromTo("#m03-c3-b2", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 3.9);
-      tl.fromTo("#m03-c3-b3", { opacity: 0, y: -60 }, Object.assign({ opacity: 1, y: 0 }, land), 4.35);
+      tl.fromTo("#m03-label3", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 3.3);
+      tl.fromTo("#m03-c3-b1", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 3.4);
+      tl.fromTo("#m03-c3-b2", { opacity: 0, y: 70 }, Object.assign({ opacity: 1, y: 0 }, rise), 3.6);
+      tl.fromTo("#m03-c3-b3", { opacity: 0, y: -60 }, Object.assign({ opacity: 1, y: 0 }, land), 3.95);
 
       // Scene 5 (4.9-6.5): footer fades up below the columns; hold still.
-      tl.fromTo("#m03-footer", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 4.95);
+      tl.fromTo("#m03-footer", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 4.3);
 
       // Pad timeline to the full frame duration.
-      tl.set({}, {}, 6.5);
+      tl.set({}, {}, 5.6);
 
       window.__timelines["03-mechanism"] = tl;
     })();

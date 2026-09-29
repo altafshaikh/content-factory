@@ -1,5 +1,5 @@
 <template>
-  <div id="root" data-composition-id="05-rule" data-width="1080" data-height="1350" data-start="0" data-duration="6">
+  <div id="root" data-composition-id="05-rule" data-width="1080" data-height="1350" data-start="0" data-duration="5.3">
     <style>
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
@@ -107,14 +107,14 @@
         });
 
         // Scene 3 (2.6-3.8): hairline draws on, "2x longer session" rises in.
-        tl.fromTo(q("05-rule-divider"), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, 2.6);
-        tl.fromTo(q("05-rule-line1"), { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 2.7);
+        tl.fromTo(q("05-rule-divider"), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, 2.4);
+        tl.fromTo(q("05-rule-line1"), { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 2.5);
 
         // Scene 4 (3.8-5.5): the consequence lands at display scale, then holds still.
-        tl.fromTo(q("05-rule-line2"), { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 3.8);
+        tl.fromTo(q("05-rule-line2"), { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 3.3);
 
         // Pin the timeline to the frame's fixed duration.
-        tl.to({}, { duration: 0 }, 5.5);
+        tl.to({}, { duration: 0 }, 4.8);
 
         window.__timelines["05-rule"] = tl;
       })();

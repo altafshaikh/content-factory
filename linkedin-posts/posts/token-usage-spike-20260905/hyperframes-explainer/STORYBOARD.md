@@ -1,8 +1,8 @@
 ---
 format: 1080x1350
-duration: 46s
+duration: 30s
 message: "You think in messages. You get billed in turns: every call re-sends the whole context."
-arc: Hook → Gap → Mechanism → Worked example → Rule → Brake → Fix → Close
+arc: Hook → Mechanism → Worked example → Rule → Fix → Close
 audience: engineers running coding agents who read their usage in messages
 mode: autonomous
 music: none
@@ -15,15 +15,15 @@ structure: concept
 - **Palette (frame.md roles):** ground = cream; secondary surfaces = tile / tile-strong cards with hairline ink@12% borders; text = ink; the ONE voltage per frame = coral (the growing quantity: turns, the re-sent file, the growing term, the fix). navy is used only for the formula plate in frame 05 and the settings line in frame 06. No other hues.
 - **Type:** display ramp EB Garamond 400 (headline / display / number-hero) for statements and hero numbers; JetBrains Mono (kicker, mono-label, number-unit) for units, axis labels and eyebrows; Inter body only for small supporting labels. Sentence case. Kicker eyebrows carry the coral spike prefix.
 - **Motion grammar:** one paused timeline per frame; long-tail power3.out entrances; each piece reveals on its beat across the full duration (silent frames pace to the beat, never front-loaded); end each frame on a held, still read. No bouncy springs, no drift, no breathing.
-- **Rhythm:** 01 and 02 are fast type beats; 03 and 04 are the builds (the teaching); 05 is the held landing (formula assembles, then holds still); 06 and 07 are steady; 08 is a calm held close with the only exit fade.
-- **Layout:** portrait stacks vertically. Hero anchored high (0.2 to 0.4 x height). All content above y = 1120 (83% keep-out). Vary framing: centered type (01, 08), stacked contrast (02), full-width strip diagram (03), bar chart (04), centered plate (05), stacked two-row comparison (06), vertical step list (07).
+- **Rhythm:** 30s test cut (gap and brake scenes dropped 2026-09-29). 01 is a fast type beat; 03 and 04 are the builds; 05 is the held landing; 07 is steady; 08 is a calm close with the only exit fade.
+- **Layout:** 4:5 feed, three bands, all used: top y 80-380 kicker + headline; middle y 380-880 the focal at 40-60% of frame; lower y 880-1120 a real element (payoff line, stat, axis, footer, handle). Settled read reaches y >= 1000, no empty band over 200px. All content above y = 1120 (83% keep-out). Vary framing: centered type (01, 08), stacked contrast (02), full-width strip diagram (03), bar chart (04), centered plate (05), stacked two-row comparison (06), vertical step list (07).
 - **Negative list:** no emojis, no company or product names, no em dashes, no gradients, glows, bokeh or purple-blue AI looks, no cursor, no browser chrome, no second coral element in a frame. Never front-load then freeze; never let elements float independently like a screensaver.
 
 ## Frame 1 — Hook
 
 - scene: Three short facts slam in one after another, stacked, then hold
 - voiceover: ""
-- duration: 4.5s
+- duration: 4.4s
 - transition_in: cut
 - status: animated
 - src: compositions/frames/01-hook.html
@@ -45,37 +45,11 @@ Scene 2 (0.9–2.2s): "427 API calls." slams in below (kinetic-beat-slam, scale-
 Scene 3 (2.2–3.2s): "Twelve hours." rises in below at headline scale, ink.
 Scene 4 (3.2–4.5s): all three hold still; the read settles.
 
-## Frame 2 — The gap
-
-- scene: Two stacked statements, then a 5 versus 427 count contrast
-- voiceover: ""
-- duration: 5s
-- transition_in: crossfade
-- status: animated
-- src: compositions/frames/02-gap.html
-- type: pain_point
-- persuasion: Misconception vs reality (contrast pair)
-- beat: recognition
-- blueprint: dataviz-countup (Adapt)
-- focal: the two count-up numbers
-- roles: cream field = background · two statement lines = foreground subject · two number tiles = supporting
-
-narrativeRole: Names the misconception the post corrects: people reason in messages, billing counts turns.
-keyMessage: A message and a billed turn are not the same unit.
-
-On-screen copy (verbatim): line 1 "You think in messages." · line 2 "You get billed in turns." (the word "turns" in coral) · tile A label "MESSAGES" value "5" · tile B label "API CALLS" value "427"
-
-Adapt: keep the count-up signature; instead of a camera push-through, the two numbers count up side by side in two tiles under the statements.
-Scene 1 (0.0–1.2s): "You think in messages." fades up in the upper third, headline scale, ink.
-Scene 2 (1.2–2.4s): "You get billed in turns." rises in beneath it, "turns" in coral.
-Scene 3 (2.4–4.0s): two tile cards rise in side by side below (stacked band, full width): left "MESSAGES" counts 0 to 5, right "API CALLS" counts 0 to 427 (counting-dynamic-scale) (tabular numerals, number-hero figure, mono label).
-Scene 4 (4.0–5.0s): hold still.
-
-## Frame 3 — Mechanism
+## Frame 2 — Mechanism
 
 - scene: Three calls drawn as growing stacks; each call carries every block from the calls before it
 - voiceover: ""
-- duration: 6.5s
+- duration: 5.6s
 - transition_in: push-slide
 - status: animated
 - src: compositions/frames/03-mechanism.html
@@ -98,11 +72,11 @@ Scene 3 (2.4–3.6s): column "CALL 2" builds: a tile copy of "read file" rises i
 Scene 4 (3.6–4.9s): column "CALL 3" builds: tile copies of "read file" and "run command" rise in, then a coral "read file" block lands on top.
 Scene 5 (4.9–6.5s): footer "Call three carries calls one and two." fades up below the columns; hold still.
 
-## Frame 4 — The worked example
+## Frame 3 — The worked example
 
 - scene: A bar chart of context size across a 947-call session; a constant coral slab rides in every bar from call 200
 - voiceover: ""
-- duration: 7s
+- duration: 6.2s
 - transition_in: crossfade
 - status: animated
 - src: compositions/frames/04-example.html
@@ -125,11 +99,11 @@ Scene 3 (2.8–3.8s): the bar at call 200 grows in with the coral slab at its ba
 Scene 4 (3.8–5.3s): the remaining 7 bars grow in with a short stagger, each taller, each carrying the identical coral slab; "CALL 947" under the last.
 Scene 5 (5.3–7.0s): below the chart "~16M tokens" counts up (counting-dynamic-scale) (number-hero figure, mono unit), then the sub "roughly $8, for one file read" fades in; hold still.
 
-## Frame 5 — The rule
+## Frame 4 — The rule
 
 - scene: The cost formula assembles term by term on a dark plate, then the quadratic consequence lands
 - voiceover: ""
-- duration: 5.5s
+- duration: 4.8s
 - transition_in: blur-crossfade
 - status: animated
 - src: compositions/frames/05-rule.html
@@ -151,37 +125,11 @@ Scene 2 (0.8–2.6s): the formula assembles term by term inside the plate: "cost
 Scene 3 (2.6–3.8s): "2× longer session" rises in below the plate (headline scale).
 Scene 4 (3.8–5.5s): "≈ 4× the cost" rises in beneath at display scale; hold still (the held landing of the film).
 
-## Frame 6 — The brake
-
-- scene: Two rows compare a 200k window where auto-compact caps context near 160k with a 1M default where it never fires
-- voiceover: ""
-- duration: 6s
-- transition_in: crossfade
-- status: animated
-- src: compositions/frames/06-brake.html
-- type: benefit_highlight
-- persuasion: Comparison pair (with vs without the brake)
-- beat: realization
-- blueprint: compose
-- focal: the two horizontal fill bars
-- roles: cream field = background · two horizontal context bars = foreground subject · labels = supporting
-
-narrativeRole: Explains why this session ran away: the brake that normally caps average context was disabled.
-keyMessage: Auto-compact caps context on a 200k window; a 1M default means it never fires.
-
-On-screen copy (verbatim): kicker "THE BRAKE" · headline "Auto-compact caps the average." · row A label "200k window" with a marker "fires near 160k" · row B label "1M default" with a tag "never fired" · footer "On a 1M default, nothing caps it."
-
-Adapt (stat-bars-and-fills progress fill): two full-width horizontal track bars stacked vertically. Row A fills to 80% of its track and stops against a hairline marker labelled "fires near 160k", then drops back a little (compaction), held. Row B's track is visually 5x longer scale compressed into the same width, and its coral fill keeps running to the end of the track with the tag "never fired".
-Scene 1 (0.0–1.2s): kicker and headline fade up at the top.
-Scene 2 (1.2–3.2s): progress fill (stat-bars-and-fills): row A appears: label "200k window", ink fill runs to the marker, the marker label "fires near 160k" fades in, the fill steps back down to about 40% and holds.
-Scene 3 (3.2–4.8s): row B appears: label "1M default", the coral fill runs the full track without stopping, tag "never fired" appears at its end.
-Scene 4 (4.8–6.0s): footer "On a 1M default, nothing caps it." fades up; hold still.
-
-## Frame 7 — The fix
+## Frame 5 — The fix
 
 - scene: Two numbered steps assemble as a vertical list
 - voiceover: ""
-- duration: 6s
+- duration: 5.0s
 - transition_in: push-slide
 - status: animated
 - src: compositions/frames/07-fix.html
@@ -203,11 +151,11 @@ Scene 2 (1.2–3.2s): card 1 rises in (index, then title, then body in quick suc
 Scene 3 (3.2–5.0s): card 2 rises in the same way below it.
 Scene 4 (5.0–6.0s): hold still.
 
-## Frame 8 — Close
+## Frame 6 — Close
 
 - scene: The post's closing challenge, centered, held, then a quiet fade out
 - voiceover: ""
-- duration: 5.5s
+- duration: 4.0s
 - transition_in: crossfade
 - status: animated
 - src: compositions/frames/08-close.html

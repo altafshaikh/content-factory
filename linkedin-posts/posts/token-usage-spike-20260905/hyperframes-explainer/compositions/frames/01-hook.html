@@ -1,5 +1,5 @@
-<template id="01-hook-template">
-  <div id="root" data-composition-id="01-hook" data-width="1080" data-height="1350" data-duration="5">
+<template id="hook01-template">
+  <div id="root" data-composition-id="01-hook" data-width="1080" data-height="1350" data-duration="4.9">
     <style>
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
@@ -12,7 +12,7 @@
         height: 1350px;
         overflow: hidden;
       }
-      #hook-01-ground {
+      #hook01-ground {
         position: absolute;
         inset: 0;
         background-color: #FAF9F5;
@@ -22,32 +22,33 @@
         background-size: 90px 90px;
         background-position: 44px 20px;
       }
-      #hook-01-stage {
+      #hook01-stage {
         position: absolute;
         inset: 0;
       }
-      .hook-01-kicker {
+      /* Top band (y 80-380): kicker + "Five messages." */
+      .hook01-kicker {
         position: absolute;
         left: 88px;
-        top: 168px;
+        top: 112px;
         display: flex;
         align-items: center;
         gap: 22px;
         font-family: "JetBrains Mono", monospace;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 28px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
         color: #141413;
         line-height: 1;
       }
-      .hook-01-kicker-rule {
+      .hook01-kicker-rule {
         display: block;
         width: 44px;
         height: 1px;
         background: rgba(20, 20, 19, 0.45);
       }
-      .hook-01-line {
+      .hook01-line {
         position: absolute;
         left: 88px;
         right: 88px;
@@ -55,50 +56,59 @@
         font-weight: 400;
         color: #141413;
         white-space: nowrap;
+        font-variant-numeric: lining-nums;
       }
-      #hook-01-l1 {
-        top: 280px;
-        font-size: 84px;
+      #hook01-l1 {
+        top: 196px;
+        font-size: 100px;
         line-height: 1.06;
         letter-spacing: -0.018em;
       }
-      #hook-01-l2 {
-        top: 430px;
-        font-size: 104px;
-        line-height: 0.95;
-        letter-spacing: -0.022em;
-        transform-origin: 0% 70%;
+      /* Middle band (y 380-880): "427 API calls." number-hero */
+      #hook01-l2 {
+        top: 384px;
+        transform-origin: 0% 50%;
       }
-      #hook-01-l2 .hook-01-num {
-        font-size: 210px;
+      #hook01-l2 .hook01-num {
+        display: block;
+        font-size: 280px;
+        line-height: 1.05;
         letter-spacing: -0.025em;
         color: #CC785C;
       }
-      #hook-01-l3 {
-        top: 760px;
-        font-size: 84px;
+      #hook01-l2 .hook01-unit {
+        display: block;
+        margin-top: 28px;
+        font-size: 124px;
+        line-height: 1.0;
+        letter-spacing: -0.022em;
+      }
+      /* Lower band (y 880-1120): "Twelve hours." + rule */
+      #hook01-l3 {
+        top: 912px;
+        font-size: 100px;
         line-height: 1.06;
         letter-spacing: -0.018em;
       }
-      #hook-01-rule {
+      #hook01-rule {
         position: absolute;
         left: 88px;
         right: 88px;
-        top: 900px;
+        top: 1078px;
         height: 1px;
         background: rgba(20, 20, 19, 0.2);
         transform-origin: 0% 50%;
       }
     </style>
 
-    <div id="hook-01-ground" class="clip" data-start="0" data-duration="5" data-track-index="0"></div>
+    <div id="hook01-ground" class="clip" data-start="0" data-duration="5" data-track-index="0"></div>
 
-    <div id="hook-01-stage" class="clip" data-start="0" data-duration="5" data-track-index="1">
-      <div class="hook-01-kicker" id="hook-01-kicker"><span class="hook-01-kicker-rule"></span><span>ONE SESSION</span></div>
-      <div class="hook-01-line" id="hook-01-l1">Five messages.</div>
-      <div class="hook-01-line" id="hook-01-l2"><span class="hook-01-num">427</span> API calls.</div>
-      <div class="hook-01-line" id="hook-01-l3">Twelve hours.</div>
-      <div id="hook-01-rule"></div>
+    <div id="hook01-stage" class="clip" data-start="0" data-duration="5" data-track-index="1">
+      <div class="hook01-kicker" id="hook01-kicker"><span class="hook01-kicker-rule"></span><span>ONE SESSION</span></div>
+      <div class="hook01-line" id="hook01-l1">Five messages.</div>
+      <div class="hook01-line" id="hook01-l2"><span class="hook01-num">427</span> <span class="hook01-unit">API calls.</span></div>
+      <div class="hook01-line" id="hook01-l3">Twelve hours.</div>
+      <div id="hook01-rule"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
@@ -108,29 +118,29 @@
         var tl = gsap.timeline({ paused: true });
 
         // One onset array drives every beat (kinetic-beat-slam).
-        var BEATS = [0.15, 0.9, 2.2];
+        var BEATS = [0.15, 0.8, 1.8];
 
-        // Scene 1: kicker, then "Five messages." rises in.
-        tl.fromTo("#hook-01-kicker", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0);
-        tl.fromTo("#hook-01-l1", { opacity: 0, y: 56 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, BEATS[0]);
+        // Scene 1 (0.0-0.9s): kicker, then "Five messages." rises in.
+        tl.fromTo("#hook01-kicker", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0);
+        tl.fromTo("#hook01-l1", { opacity: 0, y: 56 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, BEATS[0]);
 
-        // Scene 2: "427 API calls." scale-slam, the hero hit.
-        tl.fromTo("#hook-01-l2",
+        // Scene 2 (0.9-2.2s): "427 API calls." scale-slam, the hero hit.
+        tl.fromTo("#hook01-l2",
           { opacity: 0, scale: 1.5, filter: "blur(16px)" },
           { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "power4.out" },
           BEATS[1]);
 
-        // Scene 3: "Twelve hours." heavier rise with a slight tilt that resolves.
-        tl.fromTo("#hook-01-l3",
+        // Scene 3 (2.2-3.2s): "Twelve hours." heavier rise with a slight tilt that resolves.
+        tl.fromTo("#hook01-l3",
           { opacity: 0, y: 80, rotation: 3 },
           { opacity: 1, y: 0, rotation: 0, duration: 0.55, ease: "circ.out" },
           BEATS[2]);
 
-        // Scene 4: hairline rule draws under the stack, then the read holds still.
-        tl.fromTo("#hook-01-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.out" }, 3.0);
+        // Scene 4 (3.2-4.5s): hairline rule draws under the stack, then the read holds still.
+        tl.fromTo("#hook01-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.out" }, 2.5);
 
         // Pad the timeline to the full frame duration (static hold).
-        tl.set({}, {}, 4.5);
+        tl.set({}, {}, 4.4);
 
         window.__timelines["01-hook"] = tl;
       })();
